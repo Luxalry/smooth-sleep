@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='Brand: Luxalry, Product: Smooth Sleep Supplement, Category: Health and Wellness, Price: 199.00 MAD, Quantity: Natural sleep supplement with 60 60 capsules, Benefits: Natural sleep aid, Helps reduces insomnia, improve sleep, relieves stress, Certification: ONSSA, ISO, GMP, Made in Morocco' name='description'/>
+    <meta content="Marque : Luxalry, Produit : Complément Smooth Sleep, Catégorie : Santé et bien-être, Prix : 199,00 MAD, Quantité : Complément naturel pour le sommeil avec 60 gélules, Bienfaits : Aide naturelle au sommeil, réduit l'insomnie, améliore la qualité du sommeil, soulage le stress, Certifications : ONSSA, ISO, GMP, Fabriqué au Maroc" name="description"/>
+    <meta content="العلامة التجارية: لوكسالري، المنتج: مكمل سموث سليب، الفئة: الصحة والعافية، السعر: 199.00 درهم، الكمية: مكمل طبيعي للنوم يحتوي على 60 كبسولة، الفوائد: يساعد على النوم بشكل طبيعي، يخفف من الأرق، يحسن جودة النوم، يخفف التوتر، الشهادات: ONSSA، ISO، GMP، صنع في المغرب" name="description"/>
+    <meta name="keywords" content="Smooth Sleep, natural sleep aid, sleep supplement, insomnia relief, relaxation support, deep sleep pills, melatonin alternative, fall asleep faster, sleep support system, non-habit forming sleep aid, better sleep naturally">
+    <meta name="keywords" content="Smooth Sleep, aide sommeil naturelle, complément sommeil, insomnie, détente, relaxation, améliorer le sommeil, sommeil réparateur, solution insomnie, s’endormir vite, sans accoutumance">
+    <meta name="keywords" content="سموث سليب، مكمل للنوم، علاج الأرق، دعم الاسترخاء، نوم عميق، نوم طبيعي، مكمل غذائي للأرق، حل للنوم، علاج صعوبات النوم، نوم بدون قلق، علاج طبيعي للأرق">
+    <meta name="robots" content="index">
+    <meta content='index' name='robots'/>
+    <meta content='index' name='Googlebot'/>
+    <link rel="icon" href="images/luxalry-favicon.webp" type="image/webp">
+    <title>Smooth Sleep - Natural Sleep Aid</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Cairo:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Cairo:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Cairo:wght@400;600;700&display=swap">
+    </noscript>
+  <style>
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Styles for Arabic text */
+        .lang-ar {
+            font-family: 'Cairo', sans-serif;
+        }
+        /* Hide content by default */
+        .lang-content {
+            display: none;
+        }
+        /* Show active language content */
+        .lang-content.active {
+            display: block;
+        }
+        /* Header transition for auto-hide */
+        header {
+            transition: top 0.3s ease-in-out;
+        }
+        /* FAQ transition */
+        .faq-answer {
+            transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, opacity 0.3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+            padding-top: 0;
+            padding-bottom: 0;
+            opacity: 0;
+        }
+        .faq-question.active + .faq-answer {
+            max-height: 500px; /* Adjust as needed */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            opacity: 1;
+        }
+        .faq-question .arrow {
+            transition: transform 0.3s ease-out;
+        }
+        .faq-question.active .arrow {
+            transform: rotate(180deg);
+        }
+        .cta-button-gradient {
+            background-image: linear-gradient(to right, #4f46e5, #7c3aed);
+        }
+        /* Checkout Modal Styles */
+        .modal-overlay {
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+        .modal-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .modal-content {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+        .modal-overlay.modal-hidden .modal-content {
+            transform: scale(0.95);
+            opacity: 0;
+        }
+        /* Specific styling for the Before/After section for visual separation */
+        .before-after-card {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* rounded-3xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+            overflow: hidden;
+        }
+
+        .before-after-image-container {
+            position: relative;
+            height: 250px; /* Fixed height for image consistency */
+            overflow: hidden;
+        }
+
+        .before-after-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .before-after-label {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px; /* rounded-full */
+            font-weight: 700; /* font-bold */
+            font-size: 0.875rem; /* text-sm */
+        }
+        .before-label {
+    background-color: #B91C1C; /* darker red, better contrast */
+    color: #ffffff;
+}
+.after-label {
+    background-color: #15803D; /* darker green, better contrast */
+    color: #ffffff;
+}
+
+
+        .ltr {
+          direction: ltr;
+        }
+        .rtl {
+          direction: rtl;
+        }
+        
+        #confirm-delivery-note {
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .interactive-hover:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.interactive-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    </style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5K8NRF2X');</script>
+<!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K8NRF2X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Google Analytics GA4 Tag (optional if already in GTM) -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-KPGZVQ0DD3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KPGZVQ0DD3');
+    </script>
+    
+    <!-- Clarity Analytics (Optional) -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "s4tup71u68");
+    </script>
+    
+    <!-- Initial Pageview / Content View -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({ event: 'view_content' });
+    </script>
+
+</head>
+<body class="bg-slate-100">
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo -->
+            <a href="" class="flex items-center space-x-3 mb-4 md:mb-0">
+                <img src="images/smooth-sleep-logo.webp?text=Smooth Sleep"  width="32" height="32"  title="" alt="Smooth Sleep Logo" class="rounded-full shadow-md">
+                <span class="text-3xl font-extrabold text-gray-900">Smooth Sleep</span>
+            </a>
+
+            <!-- Language Switcher -->
+            <div class="bg-gray-100 rounded-full p-1">
+                <div class="container mx-auto flex justify-center items-center gap-2">
+                    <button onclick="switchLang('en')" class="lang-switcher focus:outline-none px-4 py-1 rounded-full text-sm font-semibold text-gray-600" data-lang="en">English</button>
+                    <button onclick="switchLang('fr')" class="lang-switcher focus:outline-none px-4 py-1 rounded-full text-sm font-semibold text-gray-600" data-lang="fr">Français</button>
+                    <button onclick="switchLang('ar')" class="lang-switcher focus:outline-none px-4 py-1 rounded-full text-sm font-semibold text-gray-600" data-lang="ar">العربية</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content Wrapper -->
+    <div id="page-content">
+
+        <!-- ================== EN CONTENT ================== -->
+        <div id="lang-en" class="lang-content active">
+            <main>
+        <!-- 1. Hero Section (EN) -->
+        <section id="hero-en" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 md:py-28 text-center">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">
+                    Rest Smarter. Perform Better.
+                </h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                    Scientifically crafted sleep support for high-performing professionals.
+                </p>
+                <div class="mb-12">
+                    <img src="images/luxalry-smooth-sleep-supplement-sleep-aid.webp" loading="lazy" fetchpriority="high" alt="Smooth Sleep Product" class="mx-auto rounded-3xl shadow-2xl w-64 md:w-80 border-4 border-white/50">
+                    <div class="mt-4 text-xl md:text-2xl font-bold star-rating">
+                        ⭐⭐⭐⭐⭐ <span class="text-white/80 text-base font-normal">(4.9/5 based on 2,500+ reviews)</span>
+                    </div>
+                    <p class="text-sm md:text-base mt-2 font-semibold text-indigo-300">
+                        Doctor-Formulated | Non-Habit Forming | Fast Results
+                    </p>
+                </div>
+                <a onclick="dataLayer.push({ event: 'cta_click', label: 'hero_cta' })" href="#order-btn" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 interactive-hover">
+                    Try Smooth Sleep Now!
+                </a>
+            </div>
+        </section>
+
+         <!-- 2. Professionals Benefit Section (EN) -->
+         <section id="benefits-pro-en" class="bg-slate-100 py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">An Investment In Your Professional Edge</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">Smooth Sleep isn't just a sleep aid; it's a tool to unlock peak performance. Experience the difference a truly restorative night can make.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-indigo-500 hover:shadow-xl transition duration-300">
+                        <span class="text-5xl mb-4 block">🧠</span>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Boost Cognitive Focus</h3>
+                        <p class="text-gray-600">Sharpen your concentration and decision-making for peak daily performance.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-purple-500 hover:shadow-xl transition duration-300">
+                        <span class="text-5xl mb-4 block">💼</span>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Combat Burnout & Fatigue</h3>
+                        <p class="text-gray-600">Recharge fully each night to prevent professional exhaustion.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-indigo-500 hover:shadow-xl transition duration-300">
+                        <span class="text-5xl mb-4 block">✈️</span>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Optimize Travel Sleep</h3>
+                        <p class="text-gray-600">Naturally adjust to new time zones and maintain consistent sleep patterns.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-purple-500 hover:shadow-xl transition duration-300">
+                        <span class="text-5xl mb-4 block">⏰</span>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Feel Rested in &lt; 7 Days</h3>
+                        <p class="text-gray-600">Experience noticeable improvements in sleep quality within a week.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- 3. NEW "The Luxalry Advantage" Section (EN) -->
+<section id="why-choose-en" class="py-16 bg-slate-50">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">The Luxalry Advantage</h2>
+        <p class="text-xl text-gray-600 mb-12">Engineered for Your Peak Performance</p>
+        <div class="max-w-4xl mx-auto text-left">
+            <ul class="space-y-8">
+                <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Effortless Transition to Deep Sleep</h3>
+                        <p class="text-gray-600 mt-1">Our formula doesn't just promote relaxation; it orchestrates a serene transition from a demanding day to deep, restorative sleep by calming the mental chatter that hinders rest.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Enhanced Daytime Clarity & Vitality</h3>
+                        <p class="text-gray-600 mt-1">Wake up sharp, not groggy. By optimizing your natural sleep cycle, Smooth Sleep fuels your day with sustained energy and the cognitive clarity required for high-stakes decision-making.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Clean, Non-Habit-Forming Performance</h3>
+                        <p class="text-gray-600 mt-1">Unlike pharmaceutical aids, our natural, non-habit-forming blend ensures you are in control. There is no dependency, only consistent performance, night after night.</p>
+                    </div>
+                </li>
+                 <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-gray-800">A Strategic Tool for the Ambitious</h3>
+                        <p class="text-gray-600 mt-1">See this not as a simple supplement, but as a strategic part of your nightly ritual. It's designed for driven professionals who demand excellence and understand that a high-performing day begins the night before.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Before/After Lifestyle Comparison (NEW - EN) -->
+<section id="before-after" class="bg-gradient-to-r from-blue-300 to-purple-500 text-white py-16 lang-en ">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">The Smooth Sleep Transformation</h2>
+        <p class="text-lg mb-10 max-w-3xl mx-auto opacity-90">See how Smooth Sleep can shift your professional and personal life from constant fatigue to peak performance.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Before Smooth Sleep -->
+            <div class="before-after-card">
+                <div class="before-after-image-container">
+                    <img src="images/smooth-sleep-before.webp?text=BEFORE+SMOOTH+SLEEP" loading="lazy" fetchpriority="high" alt="Person looking stressed and tired" class="before-after-image">
+                    <span class="before-after-label before-label">Before Smooth Sleep</span>
+                </div>
+                <div class="p-6 text-gray-800">
+                    <h3 class="text-2xl font-bold mb-3">Stressed & Exhausted</h3>
+                    <ul class="list-disc list-inside text-left text-gray-700 space-y-2">
+                        <li>Difficulty falling asleep, restless nights</li>
+                        <li>Morning grogginess, relying on caffeine</li>
+                        <li>Reduced focus and productivity at work</li>
+                        <li>Increased irritability and anxiety</li>
+                        <li>Impact on personal relationships and mood</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- After Smooth Sleep -->
+            <div class="before-after-card">
+                <div class="before-after-image-container">
+                    <img src="images/smooth-sleep-after-use.webp?ver=6?text=Smooth+Sleep-by-luxalry?text=AFTER+SMOOTH+SLEEP" loading="lazy" fetchpriority="high" alt="Person looking calm and focused" class="before-after-image">
+                    <span class="before-after-label after-label">After Smooth Sleep</span>
+                </div>
+                <div class="p-6 text-gray-800">
+                    <h3 class="text-2xl font-bold mb-3">Energized & Focused</h3>
+                    <ul class="list-disc list-inside text-left text-gray-700 space-y-2">
+                        <li>Drift asleep effortlessly, enjoy deep, uninterrupted rest</li>
+                        <li>Wake up refreshed, naturally energized</li>
+                        <li>Enhanced cognitive function and decision-making</li>
+                        <li>Improved mood, reduced stress & anxiety</li>
+                        <li>Better work-life balance and overall well-being</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Testimonials Section (EN) -->
+<section id="testimonials-en" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-slate-800 text-center">Trusted by Professionals Like You</h2>
+        <div class="mt-12 grid md:grid-cols-3 gap-8">
+            <div class="bg-slate-100 p-8 rounded-lg shadow-lg">
+                <p class="text-slate-600 italic">"As a project manager, my mind is always racing. Smooth Sleep helps me switch off and get the deep sleep I need to be sharp the next day. A real game-changer."</p>
+                <p class="mt-4 font-bold text-slate-800">- Sarah K., Project Manager</p>
+            </div>
+            <div class="bg-slate-100 p-8 rounded-lg shadow-lg">
+                <p class="text-slate-600 italic">"I was skeptical about natural aids, but this works. No grogginess, just a full night of restful sleep. I feel more productive and less stressed."</p>
+                <p class="mt-4 font-bold text-slate-800">- Mohammed L., Tech Consultant</p>
+            </div>
+            <div class="bg-slate-100 p-8 rounded-lg shadow-lg">
+                <p class="text-slate-600 italic">"Finally, a solution that's natural and non-addictive. I've recommended Smooth Sleep to my entire team. We all need to prioritize our well-being."</p>
+                <p class="mt-4 font-bold text-slate-800">- Fatima Z., HR Director</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Science & Research Section (EN) -->
+<section id="science-en" class="bg-gradient-to-br from-slate-50 to-indigo-50 py-16">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800">Science-Backed Sleep Optimization</h2>
+        <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-xl border-l-8 border-indigo-600">
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">Smooth Sleep's formulation is rooted in robust scientific research. Our key ingredients have been individually studied for their efficacy in promoting relaxation and improving various aspects of sleep quality. We've optimized their synergy to provide comprehensive support for your natural sleep cycle.</p>
+            <h3 class="text-2xl font-semibold mb-4 text-gray-800">Key Ingredients:</h3>
+            <ul class="list-disc list-inside text-left text-gray-600 mb-6 space-y-2">
+                <li><strong>St. John's Wort (Hypericum Perforatum):</strong> Traditionally known to help reduce mild anxiety and depression.</li>
+                <li><strong>Valerian Root:</strong> Traditionally used to promote relaxation and may help improve sleep quality.</li>
+                <li><strong>Marigold (Souci):</strong> Believed to help soothe the nervous system and may contribute to better sleep.</li>
+                <li><strong>Chamomile:</strong> Famous for its calming properties and helping to relax before bed.</li>
+                <li><strong>Passion Flower:</strong> Known for its calming properties, it may contribute to general relaxation and support nerve health.</li>
+                <li><strong>Hops Extract:</strong> Works with Valerian to calm the nervous system for deep sleep.</li>
+                <li><strong>Zinc:</strong> Supports immune system functions and contributes to nervous balance.</li>
+            </ul>
+            <div class="text-center my-10">
+                <a onclick="dataLayer.push({ event: 'cta_click', label: 'science_cta' })" href="#order-btn" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 inline-block">Invest in Your Performance!</a>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-xl border-l-4 border-purple-500 text-left italic">
+                <p class="text-gray-700 mb-2">"Optimal sleep is not a luxury, but a fundamental pillar of cognitive function and long-term health. Smooth Sleep provides a natural and effective pathway to achieving that essential rest for busy professionals."</p>
+                <p class="text-right font-semibold text-gray-800">- Dr. Anya Sharma, Sleep Specialist</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-xl border-l-4 border-purple-500 text-left italic mt-8">
+                <p class="text-gray-700 mb-2">"A disturbed sleep cycle directly impacts our daily performance, concentration, and mood. Prioritizing sleep is not just about avoiding fatigue; it is a critical investment in our cognitive health and professional productivity."</p>
+                <p class="text-right font-semibold text-gray-800">- Pr Mohammed Elbiaze, Sleep Medicine Specialist</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 7. Comparison Section EN -->
+<section class="py-16 bg-slate-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-slate-800 text-center">The Clear Choice for Better Sleep</h2>
+        <div class="mt-8 max-w-3xl mx-auto overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr>
+                        <th class="py-3 px-4 bg-white font-bold rounded-tl-lg">Feature</th>
+                        <th class="py-3 px-4 bg-blue-600 text-white font-bold text-center">Smooth Sleep</th>
+                        <th class="py-3 px-4 bg-white font-bold text-center rounded-tr-lg">Other Sleep Aids</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-slate-200">
+                        <td class="py-3 px-4 bg-white">Ingredients</td>
+                        <td class="py-3 px-4 bg-blue-50 text-center font-semibold text-blue-800">100% Natural</td>
+                        <td class="py-3 px-4 bg-white text-center text-slate-600">Often Chemical-Based</td>
+                    </tr>
+                    <tr class="border-b border-slate-200">
+                        <td class="py-3 px-4 bg-white">Addiction Risk</td>
+                        <td class="py-3 px-4 bg-blue-50 text-center font-semibold text-blue-800">None</td>
+                        <td class="py-3 px-4 bg-white text-center text-slate-600">High Risk of Dependency</td>
+                    </tr>
+                    <tr class="border-b border-slate-200">
+                        <td class="py-3 px-4 bg-white">Side Effects</td>
+                        <td class="py-3 px-4 bg-blue-50 text-center font-semibold text-blue-800">No Morning Grogginess</td>
+                        <td class="py-3 px-4 bg-white text-center text-slate-600">Drowsiness, Dizziness</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 bg-white rounded-bl-lg">Price</td>
+                        <td class="py-3 px-4 bg-blue-50 text-center font-semibold text-blue-800 rounded-br-lg">Affordable & Effective</td>
+                        <td class="py-3 px-4 bg-white text-center text-slate-600">Can Be Expensive</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<!-- 8. Quality Certifications EN -->
+<section class="bg-slate-800 text-white py-12">
+    <div class="container mx-auto px-6 text-center">
+       <h2 class="text-2xl font-bold">Quality You Can Trust</h2>
+       <p class="mt-2 text-slate-300">Manufactured in a state-of-the-art facility adhering to the highest quality standards.</p>
+       <div class="flex justify-center items-center gap-8 md:gap-12 mt-8 flex-wrap">
+           <span class="font-semibold">ONSSA Approved (CAPV 261009.24)</span>
+           <span class="font-semibold">GMP Certified</span>
+           <span class="font-semibold">NON-GMO</span>
+       </div>
+    </div>
+</section>
+<!-- 9. How to Use Section en -->
+<section class="py-16 bg-slate-50">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+             <img src="images/Smooth Sleep-Capsules-naturelles-puissantes-pour-un-sommeil-profond-سموث سليب-كبسولات-طبيعية-فعالة-لنوم-عميق-ومريح-.webp" loading="lazy" fetchpriority="high" alt="Person taking a capsule" class="rounded-lg shadow-md w-full">
+        </div>
+        <div class="order-1 md:order-2">
+            <h2 class="text-3xl font-bold text-slate-800">Simple Steps to Better Nights</h2>
+            <div class="mt-6 space-y-4">
+                <div>
+                    <h3 class="font-semibold text-lg">1. Easy to Take</h3>
+                    <p class="text-slate-600">Take one or two capsules with a glass of water 30 minutes before bedtime.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">2. Feel the Calm</h3>
+                    <p class="text-slate-600">The natural formula helps you relax, preparing your body and mind for sleep.</p>
+                </div>
+                 <div>
+                    <h3 class="font-semibold text-lg">3. Notice the Difference</h3>
+                    <p class="text-slate-600">Most users report significant improvements in sleep quality within the first week.</p>
+                </div>
+                    <div>
+                        <div class="mt-12">
+                        <a onclick="dataLayer.push({ event: 'cta_click', label: 'hero_cta' })" href="#order-btn" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                            Try Smooth Sleep Now!
+                        </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Daily Routine Section EN -->
+                 <!-- 🌙 Daily Routine Integration Section -->
+                 <section id="daily-routine" class="py-10 bg-gray-100">
+                    <div class="max-w-6xl mx-auto px-4">
+                      <h2 class="text-3xl font-bold text-center text-indigo-700 mb-8">🕒 How Smooth Sleep Fits Into Your Daily Routine</h2>
+                  
+                      <!-- EN Version -->
+                      <div class="lang-content lang-en grid md:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-xl shadow text-center">
+                          <h3 class="text-xl font-semibold mb-2">7:00 PM – Start Unwinding</h3>
+                          <p class="text-gray-600">Turn off screens, dim the lights, and start relaxing after your busy day.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow text-center">
+                          <h3 class="text-xl font-semibold mb-2">10:00 PM – Take Smooth Sleep</h3>
+                          <p class="text-gray-600">Take one capsule 30 minutes before sleep for a calm transition into rest.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow text-center">
+                          <h3 class="text-xl font-semibold mb-2">6:00 AM – Wake Up Energized</h3>
+                          <p class="text-gray-600">Feel fully rested and ready to perform at your best, without grogginess.</p>
+                        </div>
+                      </div>
+                    </section>
+
+                    <!-- 10. Limited-Time Offer (EN) -->
+<section id="limited-offer" class="bg-gradient-to-r from-amber-500 to-red-600 text-white py-16 text-center lang-en">
+    <div class="container mx-auto px-4 max-w-3xl">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4 animate-pulse">An Exclusive Offer for Professionals!</h2>
+            <p class="text-2xl md:text-3xl font-bold mb-6">As part of our professional outreach program, we're making a limited batch available at an introductory price.</p>
+            <p class="text-xl md:text-2xl font-bold text-yellow-200 mb-8">Invest in your performance with 35% OFF the 5-bottle package.</p>
+        <p class="text-xl md:text-2xl font-bold text-red-800 mb-8 bg-white bg-opacity-80 p-4 rounded-lg">Cash on Delivery available across Morocco!</p>
+        <button onclick="openCheckoutModal('5', 'en')" class="cta-button-gradient text-white font-bold py-4 px-8 text-xl md:py-5 md:px-10 md:text-2xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">Secure Your Supply</button>
+    </div>
+</section>
+
+<!-- 11. Order Now Section (EN) -->
+<section id="order-btn" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-24 text-center">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-8 leading-tight">Choose Your Path to Optimal Sleep</h2>
+        <p class="text-xl md:text-2xl mb-12 opacity-90">Select the package that best fits your needs and start your transformation.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 items-start ">
+            <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-xl flex flex-col items-center border-t-8 border-indigo-400 ">
+                <h3 class="text-2xl font-bold mb-2">1 Bottle</h3>
+                <p class="text-sm text-gray-500 mb-4">Trial Pack</p>
+                <p class="text-4xl font-extrabold mb-2 text-indigo-700">299 MAD</p>
+                <p class="text-lg line-through text-gray-500 mb-6">Regular: <s>399 MAD</s></p>
+                <ul class="text-left text-gray-700 mb-6 space-y-2">
+                    <li>✔️ 30-Day Supply</li>
+                    <li>✔️ Experience the core benefits</li>
+                    <li>❌ No bulk savings</li>
+                </ul>
+                <button onclick="openCheckoutModal('1', 'en')" class="w-full mt-auto bg-indigo-600 text-white hover:bg-indigo-700 font-bold py-4 rounded-full text-xl transition duration-300 interactive-hover">Buy Now</button>
+            </div>
+            <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-2xl flex flex-col items-center border-t-8 border-purple-600 relative transform md:scale-110 ">
+                <span class="absolute top-0 left-1/2 -translate-x-1/2 -mt-6 bg-purple-700 text-white text-sm font-bold px-5 py-2 rounded-full shadow-lg ">Most Popular</span>
+                <h3 class="text-2xl font-bold mb-2">3 Bottles</h3>
+                <p class="text-sm text-gray-500 mb-4">Save 20%</p>
+                <p class="text-4xl font-extrabold mb-2 text-purple-700">717 MAD</p>
+                <p class="text-lg line-through text-gray-500 mb-6">Regular: <s>897 MAD</s></p>
+                <ul class="text-left text-gray-700 mb-6 space-y-2">
+                    <li>✔️ 90-Day Supply</li>
+                    <li>✔️ Long-term sleep optimization</li>
+                    <li>✔️ Significant savings</li>
+                </ul>
+                <button onclick="openCheckoutModal('3', 'en')" class="w-full mt-auto bg-purple-600 text-white hover:bg-purple-700 font-bold py-4 rounded-full text-xl transition duration-300 interactive-hover">Buy Now</button>
+            </div>
+            <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-xl flex flex-col items-center border-t-8 border-indigo-400 ">
+                <h3 class="text-2xl font-bold mb-2">5 Bottles</h3>
+                <p class="text-sm font-bold text-red-700 mb-4 animate-pulse">Save 35%</p>
+                <p class="text-4xl font-extrabold mb-2 text-indigo-700">972 MAD</p>
+                <p class="text-lg line-through text-gray-500 mb-6">Regular: <s>1495 MAD</s></p>
+                <ul class="text-left text-gray-700 mb-6 space-y-2">
+                    <li>✔️ 150-Day Supply</li>
+                    <li>✔️ Maximize long-term benefits</li>
+                    <li>✔️ Our best value package</li>
+                </ul>
+                <button onclick="openCheckoutModal('5', 'en')" class="w-full mt-auto bg-indigo-600 text-white hover:bg-indigo-700 font-bold py-4 rounded-full text-xl transition duration-300 interactive-hover">Buy Now</button>
+            </div>
+        </div>
+        <!-- Customer Support Section EN -->
+        <div class="mt-12 bg-white/10 p-6 rounded-2xl max-w-2xl mx-auto flex items-center justify-center gap-4">
+            
+            <img src="images/contact-luxalry-support.webp" loading="lazy" fetchpriority="high" width="96" height="96" alt="Guarantee Seal" title="" class="img-small rounded-full">
+            <div>
+                <h4 class="text-xl font-bold text-white">📞 Customer Support!</h4>
+                <p class="text-slate-300">Our team will contact you shortly to confirm your details, check on your health status, and suggest additional ideas to help you sleep better.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- 12. FAQ Section (EN) -->
+        <section id="faq" class="bg-slate-900 text-slate-300 py-8 lang-en">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white-800">Professional FAQ: Your Questions Answered</h2>
+                <div class="max-w-3xl mx-auto text-left">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-l-4 border-blue-400">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Can I take Smooth Sleep during demanding business travel?</h3>
+                        <p class="text-gray-700">Yes, Smooth Sleep is ideal for mitigating jet lag and adapting to new time zones. Its natural formula helps regulate your circadian rhythm, enabling you to rest effectively even on the go.</p>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-l-4 border-purple-400">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Will I experience grogginess or drowsiness the next day?</h3>
+                        <p class="text-gray-700">No, Smooth Sleep is formulated to support natural sleep without residual grogginess. You will wake up feeling refreshed and mentally alert, ready for your professional commitments.</p>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-l-4 border-blue-400">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Can I combine Smooth Sleep with my morning coffee or other medications?</h3>
+                        <p class="text-gray-700">Smooth Sleep is designed to be taken before bed and should not interfere with morning caffeine intake. However, always consult with your healthcare provider regarding potential interactions with other medications you are currently taking.</p>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-l-4 border-purple-400">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">How long does it take for Smooth Sleep to show results?</h3>
+                        <p class="text-gray-700">Many professionals report noticeable improvements in sleep quality within the first few nights. Optimal results typically manifest with consistent use over 7-14 days as your body adapts to a healthier sleep pattern.</p>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-l-4 border-blue-400">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Is Smooth Sleep suitable for long-term use?</h3>
+                        <p class="text-gray-700">Yes, its non-habit forming, natural formulation makes it suitable for both short-term use during periods of high stress or travel, and for longer-term support in maintaining consistent sleep health.</p>
+                    </div>
+                    <!-- FAQ Item 6 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-l-4 border-purple-400">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">What makes Smooth Sleep different from other sleep aids?</h3>
+                        <p class="text-gray-700">Smooth Sleep combines a precise blend of scientifically-backed natural ingredients, specifically chosen for their synergistic effects on relaxation and sleep quality, without the side effects often associated with synthetic alternatives. It's formulated for the unique demands of high-performing individuals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. Footer -->
+        <footer class="bg-slate-900 text-slate-300 py-8">
+            <div class="container mx-auto px-6 text-center">
+                  <p class="font-semibold text-lg">Need Help? Contact Us!</p>
+                  <p class="mt-2">Phone/WhatsApp: <a href="https://wa.me/212768356015" class="hover:text-white">+212-768-356015</a></p>
+                  <p class="mt-4 text-sm text-slate-400">&copy; 2025 Luxalry. All Rights Reserved. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+            </div>
+     </footer>
+ </main>
+</div>
+</div>
+        <!-- ================== FR CONTENT ================== -->    
+        <div id="lang-fr" class="lang-content">
+                <main>
+<!-- 1. Hero Section (FR) -->
+<section id="hero-fr" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 md:py-28 text-center">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">Dormez mieux. Performez plus.</h1>
+        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">Soutien au sommeil scientifiquement élaboré pour les professionnels très performants.</p>
+        <div class="mb-12">
+            <img src="images/luxalry-smooth-sleep-supplement-sleep-aid.webp" loading="lazy" fetchpriority="high" alt="Produit Smooth Sleep" class="mx-auto rounded-3xl shadow-2xl w-64 md:w-80 border-4 border-white/50">
+            <div class="mt-4 text-xl md:text-2xl font-bold star-rating">⭐⭐⭐⭐⭐ <span class="text-white/80 text-base font-normal">(4.9/5 basé sur plus de 2 500 avis)</span></div>
+            <p class="text-sm md:text-base mt-2 font-semibold text-indigo-300">Formulé par des médecins | Non-accoutumant | Résultats rapides</p>
+        </div>
+        <a onclick="dataLayer.push({ event: 'cta_click', label: 'hero_cta' })" href="#order-btn-fr" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">Essayez Smooth Sleep Maintenant!</a>
+    </div>
+</section>
+
+<!-- 2. Professionals Benefit Section (NEW - FR) -->
+<section class="bg-gray-50 py-16 lang-fr">
+<div class="container mx-auto px-4 text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800">Pour les professionnels très performants</h2>
+<p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto">Smooth Sleep n'est pas seulement une aide au sommeil; c'est un investissement dans votre avantage professionnel. Découvrez la différence qu'une nuit véritablement réparatrice peut faire.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Benefit 1: Cognitive Focus -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition duration-300">
+        <span class="text-5xl mb-4 block">🧠</span>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Améliorez la concentration cognitive</h3>
+        <p class="text-gray-600">Affinez votre concentration et votre prise de décision pour des performances quotidiennes optimales.</p>
+    </div>
+    <!-- Benefit 2: Avoid Burnout -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-purple-500 hover:shadow-xl transition duration-300">
+        <span class="text-5xl mb-4 block">💼</span>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Combattez l'épuisement professionnel et la fatigue</h3>
+        <p class="text-gray-600">Rechargez complètement chaque nuit pour prévenir l'épuisement professionnel.</p>
+    </div>
+    <!-- Benefit 3: Fix Travel Sleep Issues -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition duration-300">
+        <span class="text-5xl mb-4 block">✈️</span>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Optimisez le sommeil en voyage</h3>
+        <p class="text-gray-600">Adaptez-vous naturellement aux nouveaux fuseaux horaires et maintenez des habitudes de sommeil cohérentes.</p>
+    </div>
+    <!-- Benefit 4: Quick Results -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-purple-500 hover:shadow-xl transition duration-300">
+        <span class="text-5xl mb-4 block">⏰</span>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Sentez-vous reposé en moins de 7 jours</h3>
+        <p class="text-gray-600">Obtenez des améliorations notables de la qualité du sommeil en une semaine.</p>
+    </div>
+</div>
+</div>
+</section>
+<!-- 3. NEW "The Luxalry Advantage" Section (FR) -->
+<section id="why-choose-fr" class="py-16 bg-slate-50">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">L'Avantage Luxalry</h2>
+        <p class="text-xl text-gray-600 mb-12">Conçu pour Votre Performance Optimale</p>
+        <div class="max-w-4xl mx-auto text-left">
+            <ul class="space-y-8">
+                <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Transition sans Effort vers un Sommeil Profond</h3>
+                        <p class="text-gray-600 mt-1">Notre formule ne fait pas que favoriser la relaxation ; elle orchestre une transition sereine d'une journée exigeante vers un sommeil profond et réparateur en apaisant le bavardage mental qui nuit au repos.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Clarté et Vitalité Accrues Pendant la Journée</h3>
+                        <p class="text-gray-600 mt-1">Réveillez-vous vif, pas somnolent. En optimisant votre cycle de sommeil naturel, Smooth Sleep alimente votre journée avec une énergie durable et la clarté cognitive requise pour les décisions à fort enjeu.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Performance Propre et Sans Dépendance</h3>
+                        <p class="text-gray-600 mt-1">Contrairement aux aides pharmaceutiques, notre mélange naturel et sans accoutumance vous assure de garder le contrôle. Il n'y a pas de dépendance, seulement une performance constante, nuit après nuit.</p>
+                    </div>
+                </li>
+                 <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Un Outil Stratégique pour les Ambitieux</h3>
+                        <p class="text-gray-600 mt-1">Ne considérez pas cela comme un simple supplément, mais comme une partie stratégique de votre rituel nocturne. Il est conçu pour les professionnels motivés qui exigent l'excellence et comprennent qu'une journée de haute performance commence la veille.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- 4. Before/After Lifestyle Comparison (NEW - FR) -->
+<section id="before-after-fr" class="bg-gradient-to-r from-blue-300 to-purple-500 text-white py-16 lang-fr">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">La Transformation Smooth Sleep</h2>
+        <p class="text-lg mb-10 max-w-3xl mx-auto opacity-90">Découvrez comment Smooth Sleep peut transformer votre vie professionnelle et personnelle, de la fatigue constante à la performance maximale.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Avant Smooth Sleep -->
+            <div class="before-after-card">
+                <div class="before-after-image-container">
+                    <img src="images/smooth-sleep-before.webp?text=AVANT+SMOOTH+SLEEP" loading="lazy" fetchpriority="high" alt="Personne stressée et fatiguée" class="before-after-image">
+                    <span class="before-after-label before-label">Avant Smooth Sleep</span>
+                </div>
+                <div class="p-6 text-gray-800">
+                    <h3 class="text-2xl font-bold mb-3">Stressé & Épuisé</h3>
+                    <ul class="list-disc list-inside text-left text-gray-700 space-y-2">
+                        <li>Difficulté à s'endormir, nuits agitées</li>
+                        <li>Fatigue matinale, dépendance à la caféine</li>
+                        <li>Moins de concentration et de productivité</li>
+                        <li>Irritabilité et anxiété accrues</li>
+                        <li>Relations personnelles affectées</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Après Smooth Sleep -->
+            <div class="before-after-card">
+                <div class="before-after-image-container">
+                    <img src="images/smooth-sleep-after-use.webp?ver=6?text=Smooth+Sleep-by-luxalry?text=APRÈS+SMOOTH+SLEEP" loading="lazy" fetchpriority="high" alt="Personne calme et concentrée" class="before-after-image">
+                    <span class="before-after-label after-label">Après Smooth Sleep</span>
+                </div>
+                <div class="p-6 text-gray-800">
+                    <h3 class="text-2xl font-bold mb-3">Énergisé & Concentré</h3>
+                    <ul class="list-disc list-inside text-left text-gray-700 space-y-2">
+                        <li>Endormissement facile, sommeil profond</li>
+                        <li>Réveil rafraîchi, énergie naturelle</li>
+                        <li>Fonctions cognitives améliorées</li>
+                        <li>Humeur positive, stress réduit</li>
+                        <li>Équilibre vie pro/perso optimisé</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+             
+<!-- 5. Testimonials Section (FR) -->
+<section id="testimonials-fr" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-slate-800 text-center">Approuvé par des professionnels comme vous</h2>
+        <div class="mt-12 grid md:grid-cols-3 gap-8">
+            <div class="bg-slate-100 p-8 rounded-lg shadow-lg">
+                <p class="text-slate-600 italic">"En tant que chef de projet, mon esprit est toujours en ébullition. Smooth Sleep m'aide à déconnecter et à obtenir le sommeil profond dont j'ai besoin pour être performant le lendemain. Ça change la vie."</p>
+                <p class="mt-4 font-bold text-slate-800">- Sarah K., Chef de projet</p>
+            </div>
+            <div class="bg-slate-100 p-8 rounded-lg shadow-lg">
+                <p class="text-slate-600 italic">"J'étais sceptique quant aux aides naturelles, mais celle-ci fonctionne. Pas de somnolence, juste une nuit complète de sommeil réparateur. Je me sens plus productif et moins stressé."</p>
+                <p class="mt-4 font-bold text-slate-800">- Mohammed L., Consultant Tech</p>
+            </div>
+            <div class="bg-slate-100 p-8 rounded-lg shadow-lg">
+                <p class="text-slate-600 italic">"Enfin une solution naturelle et non addictive. J'ai recommandé Smooth Sleep à toute mon équipe. Nous devons tous donner la priorité à notre bien-être."</p>
+                <p class="mt-4 font-bold text-slate-800">- Fatima Z., Directrice RH</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 6. Science & Research Section (FR) -->
+<section id="science-fr" class="bg-gradient-to-br from-slate-50 to-indigo-50 py-16">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800">Optimisation du Sommeil Soutenue par la Science</h2>
+        <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-xl border-l-8 border-indigo-600">
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">La formulation de Smooth Sleep est ancrée dans une recherche scientifique solide. Nos ingrédients clés ont été étudiés individuellement pour leur efficacité à promouvoir la relaxation et à améliorer divers aspects de la qualité du sommeil. Nous avons optimisé leur synergie pour fournir un soutien complet à votre cycle de sommeil naturel.</p>
+            <h3 class="text-2xl font-semibold mb-4 text-gray-800">Ingrédients Clés :</h3>
+            <ul class="list-disc list-inside text-left text-gray-600 mb-6 space-y-2">
+                <li><strong>Millepertuis (Hypericum Perforatum) :</strong> Traditionnellement connu pour aider à réduire l'anxiété et la dépression légère.</li>
+                <li><strong>Racine de Valériane :</strong> Utilisée traditionnellement pour favoriser la relaxation et peut aider à améliorer la qualité du sommeil.</li>
+                <li><strong>Souci (Belamane) :</strong> On pense qu'il aide à apaiser le système nerveux et peut contribuer à un meilleur sommeil.</li>
+                <li><strong>Camomille :</strong> Célèbre pour ses propriétés apaisantes et aidant à se détendre avant de dormir.</li>
+                <li><strong>Fleur de la Passion :</strong> Connue pour ses propriétés calmantes, elle peut contribuer à la relaxation générale et soutenir la santé nerveuse.</li>
+                <li><strong>Extrait de Houblon :</strong> Agit en synergie avec la valériane pour calmer le système nerveux et favoriser un sommeil profond.</li>
+                <li><strong>Zinc :</strong> Soutient les fonctions du système immunitaire et contribue à l'équilibre nerveux.</li>
+            </ul>
+            <div class="text-center my-10">
+                <a onclick="dataLayer.push({ event: 'cta_click', label: 'science_cta' })" href="#order-btn-fr" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 inline-block">Investissez dans Votre Performance!</a>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-xl border-l-4 border-purple-500 text-left italic">
+                <p class="text-gray-700 mb-2">"Un sommeil optimal n'est pas un luxe, mais un pilier fondamental de la fonction cognitive et de la santé à long terme. Smooth Sleep offre une voie naturelle et efficace pour atteindre ce repos essentiel pour les professionnels occupés."</p>
+                <p class="text-right font-semibold text-gray-800">- Dr. Anya Sharma, Spécialiste du Sommeil</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-xl border-l-4 border-purple-500 text-left italic mt-8">
+                <p class="text-gray-700 mb-2">"Un cycle de sommeil perturbé a un impact direct sur nos performances quotidiennes, notre concentration et notre humeur. Donner la priorité au sommeil n'est pas seulement une question d'éviter la fatigue ; c'est un investissement essentiel dans notre santé cognitive et notre productivité professionnelle."</p>
+                <p class="text-right font-semibold text-gray-800">- Pr Mohammed Elbiaze, Spécialiste en Médecine du Sommeil</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 7. Comparison Section FR -->
+<section class="py-16 bg-slate-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-slate-800 text-center">Le choix évident pour un meilleur sommeil</h2>
+        <div class="mt-8 max-w-3xl mx-auto overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr>
+                        <th class="py-3 px-4 bg-white font-bold rounded-tl-lg">Caractéristique</th>
+                        <th class="py-3 px-4 bg-blue-600 text-white font-bold text-center">Smooth Sleep</th>
+                        <th class="py-3 px-4 bg-white font-bold text-center rounded-tr-lg">Autres somnifères</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-slate-200">
+                        <td class="py-3 px-4 bg-white">Ingrédients</td>
+                        <td class="py-3 px-4 bg-blue-50 text-center font-semibold text-blue-800">100% Naturels</td>
+                        <td class="py-3 px-4 bg-white text-center text-slate-600">Souvent à base de produits chimiques</td>
+                    </tr>
+                    <tr class="border-b border-slate-200">
+                        <td class="py-3 px-4 bg-white">Risque d'addiction</td>
+                        <td class="py-3 px-4 bg-blue-50 text-center font-semibold text-blue-800">Aucun</td>
+                        <td class="py-3 px-4 bg-white text-center text-slate-600">Risque élevé de dépendance</td>
+                    </tr>
+                    <tr class="border-b border-slate-200">
+                        <td class="py-3 px-4 bg-white">Effets secondaires</td>
+                        <td class="py-3 px-4 bg-blue-50 text-center font-semibold text-blue-800">Pas de somnolence matinale</td>
+                        <td class="py-3 px-4 bg-white text-center text-slate-600">Somnolence, étourdissements</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 bg-white rounded-bl-lg">Prix</td>
+                        <td class="py-3 px-4 bg-blue-50 text-center font-semibold text-blue-800 rounded-br-lg">Abordable et efficace</td>
+                        <td class="py-3 px-4 bg-white text-center text-slate-600">Peut être coûteux</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<!-- 8. Quality Certifications FR -->
+<section class="bg-slate-800 text-white py-12">
+    <div class="container mx-auto px-6 text-center">
+       <h2 class="text-2xl font-bold">Une qualité digne de confiance</h2>
+       <p class="mt-2 text-slate-300">Fabriqué dans une installation de pointe respectant les normes de qualité les plus élevées.</p>
+       <div class="flex justify-center items-center gap-8 md:gap-12 mt-8 flex-wrap">
+           <span class="font-semibold">Approuvé ONSSA (CAPV 261009.24)</span>
+           <span class="font-semibold">Certifié BPF (GMP)</span>
+           <span class="font-semibold">SANS OGM</span>
+       </div>
+    </div>
+</section>
+<!-- 9. How to Use Section FR -->
+<section class="py-16 bg-slate-50">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+             <img src="images/Smooth Sleep-Capsules-naturelles-puissantes-pour-un-sommeil-profond-سموث سليب-كبسولات-طبيعية-فعالة-لنوم-عميق-ومريح-.webp?text=Mode+d'emploi" loading="lazy" fetchpriority="high" alt="Personne prenant une gélule" class="rounded-lg shadow-md w-full">
+        </div>
+        <div class="order-1 md:order-2">
+            <h2 class="text-3xl font-bold text-slate-800">Des étapes simples pour de meilleures nuits</h2>
+            <div class="mt-6 space-y-4">
+                <div>
+                    <h3 class="font-semibold text-lg">1. Facile à prendre</h3>
+                    <p class="text-slate-600">Prendre une à deux gélules avec un verre d'eau 30 minutes avant le coucher.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">2. Ressentez le calme</h3>
+                    <p class="text-slate-600">La formule naturelle vous aide à vous détendre, préparant votre corps et votre esprit au sommeil.</p>
+                </div>
+                 <div>
+                    <h3 class="font-semibold text-lg">3. Remarquez la différence</h3>
+                    <p class="text-slate-600">La plupart des utilisateurs signalent une amélioration significative de la qualité du sommeil dès la première semaine.</p>
+                </div>
+                <div>
+                    <div class="mt-12">
+                    <a onclick="dataLayer.push({ event: 'cta_click', label: 'hero_cta' })" href="#order-btn-fr" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                        Try Smooth Sleep Now!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Daily Routine Section FR -->
+<section id="daily-routine" class="py-10 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-indigo-700 mb-8">🕒 Comment Smooth Sleep s'intègre à votre routine quotidienne</h2>
+      <!-- FR Version -->
+<div class="lang-content lang-fr grid md:grid-cols-3 gap-6">
+<div class="bg-white p-6 rounded-xl shadow text-center">
+<h3 class="text-xl font-semibold mb-2">19h00 – Commencez à vous détendre</h3>
+<p class="text-gray-600">Éteignez les écrans, tamisez la lumière et commencez à vous relaxer.</p>
+</div>
+<div class="bg-white p-6 rounded-xl shadow text-center">
+<h3 class="text-xl font-semibold mb-2">22h00 – Prenez Smooth Sleep</h3>
+<p class="text-gray-600">Prenez une capsule 30 minutes avant le coucher pour faciliter l’endormissement.</p>
+</div>
+<div class="bg-white p-6 rounded-xl shadow text-center">
+<h3 class="text-xl font-semibold mb-2">6h00 – Réveillez-vous plein d’énergie</h3>
+<p class="text-gray-600">Commencez la journée avec énergie, sans sensation de fatigue.</p>
+</div>
+</div>
+</section>
+<!-- 10. Limited-Time Offer (FR) -->
+<section id="limited-offer-fr" class="bg-gradient-to-r from-amber-500 to-red-600 text-white py-16 text-center lang-fr">
+    <div class="container mx-auto px-4 max-w-3xl">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4 animate-pulse">Une Offre Exclusive pour les Professionnels!</h2>
+            <p class="text-2xl md:text-3xl font-bold mb-6">Dans le cadre de notre programme de sensibilisation professionnelle, nous proposons un lot limité à un prix de lancement.</p>
+            <p class="text-xl md:text-2xl font-bold text-yellow-200 mb-8">Investissez dans votre performance avec -35% sur le pack de 5 bouteilles.</p>
+        <p class="text-xl md:text-2xl font-bold text-red-800 mb-8 bg-white bg-opacity-80 p-4 rounded-lg">Paiement à la livraison disponible partout au Maroc !</p>
+        <button onclick="openCheckoutModal('5', 'fr')" class="cta-button-gradient text-white font-bold py-4 px-8 text-xl md:py-5 md:px-10 md:text-2xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">Sécurisez Votre Stock</button>
+    </div>
+</section>
+<!-- 11. Order Now Section (FR) -->
+<section id="order-btn-fr" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-24 text-center">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-8 leading-tight">Choisissez votre chemin vers un sommeil optimal</h2>
+        <p class="text-xl md:text-2xl mb-12 opacity-90">Sélectionnez le forfait qui correspond le mieux à vos besoins et commencez votre transformation.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 items-start">
+            <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-xl flex flex-col items-center border-t-8 border-indigo-400">
+                <h3 class="text-2xl font-bold mb-2">1 Bouteille</h3>
+                <p class="text-sm text-gray-500 mb-4">Pack d'essai</p>
+                <p class="text-4xl font-extrabold mb-2 text-indigo-700">299 MAD</p>
+                <p class="text-lg line-through text-gray-500 mb-6">Prix régulier: <s>399 MAD</s></p>
+                <ul class="text-left text-gray-700 mb-6 space-y-2">
+                    <li>✔️ Approvisionnement de 30 jours</li>
+                    <li>✔️ Découvrez les principaux avantages</li>
+                    <li>❌ Pas d'économies sur l'achat en gros</li>
+                </ul>
+                <button onclick="openCheckoutModal('1', 'fr')" class="w-full mt-auto bg-indigo-600 text-white hover:bg-indigo-700 font-bold py-4 rounded-full text-xl transition duration-300 interactive-hover">Acheter</button>
+            </div>
+            <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-2xl flex flex-col items-center border-t-8 border-purple-600 relative transform md:scale-110">
+                <span class="absolute top-0 left-1/2 -translate-x-1/2 -mt-6 bg-purple-700 text-white text-sm font-bold px-5 py-2 rounded-full shadow-lg">Le plus populaire</span>
+                <h3 class="text-2xl font-bold mb-2">3 Bouteilles</h3>
+                <p class="text-sm text-gray-500 mb-4">Économisez 20%</p>
+                <p class="text-4xl font-extrabold mb-2 text-purple-700">717 MAD</p>
+                <p class="text-lg line-through text-gray-500 mb-6">Prix régulier: <s>897 MAD</s></p>
+                <ul class="text-left text-gray-700 mb-6 space-y-2">
+                    <li>✔️ Approvisionnement de 90 jours</li>
+                    <li>✔️ Optimisation du sommeil à long terme</li>
+                    <li>✔️ Économies importantes</li>
+                </ul>
+                <button onclick="openCheckoutModal('3', 'fr')" class="w-full mt-auto bg-purple-600 text-white hover:bg-purple-700 font-bold py-4 rounded-full text-xl transition duration-300 interactive-hover">Acheter</button>
+            </div>
+            <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-xl flex flex-col items-center border-t-8 border-indigo-400">
+                <h3 class="text-2xl font-bold mb-2">5 Bouteilles</h3>
+                <p class="text-sm font-bold text-red-700 mb-4 animate-pulse ">Économisez 35%</p>
+                <p class="text-4xl font-extrabold mb-2 text-indigo-700">972 MAD</p>
+                <p class="text-lg line-through text-gray-500 mb-6">Prix régulier: <s>1495 MAD</s></p>
+                <ul class="text-left text-gray-700 mb-6 space-y-2">
+                    <li>✔️ Approvisionnement de 150 jours</li>
+                    <li>✔️ Maximisez les avantages à long terme</li>
+                    <li>✔️ Notre meilleure offre</li>
+                </ul>
+                <button onclick="openCheckoutModal('5', 'fr')" class="w-full mt-auto bg-indigo-600 text-white hover:bg-indigo-700 font-bold py-4 rounded-full text-xl transition duration-300 interactive-hover">Acheter</button>
+            </div>
+        </div>
+        <!-- Customer Support Section FR -->
+        <div class="mt-12 bg-white/10 p-6 rounded-2xl max-w-2xl mx-auto flex items-center justify-center gap-4">
+            <img src="images/contact-luxalry-support.webp" loading="lazy" fetchpriority="high" width="96" height="96" alt="Guarantee Seal" title="" class="img-small rounded-full">
+            <div>
+                <h4 class="text-xl font-bold text-white">📞 Service client !</h4>
+                <p class="text-slate-300">Notre équipe vous contactera bientôt pour confirmer vos informations, poser quelques questions sur votre santé, et vous proposer d’autres conseils pour mieux dormir.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 12. FAQ Section (FR) -->
+<section class="bg-slate-900 text-slate-300 py-8 lang-fr">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white-800">FAQ Professionnelle : Vos Questions, Nos Réponses</h2>
+        <div class="max-w-3xl mx-auto text-left">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-l-4 border-blue-400">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Puis-je prendre Smooth Sleep pendant mes voyages d'affaires exigeants ?</h3>
+                <p class="text-gray-700">Oui, Smooth Sleep est idéal pour atténuer le décalage horaire et s'adapter aux nouveaux fuseaux horaires. Sa formule naturelle aide à réguler votre rythme circadien, vous permettant de vous reposer efficacement même en déplacement.</p>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-l-4 border-purple-400">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Vais-je ressentir de la somnolence ou de la torpeur le lendemain ?</h3>
+                <p class="text-gray-700">Non, Smooth Sleep est formulé pour favoriser un sommeil naturel sans somnolence résiduelle. Vous vous réveillerez frais et alerte mentalement, prêt pour vos engagements professionnels.</p>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-l-4 border-blue-400">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Puis-je combiner Smooth Sleep avec mon café du matin ou d'autres médicaments ?</h3>
+                <p class="text-gray-700">Smooth Sleep est conçu pour être pris avant le coucher et ne devrait pas interférer avec la consommation de caféine le matin. Cependant, consultez toujours votre professionnel de la santé concernant les interactions potentielles avec d'autres médicaments que vous prenez actuellement.</p>
+            </div>
+            <!-- FAQ Item 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-l-4 border-purple-400">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Combien de temps faut-il à Smooth Sleep pour montrer des résultats ?</h3>
+                <p class="text-gray-700">De nombreux professionnels rapportent des améliorations notables de la qualité du sommeil dès les premières nuits. Les résultats optimaux se manifestent généralement avec une utilisation constante sur 7 à 14 jours, à mesure que votre corps s'adapte à un rythme de sommeil plus sain.</p>
+            </div>
+            <!-- FAQ Item 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-l-4 border-blue-400">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Smooth Sleep convient-il à une utilisation à long terme ?</h3>
+                <p class="text-gray-700">Oui, sa formulation naturelle et non-accoutumante le rend adapté à une utilisation à court terme pendant les périodes de stress élevé ou de voyage, et à un soutien à plus long terme pour maintenir une bonne santé du sommeil.</p>
+            </div>
+            <!-- FAQ Item 6 -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-l-4 border-purple-400">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Qu'est-ce qui distingue Smooth Sleep des autres aides au sommeil ?</h3>
+                <p class="text-gray-700">Smooth Sleep combine un mélange précis d'ingrédients naturels scientifiquement prouvés, spécialement choisis pour leurs effets synergiques sur la relaxation et la qualité du sommeil, sans les effets secondaires souvent associés aux alternatives synthétiques. Il est formulé pour les exigences uniques des individus très performants.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 13. Footer -->
+<footer class="bg-slate-900 text-slate-300 py-8">
+    <div class="container mx-auto px-6 text-center">
+        <p class="font-semibold text-lg">Besoin d'aide ? Contactez-nous !</p>
+        <p class="mt-2">Téléphone/WhatsApp: <a href="https://wa.me/212768356015" class="hover:text-white">+212-768-356015</a></p>
+        <p class="mt-4 text-sm text-slate-400">&copy; 2025 Luxalry. Tous droits réservés. Ce produit n'est pas destiné à diagnostiquer, traiter, guérir ou prévenir une quelconque maladie.</p>
+    </div>
+</footer>
+</main>
+</div>
+</body>
+        <!-- ================== AR CONTENT ================== -->
+        <div id="lang-ar" class="lang-content lang-ar">
+            <main>
+
+<!-- 1. Hero Section (AR) -->
+<section id="hero-ar" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 md:py-28 text-center">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">نم نوماً هادئاً. وأبدع في عملك.</h1>
+        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">دعم نوم مصمم علمياً للمهنيين ذوي الأداء العالي.</p>
+        <div class="mb-12">
+            <img src="images/luxalry-smooth-sleep-supplement-sleep-aid.webp" loading="lazy" fetchpriority="high" alt="منتج Smooth Sleep" class="mx-auto rounded-3xl shadow-2xl w-64 md:w-80 border-4 border-white/50">
+            <div class="mt-4 text-xl md:text-2xl font-bold star-rating">⭐⭐⭐⭐⭐ <span class="text-white/80 text-base font-normal">(4.9/5 بناءً على أكثر من 2500 تقييم)</span></div>
+            <p class="text-sm md:text-base mt-2 font-semibold text-indigo-300">صيغة طبية | غير مسببة للإدمان | نتائج سريعة</p>
+        </div>
+        <a onclick="dataLayer.push({ event: 'cta_click', label: 'hero_cta' })" href="#order-btn-ar" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">جرب سموث سليب الآن!</a>
+    </div>
+</section>
+<!-- 2. Professionals Benefit Section (NEW - AR) -->
+<section class="bg-gray-50 py-16 lang-ar">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800">للمهنيين ذوي الأداء العالي</h2>
+        <p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto">سوث سليب ليس مجرد مساعد للنوم؛ إنه استثمار في ميزتك المهنية. اختبر الفرق الذي يمكن أن تحدثه ليلة نوم مريحة حقًا.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Benefit 1: Cognitive Focus -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition duration-300">
+                <span class="text-5xl mb-4 block">🧠</span>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">تعزيز التركيز الإدراكي</h3>
+                <p class="text-gray-600">شحذ تركيزك وقدرتك على اتخاذ القرار لأقصى أداء يومي.</p>
+            </div>
+            <!-- Benefit 2: Avoid Burnout -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-purple-500 hover:shadow-xl transition duration-300">
+                <span class="text-5xl mb-4 block">💼</span>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">مكافحة الإرهاق والتعب</h3>
+                <p class="text-gray-600">اشحن طاقتك بالكامل كل ليلة لمنع الإرهاق المهني.</p>
+            </div>
+            <!-- Benefit 3: Fix Travel Sleep Issues -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition duration-300">
+                <span class="text-5xl mb-4 block">✈️</span>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">تحسين النوم أثناء السفر</h3>
+                <p class="text-gray-600">تكيف بشكل طبيعي مع المناطق الزمنية الجديدة وحافظ على أنماط نوم ثابتة.</p>
+            </div>
+            <!-- Benefit 4: Quick Results -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-purple-500 hover:shadow-xl transition duration-300">
+                <span class="text-5xl mb-4 block">⏰</span>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">اشعر بالراحة في أقل من 7 أيام</h3>
+                <p class="text-gray-600">اختبر تحسينات ملحوظة في جودة النوم في غضون أسبوع.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. NEW "The Luxalry Advantage" Section (AR) -->
+<section id="why-choose-ar" class="py-16 bg-slate-50" dir="rtl">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">ميزة لوكسالري</h2>
+        <p class="text-xl text-gray-600 mb-12">مُصمم خصيصًا لأدائك الفائق</p>
+        <div class="max-w-4xl mx-auto text-right">
+            <ul class="space-y-8">
+                <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="mr-4">
+                        <h3 class="text-lg font-semibold text-gray-800">انتقال سلس إلى نوم عميق</h3>
+                        <p class="text-gray-600 mt-1">تركيبتنا لا تعزز الاسترخاء فحسب، بل تنظم انتقالًا هادئًا من يوم حافل بالعمل إلى نوم عميق ومُجدِّد للحيوية عبر تهدئة الضجيج الذهني الذي يعيق الراحة.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="mr-4">
+                        <h3 class="text-lg font-semibold text-gray-800">صفاء ذهني وحيوية معززة نهارًا</h3>
+                        <p class="text-gray-600 mt-1">استيقظ بذهن صافٍ، لا مترنح. من خلال تحسين دورة نومك الطبيعية، يمدك سموث سليب بالطاقة المستدامة والصفاء المعرفي اللازم لاتخاذ القرارات الحاسمة.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="mr-4">
+                        <h3 class="text-lg font-semibold text-gray-800">أداء نقي لا يسبب الإدمان</h3>
+                        <p class="text-gray-600 mt-1">على عكس المساعدات الصيدلانية، تضمن تركيبتنا الطبيعية وغير المسببة للتعود أنك دائمًا المسيطر. لا يوجد أي اعتماد، بل أداء متسق، ليلة بعد ليلة.</p>
+                    </div>
+                </li>
+                 <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="mr-4">
+                        <h3 class="text-lg font-semibold text-gray-800">أداة استراتيجية للطموحين</h3>
+                        <p class="text-gray-600 mt-1">لا تنظر لهذا المنتج كمكمل بسيط، بل كجزء استراتيجي من طقوسك الليلية. إنه مصمم للمهنيين الطموحين الذين يتطلبون التميز ويدركون أن اليوم عالي الأداء يبدأ في الليلة التي تسبقه.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Before/After Lifestyle Comparison (NEW - AR) -->
+<section id="before-after-ar" class="bg-gradient-to-r from-blue-300 to-purple-500 text-white py-16 lang-ar">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">تحوّل Smooth Sleep</h2>
+        <p class="text-lg mb-10 max-w-3xl mx-auto opacity-90">اكتشف كيف يمكن لـ Smooth Sleep أن يحوّل حياتك المهنية والشخصية من التعب الدائم إلى الأداء العالي.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- قبل استخدام Smooth Sleep -->
+            <div class="before-after-card">
+                <div class="before-after-image-container">
+                    <img src="images/smooth-sleep-before.webp?text=قبل+Smooth+Sleep" loading="lazy" fetchpriority="high" alt="شخص متعب ومجهد" class="before-after-image">
+                    <span class="before-after-label before-label">قبل استخدام Smooth Sleep</span>
+                </div>
+                <div class="p-6 text-gray-800 text-right">
+                    <h3 class="text-2xl font-bold mb-3">توتر وإرهاق</h3>
+                    <ul class="list-disc list-inside text-right text-gray-700 space-y-2" dir="rtl">
+
+                        <li>صعوبة في النوم، ليالٍ غير مريحة</li>
+                        <li>تعب عند الاستيقاظ، الاعتماد على الكافيين</li>
+                        <li>انخفاض التركيز والإنتاجية</li>
+                        <li>زيادة التوتر والقلق</li>
+                        <li>تأثير سلبي على العلاقات والمزاج</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- بعد استخدام Smooth Sleep -->
+            <div class="before-after-card">
+                <div class="before-after-image-container">
+                    <img src="images/smooth-sleep-after-use.webp?ver=6?text=بعد+Smooth+Sleep" loading="lazy" fetchpriority="high" alt="شخص هادئ ومركز" class="before-after-image">
+                    <span class="before-after-label after-label">بعد استخدام Smooth Sleep</span>
+                </div>
+                <div class="p-6 text-gray-800 text-right">
+                    <h3 class="text-2xl font-bold mb-3">نشاط وتركيز</h3>
+                    <ul class="list-disc list-inside text-right text-gray-700 space-y-2" dir="rtl">
+                        <li>نوم عميق ومريح بدون عناء</li>
+                        <li>استيقاظ منتعش وبطاقة طبيعية</li>
+                        <li>وظائف عقلية واتخاذ قرارات أفضل</li>
+                        <li>تحسن في المزاج وتقليل التوتر</li>
+                        <li>توازن أفضل بين العمل والحياة</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 5. Testimonials Section (AR) -->
+<section id="testimonials-ar" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-slate-800 text-center">يثق به محترفون مثلك</h2>
+        <div class="mt-12 grid md:grid-cols-3 gap-8">
+            <div class="bg-slate-100 p-8 rounded-lg shadow-lg">
+                <p class="text-slate-600 italic">"كمديرة مشاريع، ذهني دائمًا في سباق. Smooth Sleep يساعدني على التوقف والحصول على النوم العميق الذي أحتاجه لأكون في قمة تركيزي في اليوم التالي. لقد غير حياتي."</p>
+                <p class="mt-4 font-bold text-slate-800">- سارة ك.، مديرة مشاريع</p>
+            </div>
+            <div class="bg-slate-100 p-8 rounded-lg shadow-lg">
+                <p class="text-slate-600 italic">"كنت متشككًا في المساعدات الطبيعية، لكن هذا المنتج فعال. لا يوجد خمول، فقط ليلة كاملة من النوم المريح. أشعر بإنتاجية أكبر وضغط أقل."</p>
+                <p class="mt-4 font-bold text-slate-800">- محمد ل.، مستشار تقني</p>
+            </div>
+            <div class="bg-slate-100 p-8 rounded-lg shadow-lg">
+                <p class="text-slate-600 italic">"أخيرًا، حل طبيعي ولا يسبب الإدمان. لقد أوصيت بـ Smooth Sleep لفريقي بأكمله. يجب علينا جميعًا إعطاء الأولوية لرفاهيتنا."</p>
+                <p class="mt-4 font-bold text-slate-800">- فاطمة ز.، مديرة الموارد البشرية</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 6. Science & Research Section (AR) -->
+<section id="science-ar" class="bg-gradient-to-br from-slate-50 to-indigo-50 py-16" dir="rtl">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800">تحسين النوم المدعوم علميًا</h2>
+        <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-xl border-r-8 border-l-0 border-indigo-600">
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">تستند تركيبة Smooth Sleep إلى بحث علمي قوي. تمت دراسة مكوناتنا الرئيسية بشكل فردي لفعاليتها في تعزيز الاسترخاء وتحسين جوانب مختلفة من جودة النوم. لقد قمنا بتحسين تآزرها لتوفير دعم شامل لدورة نومك الطبيعية.</p>
+            <h3 class="text-2xl font-semibold mb-4 text-gray-800">المكونات الرئيسية:</h3>
+            <ul class="list-disc list-inside text-right text-gray-600 mb-6 space-y-2">
+                <li><strong>هيوفاريقون (Hypericum Perforatum):</strong> يُعرف تقليديًا بأنه قد يساعد في تقليل القلق والاكتئاب الطفيف.</li>
+                <li><strong>ناردين (Valerian Root):</strong> يُستخدم تقليديًا لتعزيز الاسترخاء وقد يساعد في تحسين جودة النوم.</li>
+                <li><strong>بلعمان (Souci):</strong> يُعتقد أنه يساعد في تهدئة الجهاز العصبي وقد يساهم في تحسين النوم.</li>
+                <li><strong>البابونج (Chamomile):</strong> مشهور بخصائصه المهدئة والمساعدة على الاسترخاء قبل النوم.</li>
+                <li><strong>زهرة الآلام (Passion Flower):</strong> تعرف بخصائصها المهدئة وقد تساهم في الاسترخاء العام ودعم صحة الأعصاب.</li>
+                <li><strong>مستخلص الجنجل (Hops Extract):</strong> يعمل مع الناردين لتهدئة الجهاز العصبي من أجل نوم عميق.</li>
+                <li><strong>الزنك (Zinc):</strong> يدعم وظائف الجهاز المناعي ويساهم في التوازن العصبي.</li>
+            </ul>
+            <div class="text-center my-10">
+                <a onclick="dataLayer.push({ event: 'cta_click', label: 'science_cta' })" href="#order-btn-ar" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 inline-block">استثمر في أدائك!</a>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-xl border-r-4 border-l-0 border-purple-500 text-right italic">
+                <p class="text-gray-700 mb-2">"النوم الأمثل ليس رفاهية، بل هو ركيزة أساسية للوظيفة الإدراكية والصحة على المدى الطويل. يوفر Smooth Sleep مسارًا طبيعيًا وفعالًا لتحقيق تلك الراحة الأساسية للمهنيين المشغولين."</p>
+                <p class="text-left font-semibold text-gray-800">- د. أنيا شارما، أخصائية النوم</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-xl border-r-4 border-l-0 border-purple-500 text-right italic mt-8">
+                <p class="text-gray-700 mb-2">"يؤثر اضطراب دورة النوم بشكل مباشر على أدائنا اليومي وتركيزنا ومزاجنا. إن إعطاء الأولوية للنوم لا يقتصر فقط على تجنب التعب، بل هو استثمار حاسم في صحتنا الإدراكية وإنتاجيتنا المهنية."</p>
+                <p class="text-left font-semibold text-gray-800">- البروفيسور محمد البياز، أخصائي في طب النوم</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 7. Comparison Section AR -->
+               <section class="py-16 bg-slate-50">
+                   <div class="container mx-auto px-6">
+                       <h2 class="text-3xl font-bold text-slate-800 text-center">الاختيار الواضح لنوم أفضل</h2>
+                       <div class="mt-8 max-w-3xl mx-auto overflow-x-auto">
+                           <table class="w-full text-right border-collapse">
+                               <thead>
+                                   <tr>
+                                       <th class="py-3 px-4 bg-white font-bold rounded-tr-lg">الميزة</th>
+                                       <th class="py-3 px-4 bg-blue-600 text-white font-bold text-center">Smooth Sleep</th>
+                                       <th class="py-3 px-4 bg-white font-bold text-center rounded-tl-lg">مساعدات النوم الأخرى</th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr class="border-b border-slate-200">
+                                       <td class="py-3 px-4 bg-white">المكونات</td>
+                                       <td class="py-3 px-4 bg-blue-50 text-center font-semibold text-blue-800">طبيعية 100%</td>
+                                       <td class="py-3 px-4 bg-white text-center text-slate-600">غالبًا كيميائية</td>
+                                   </tr>
+                                   <tr class="border-b border-slate-200">
+                                       <td class="py-3 px-4 bg-white">خطر الإدمان</td>
+                                       <td class="py-3 px-4 bg-blue-50 text-center font-semibold text-blue-800">لا يوجد</td>
+                                       <td class="py-3 px-4 bg-white text-center text-slate-600">خطر اعتماد مرتفع</td>
+                                   </tr>
+                                   <tr class="border-b border-slate-200">
+                                       <td class="py-3 px-4 bg-white">الآثار الجانبية</td>
+                                       <td class="py-3 px-4 bg-blue-50 text-center font-semibold text-blue-800">لا يوجد خمول صباحي</td>
+                                       <td class="py-3 px-4 bg-white text-center text-slate-600">نعاس، دوخة</td>
+                                   </tr>
+                                   <tr>
+                                       <td class="py-3 px-4 bg-white rounded-br-lg">السعر</td>
+                                       <td class="py-3 px-4 bg-blue-50 text-center font-semibold text-blue-800 rounded-bl-lg">فعال وبسعر معقول</td>
+                                       <td class="py-3 px-4 bg-white text-center text-slate-600">يمكن أن يكون مكلفًا</td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                       </div>
+                   </div>
+               </section>
+               <!-- 8. Quality Certifications AR -->
+               <section class="bg-slate-800 text-white py-12">
+                <div class="container mx-auto px-6 text-center">
+                   <h2 class="text-2xl font-bold">جودة يمكنك الوثوق بها</h2>
+                   <p class="mt-2 text-slate-300">تم التصنيع في منشأة حديثة تلتزم بأعلى معايير الجودة.</p>
+                   <div class="flex justify-center items-center gap-8 md:gap-12 mt-8 flex-wrap">
+                       <span class="font-semibold">مرخص من ONSSA (CAPV 261009.24)</span>
+                       <span class="font-semibold">حاصل على شهادة GMP</span>
+                       <span class="font-semibold">خالي من المواد المعدلة وراثياً</span>
+                   </div>
+                </div>
+           </section>
+           <!-- 9. How to Use Section AR -->
+           <section class="py-16 bg-slate-50">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-2">
+                     <img src="images/Smooth Sleep-Capsules-naturelles-puissantes-pour-un-sommeil-profond-سموث سليب-كبسولات-طبيعية-فعالة-لنوم-عميق-ومريح-.webp?text=طريقة+الاستخدام" loading="lazy" fetchpriority="high" alt="شخص يتناول كبسولة" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="order-1 md:order-1 text-right">
+                    <h2 class="text-3xl font-bold text-slate-800">خطوات بسيطة لليالٍ أفضل</h2>
+                    <div class="mt-6 space-y-4">
+                        <div>
+                            <h3 class="font-semibold text-lg">1. سهل التناول</h3>
+                            <p class="text-slate-600">تناول كبسولة أو كبسولتين مع كوب من الماء قبل 30 دقيقة من موعد النوم.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">2. اشعر بالهدوء</h3>
+                            <p class="text-slate-600">تساعدك التركيبة الطبيعية على الاسترخاء وتهيئة جسمك وعقلك للنوم.</p>
+                        </div>
+                         <div>
+                            <h3 class="font-semibold text-lg">3. لاحظ الفرق</h3>
+                            <p class="text-slate-600">أبلغ معظم المستخدمين عن تحسن كبير في جودة النوم خلال الأسبوع الأول.</p>
+                        </div>
+                        <div>
+                            <div class="mt-12">
+                            <a onclick="dataLayer.push({ event: 'cta_click', label: 'hero_cta' })" href="#order-btn-ar" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                                ! جرب سموث سليب الآن
+                            </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Daily Routine Section AR -->
+        <section id="daily-routine" class="py-10 bg-gray-100">
+            <div class="max-w-6xl mx-auto px-4">
+              <h2 class="text-3xl font-bold text-center text-indigo-700 mb-8">🕒 كيف يتناسب Smooth Sleep مع روتينك اليومي</h2>
+              <!-- AR Version -->
+<div class="lang-content lang-ar grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <h3 class="text-xl font-semibold mb-2">7:00 مساءً – بداية الاسترخاء</h3>
+      <p class="text-gray-600">قم بإطفاء الشاشات وخفّض الإضاءة وابدأ في التهدئة بعد يومك الطويل.</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <h3 class="text-xl font-semibold mb-2">10:00 مساءً – تناول Smooth Sleep</h3>
+      <p class="text-gray-600">خذ كبسولة واحدة قبل النوم بـ 30 دقيقة لتدخل في النوم بهدوء.</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <h3 class="text-xl font-semibold mb-2">6:00 صباحاً – استيقظ بنشاط</h3>
+      <p class="text-gray-600">استيقظ وأنت في قمة نشاطك دون أي إحساس بالنعاس أو الثقل.</p>
+    </div>
+  </div>
+</div>
+</section>
+ <!-- 10. Limited-Time Offer (AR) -->
+ <section id="limited-offer-ar" class="bg-gradient-to-r from-amber-500 to-red-600 text-white py-16 text-center lang-ar">
+    <div class="container mx-auto px-4 max-w-3xl">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4 animate-pulse">!عرض حصري للمهنيين</h2>
+            <p class="text-2xl md:text-3xl font-bold mb-6">كجزء من برنامجنا للتواصل مع المهنيين، نقدم دفعة محدودة بسعر تمهيدي.</p>
+            <p class="text-xl md:text-2xl font-bold text-yellow-200 mb-8">استثمر في أدائك مع خصم 35% على باقة الخمس زجاجات.</p>
+        <p class="text-xl md:text-2xl font-bold text-red-800 mb-8 bg-white bg-opacity-80 p-4 rounded-lg">!الدفع عند الاستلام متاح في جميع أنحاء المغرب</p>
+        <button onclick="openCheckoutModal('5', 'ar')" class="cta-button-gradient text-white font-bold py-4 px-8 text-xl md:py-5 md:px-10 md:text-2xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">أمّن إمدادك الآن</button>
+    </div>
+</section>
+<!-- 11 Order Now Section (AR) -->
+<section id="order-btn-ar" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-24 text-center">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-8 leading-tight">اختر طريقك إلى النوم الأمثل</h2>
+        <p class="text-xl md:text-2xl mb-12 opacity-90">اختر الحزمة التي تناسب احتياجاتك بشكل أفضل وابدأ تحولك.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 items-start">
+            <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-xl flex flex-col items-center border-t-8 border-indigo-400">
+                <h3 class="text-2xl font-bold mb-2">زجاجة واحدة</h3>
+                <p class="text-sm text-gray-500 mb-4">عبوة تجريبية</p>
+                <p class="text-4xl font-extrabold mb-2 text-indigo-700">299 درهم</p>
+                <p class="text-lg line-through text-gray-500 mb-6"><s>399 درهم</s></p>
+                <ul class="text-right text-gray-700 mb-6 space-y-2">
+                    <li>تكفي لمدة 30 يومًا ✔️</li>
+                    <li>اختبر الفوائد الأساسية ✔️</li>
+                    <li> لا يوجد توفير للكمية ❌</li>
+                </ul>
+                <button onclick="openCheckoutModal('1', 'ar')" class="w-full mt-auto bg-indigo-600 text-white hover:bg-indigo-700 font-bold py-4 rounded-full text-xl transition duration-300 interactive-hover">اشترِ الآن</button>
+            </div>
+            <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-2xl flex flex-col items-center border-t-8 border-purple-600 relative transform md:scale-110">
+                <span class="absolute top-0 left-1/2 -translate-x-1/2 -mt-6 bg-purple-700 text-white text-sm font-bold px-5 py-2 rounded-full shadow-lg">الأكثر شيوعًا</span>
+                <h3 class="text-2xl font-bold mb-2">3 زجاجات</h3>
+                <p class="text-sm text-gray-500 mb-4">خصم 20%</p>
+                <p class="text-4xl font-extrabold mb-2 text-purple-700">717 درهم</p>
+                <p class="text-lg line-through text-gray-500 mb-6"><s>897 درهم</s></p>
+                <ul class="text-right text-gray-700 mb-6 space-y-2">
+                    <li>تكفي لمدة 90 يومًا ✔️</li>
+                    <li>تحسين النوم على المدى الطويل ✔️</li>
+                    <li>توفير كبير ✔️</li>
+                </ul>
+                <button onclick="openCheckoutModal('3', 'ar')" class="w-full mt-auto bg-purple-600 text-white hover:bg-purple-700 font-bold py-4 rounded-full text-xl transition duration-300 interactive-hover">اشترِ الآن</button>
+            </div>
+            <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-xl flex flex-col items-center border-t-8 border-indigo-400">
+                <h3 class="text-2xl font-bold mb-2">5 زجاجات</h3>
+                <p class="text-sm font-bold text-red-700 mb-4 animate-pulse">خصم 35%</p>
+                <p class="text-4xl font-extrabold mb-2 text-indigo-700">972 درهم</p>
+                <p class="text-lg line-through text-gray-500 mb-6"><s>1495 درهم</s></p>
+                <ul class="text-right text-gray-700 mb-6 space-y-2">
+                    <li>تكفي لمدة 150 يومًا ✔️</li>
+                    <li>تعظيم الفوائد طويلة الأجل ✔️</li>
+                    <li>أفضل حزمة قيمة لدينا ✔️</li>
+                </ul>
+                <button onclick="openCheckoutModal('5', 'ar')" class="w-full mt-auto bg-indigo-600 text-white hover:bg-indigo-700 font-bold py-4 rounded-full text-xl transition duration-300 interactive-hover">اشترِ الآن</button>
+            </div>
+        </div>
+        
+        <div class="mt-12 bg-white/10 p-6 rounded-2xl max-w-2xl mx-auto flex items-center justify-center gap-4">
+            <img src="images/contact-luxalry-support.webp" loading="lazy" fetchpriority="high" width="96" height="96" alt="Guarantee Seal" title="" class="img-small rounded-full">
+            <div>
+                <h4 class="text-xl font-bold text-white">📞 دعم العملاء!</h4>
+               <p class="text-slate-300">سيتواصل معك فريقنا قريبًا لتأكيد معلوماتك، والاستفسار عن حالتك الصحية، واقتراح حلول أو نصائح إضافية لنوم أفضل.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 12. FAQ Section (AR) -->
+<section class="bg-slate-900 text-slate-300 py-8 lang-ar">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-wihte-800">الأسئلة الشائعة للمهنيين: إجابات لأسئلتكم</h2>
+        <div class="max-w-3xl mx-auto text-right">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-r-4 border-blue-400">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">هل يمكنني تناول سموث سليب أثناء السفر التجاري المتطلب؟</h3>
+                <p class="text-gray-700">نعم، سموث سليب مثالي لتخفيف اضطراب الرحلات الجوية الطويلة والتكيف مع المناطق الزمنية الجديدة. تساعد تركيبته الطبيعية على تنظيم إيقاعك اليومي، مما يمكنك من الراحة بفعالية حتى أثناء التنقل.</p>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-r-4 border-purple-400">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">هل سأشعر بالنعاس أو الخمول في اليوم التالي؟</h3>
+                <p class="text-gray-700">لا، سموث سليب مصمم لدعم النوم الطبيعي دون التسبب في الخمول المتبقي. سوف تستيقظ منتعشًا ومتيقظًا ذهنياً، جاهزًا لالتزاماتك المهنية.</p>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-r-4 border-blue-400">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">هل يمكنني دمج سموث سليب مع قهوتي الصباحية أو أدوية أخرى؟</h3>
+                <p class="text-gray-700">صُمم سموث سليب ليتم تناوله قبل النوم ويجب ألا يتداخل مع تناول الكافيين في الصباح. ومع ذلك، استشر دائمًا مقدم الرعاية الصحية الخاص بك بشأن التفاعلات المحتملة مع الأدوية الأخرى التي تتناولها حاليًا.</p>
+            </div>
+            <!-- FAQ Item 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-r-4 border-purple-400">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">كم من الوقت يستغرق ظهور نتائج سموث سليب؟</h3>
+                <p class="text-gray-700">يبلغ العديد من المهنيين عن تحسينات ملحوظة في جودة النوم في الليالي القليلة الأولى. عادة ما تظهر النتائج المثلى مع الاستخدام المستمر على مدار 7-14 يومًا مع تكيف جسمك مع نمط نوم أكثر صحة.</p>
+            </div>
+            <!-- FAQ Item 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-r-4 border-blue-400">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">هل سموث سليب مناسب للاستخدام على المدى الطويل؟</h3>
+                <p class="text-gray-700">نعم، تركيبته الطبيعية وغير المسببة للإدمان تجعله مناسبًا للاستخدام على المدى القصير خلال فترات التوتر الشديد أو السفر، وللدعم على المدى الطويل في الحفاظ على صحة نوم ثابتة.</p>
+            </div>
+            <!-- FAQ Item 6 -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-4 border-r-4 border-purple-400">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">ما الذي يميز سموث سليب عن غيره من مساعدات النوم؟</h3>
+                <p class="text-gray-700">يجمع سموث سليب بين مزيج دقيق من المكونات الطبيعية المدعومة علميًا، المختارة خصيصًا لتأثيراتها المتآزرة على الاسترخاء وجودة النوم، دون الآثار الجانبية المرتبطة غالبًا بالبدائل الاصطناعية. إنه مصمم لتلبية المتطلبات الفريدة للأفراد ذوي الأداء العالي.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 13. Footer -->
+<footer class="bg-slate-900 text-slate-300 py-8">
+    <div class="container mx-auto px-6 text-center">
+          <p class="font-semibold text-lg">هل تحتاج إلى مساعدة؟ اتصل بنا!</p>
+          <p class="mt-2">الهاتف/واتساب: <a href="https://wa.me/212768356015" class="hover:text-white">+212768356015</a></p>
+          <p class="mt-4 text-sm text-slate-400">&copy; 2025 Luxalry. كل الحقوق محفوظة. هذا المنتج غير مخصص لتشخيص أو علاج أو منع أي مرض.</p>
+    </div>
+</footer>
+</main>
+</div>
+</div>
+    <!-- ================== CHECKOUT MODAL (Corrected Structure) ================== -->
+    <div id="checkout-modal-body" class="modal-overlay modal-hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-[100] ltr">
+        <div class="modal-content bg-white w-full max-w-md rounded-xl shadow-lg relative overflow-hidden p-6 md:p-8" id="form-container">
+            <!-- Close Button -->
+            <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <!-- Success Message -->
+            <div id="success-message" class="absolute inset-0 bg-white bg-opacity-95 flex-col items-center justify-center rounded-xl flex hidden">
+                <svg class="w-16 h-16 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <h2 class="text-xl font-bold text-gray-800" data-lang-key="OrderConfirmed">Order Confirmed!</h2>
+                <p class="text-gray-600" data-lang-key="Redirecting">Redirecting to WhatsApp...</p>
+            </div>
+
+            <!-- Main Form Content -->
+            <div id="form-content">
+                <div class="text-center mb-6">
+                    <h1 class="text-2xl font-bold text-gray-800" data-lang-key="CompleteOrder">Complete Your Order</h1>
+                    <p class="text-gray-500 mt-1" data-lang-key="FillDetails">Fill out the details below to checkout.</p>
+                </div>
+
+                <form id="checkout-form" novalidate>
+                    <!-- Step 1: Product Details -->
+                    <div id="form-step-1">
+                        <fieldset class="mb-6">
+                            <input type="hidden" id="sku" value="insomnie">
+                            <legend class="text-lg font-semibold text-gray-700 border-b w-full pb-2 mb-4" data-lang-key="ProductDetails">Product Details</legend>
+                            <div class="bg-gray-50 p-4 rounded-lg mb-4 border border-gray-200">
+                                <h3 id="product-title" class="text-lg font-semibold text-gray-900" data-lang-key="ProductName">Smooth Sleep</h3>
+                                <div id="product-price" class="text-xl font-bold text-indigo-700 mt-1"></div>
+                            </div>
+                            <label for="product-variant" class="block text-sm font-medium text-gray-600 mb-1 required-label" data-lang-key="Quantity">Quantity</label>
+                            <select id="product-variant" required class="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <option value="" data-price="0" disabled selected data-lang-key="SelectQuantity">Select a quantity</option>
+                                <option value="1" data-price="299" data-old-price="399" data-lang-key="Bottle1">1 Bottle</option>
+                                <option value="3" data-price="717" data-old-price="897" data-lang-key="Bottle3">3 Bottles</option>
+                                <option value="5" data-price="972" data-old-price="1495" data-lang-key="Bottle5">5 Bottles</option>
+                            </select>
+                        </fieldset>
+                        <button id="next-button" type="button" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition-all transform hover:scale-105">
+                            <span data-lang-key="Next">Next</span>
+                        </button>
+                    </div>
+
+                    <!-- Step 2: Your Details -->
+                    <div id="form-step-2" class="hidden">
+                        <fieldset>
+                            <legend class="text-lg font-semibold text-gray-700 border-b w-full pb-2 mb-4" data-lang-key="YourDetails">Your Details</legend>
+                            <label for="full-name" class="block text-sm font-medium text-gray-600 mb-1 required-label" data-lang-key="FullName">Full Name</label>
+                            <input type="text" id="full-name" required class="w-full mb-4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" data-lang-key="FullNamePlaceholder" placeholder="Enter Your Name*">
+                            
+                            <div class="mb-4">
+                                <label for="phone-number" class="block text-sm font-medium text-gray-600 mb-1 required-label" data-lang-key="PhoneNumber">Phone Number</label>
+                                <input type="tel" id="phone-number" required class="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" data-lang-key="PhoneNumberPlaceholder" placeholder="+212 600-000000">
+                                <p id="phone-format-error" class="text-red-500 text-sm mt-1 hidden" data-lang-key="ValidPhone">Please enter a valid phone number.</p>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="confirm-phone-number" class="block text-sm font-medium text-gray-600 mb-1 required-label" data-lang-key="ConfirmPhoneNumber">Confirm Phone Number</label>
+                                <input type="tel" id="confirm-phone-number" required class="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" data-lang-key="ConfirmPhoneNumberPlaceholder" placeholder="Re-enter phone number">
+                                <p id="phone-mismatch-error" class="text-red-500 text-sm mt-1 hidden" data-lang-key="PhoneMismatch">Phone numbers do not match.</p>
+                            </div>
+
+                            <label for="full-address" class="block text-sm font-medium text-gray-600 mb-1 required-label" data-lang-key="FullAddress">Full Address</label>
+                            <textarea id="full-address" rows="3" required class="w-full mb-6 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" data-lang-key="FullAddressPlaceholder" placeholder="Street, City, etc."></textarea>
+                        </fieldset>
+                        <div class="flex gap-4">
+                             <button id="back-button-step2" type="button" class="w-1/3 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-4 rounded-lg transition-all">
+                                <span data-lang-key="Back">Back</span>
+                            </button>
+                            <button id="next-button-step2" type="button" class="w-2/3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition-all transform hover:scale-105">
+                                <span data-lang-key="Next">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Additional Info -->
+                    <div id="form-step-3" class="hidden">
+                        <fieldset>
+                            <legend class="text-lg font-semibold text-gray-700 border-b w-full pb-2 mb-4" data-lang-key="AdditionalInfo">Additional Info</legend>
+                            
+                            
+                            <div class="mb-4">
+                                <label for="note" class="block text-sm font-medium text-gray-600 mb-1" data-lang-key="CallTime">Preferred call time for free consultation</label>
+                                <select id="note" class="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option value="09:00 - 12:00">09:00 - 12:00</option>
+                                    <option value="14:00 - 19:00" selected>14:00 - 19:00</option>
+                                    <option value="20:00 - 23:00">20:00 - 23:00</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="delivery-note" class="block text-sm font-medium text-gray-600 mb-1" data-lang-key="DeliveryNote">Delivery Note (Optional)</label>
+                                <textarea id="delivery-note" rows="3" class="w-full mb-6 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" data-lang-key="DeliveryNotePlaceholder" placeholder="e.g., leave with the concierge, call upon arrival..."></textarea>
+                            </div>
+                        </fieldset>
+                        <div class="flex gap-4">
+                            <button id="back-button-step3" type="button" class="w-1/3 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-4 rounded-lg transition-all">
+                                <span data-lang-key="Back">Back</span>
+                            </button>
+                            <button id="submit-button" type="submit" class="w-2/3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
+                                <span data-lang-key="SubmitOrder">Submit Order</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Dialog (Moved Outside and Corrected) -->
+    <div id="confirmation-modal" class="modal-overlay modal-hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-[110]">
+        <div class="modal-content bg-white rounded-lg shadow-xl p-6 w-full max-w-sm" id="modal-content-confirm">
+            <h2 class="text-lg font-bold text-gray-800 mb-4 text-center" data-lang-key="ConfirmDetails">Please Confirm Your Details</h2>
+            
+            <div id="confirmation-details-box" class="my-4 p-3 bg-gray-50 rounded-lg border border-gray-200 text-sm space-y-2">
+                <p><strong><span data-lang-key="OrderID">Order ID</span>:</strong> <span id="confirm-order-id" class="font-bold text-gray-800"></span></p>
+                <hr class="my-2">
+                <p><strong><span data-lang-key="ConfirmName">Name</span>:</strong> <span id="confirm-name" class="font-normal text-gray-700"></span></p>
+                <p><strong><span data-lang-key="ConfirmPhone">Phone</span>:</strong> <span id="confirm-phone" class="font-normal text-gray-700"></span></p>
+                <p><strong><span data-lang-key="ConfirmAddress">Address</span>:</strong> <span id="confirm-address" class="font-normal text-gray-700"></span></p>
+                <p><strong><span data-lang-key="ConfirmCallTime">Call Time</span>:</strong> <span id="confirm-call-time" class="font-normal text-gray-700"></span></p>
+                <p><strong><span data-lang-key="ConfirmDeliveryNote">Delivery Note</span>:</strong> <span id="confirm-delivery-note" class="font-normal text-gray-700"></span></p>
+                <hr class="my-2">
+                <p><strong><span data-lang-key="ConfirmQuantity">Quantity</span>:</strong> <span id="confirm-variant" class="font-normal text-gray-700"></span></p>
+                <p><strong><span data-lang-key="ConfirmPrice">Price</span>:</strong> <span id="confirm-price" class="font-bold text-green-600"></span></p>
+            </div>
+            
+            <p class="text-gray-600 mb-6 text-center" data-lang-key="ConfirmCorrect">Is this information correct?</p>
+            <div class="flex justify-center gap-4 flex-wrap" dir="ltr">
+                <button id="edit-button" type="button" class="px-6 py-2 bg-gray-200 text-gray-800 font-semibold rounded-lg hover:bg-gray-300 transition-colors" data-lang-key="EditButton">No, Edit</button>
+                <button id="confirm-button" type="button" class="px-6 py-2 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors flex items-center">
+                    <span id="confirm-button-text" data-lang-key="ConfirmButton">Yes, Go!</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // SCROLL TRACKING
+      window.addEventListener('scroll', () => {
+        const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+        if (scrollPercentage >= 25) dataLayer.push({ event: 'scroll_depth', 'scroll_percentage': 25 });
+        if (scrollPercentage >= 50) dataLayer.push({ event: 'scroll_depth', 'scroll_percentage': 50 });
+        if (scrollPercentage >= 75) dataLayer.push({ event: 'scroll_depth', 'scroll_percentage': 75 });
+        if (scrollPercentage >= 90) dataLayer.push({ event: 'scroll_depth', 'scroll_percentage': 90 });
+      }, { passive: true });
+
+      // CTA BUTTON CLICK TRACKING
+      document.addEventListener('DOMContentLoaded', function() {
+        const ctaButtons = document.querySelectorAll('a[href="#order-btn"], a[href="#order-btn-fr"], a[href="#order-btn-ar"], button[onclick^="openCheckoutModal"]');
+        ctaButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            dataLayer.push({ event: 'cta_click', 'cta_label': btn.innerText || 'Buy Now' });
+          });
+        });
+      });
+
+      // ORDER PLACED TRACKING (Called after successful order submission)
+      function pushOrderData(orderData) {
+        dataLayer.push({
+          event: 'purchase',
+          ecommerce: {
+              transaction_id: orderData.orderId,
+              value: orderData.productPrice,
+              currency: 'MAD',
+              items: [{
+                item_id: orderData.sku,
+                item_name: orderData.productTitle,
+                quantity: orderData.productVariant,
+                price: orderData.productPrice
+              }]
+          }
+        });
+      }
+
+        // --- LANGUAGE & TRANSLATION ---
+        const translations = {
+            en: {
+                CompleteOrder: "Complete Your Order",
+                FillDetails: "Fill out the details below to checkout.",
+                ProductDetails: "Product Details",
+                ProductName: "Smooth Sleep",
+                Quantity: "Quantity",
+                SelectQuantity: "Select a quantity",
+                Bottle1: "1 Bottle",
+                Bottle3: "3 Bottles",
+                Bottle5: "5 Bottles",
+                YourDetails: "Your Details",
+                FullName: "Full Name",
+                FullNamePlaceholder: "Enter Your Name*",
+                PhoneNumber: "Phone Number",
+                PhoneNumberPlaceholder: "+212 600-000000",
+                ConfirmPhoneNumber: "Confirm Phone Number",
+                ConfirmPhoneNumberPlaceholder: "Re-enter phone number",
+                FullAddress: "Full Address",
+                FullAddressPlaceholder: "Street, City, etc.",
+                ValidPhone: "Please enter a valid phone number.",
+                PhoneMismatch: "Phone numbers do not match.",
+                SubmitOrder: "Submit Order",
+                OrderConfirmed: "Order Confirmed!",
+                Redirecting: "Redirecting to WhatsApp...",
+                ConfirmDetails: "Please Confirm Your Details",
+                OrderID: "Order ID",
+                ConfirmName: "Name",
+                ConfirmPhone: "Phone",
+                ConfirmAddress: "Address",
+                ConfirmCallTime: "Consultation Time",
+                ConfirmDeliveryNote: "Delivery Note",
+                ConfirmQuantity: "Quantity",
+                ConfirmPrice: "Price",
+                ConfirmCorrect: "Is this information correct?",
+                EditButton: "No, Edit",
+                ConfirmButton: "Yes, Go!",
+                Processing: 'Processing...',
+                Next: 'Next',
+                Back: 'Back',
+                AdditionalInfo: "Additional Info",
+                CallTime: "Preferred call time for free consultation",
+                DeliveryNote: "Delivery Note (Optional)",
+                DeliveryNotePlaceholder: "e.g., leave with the concierge, call upon arrival...",
+                ClientNote: "(Client Note): please call me at {time} for consultation and confirmation",
+                SellerNote: "(Seller Note): im replacing confirmation call to consultation call to convert maximum leads to delivered orders",
+                
+            },
+            fr: {
+                CompleteOrder: "Complétez votre commande",
+                FillDetails: "Remplissez les détails ci-dessous pour finaliser.",
+                ProductDetails: "Détails du produit",
+                ProductName: "Smooth Sleep",
+                Quantity: "Quantité",
+                SelectQuantity: "Sélectionnez une quantité",
+                Bottle1: "1 Bouteille",
+                Bottle3: "3 Bouteilles",
+                Bottle5: "5 Bouteilles",
+                YourDetails: "Vos coordonnées",
+                FullName: "Nom complet",
+                FullNamePlaceholder: "Entrez votre nom complet*",
+                PhoneNumber: "Numéro de téléphone",
+                PhoneNumberPlaceholder: "+212 600-000000",
+                ConfirmPhoneNumber: "Confirmez le numéro de téléphone",
+                ConfirmPhoneNumberPlaceholder: "Retapez le numéro de téléphone",
+                FullAddress: "Adresse complète",
+                FullAddressPlaceholder: "Rue, Ville, etc.",
+                ValidPhone: "Veuillez entrer un numéro de téléphone valide.",
+                PhoneMismatch: "Les numéros de téléphone ne correspondent pas.",
+                SubmitOrder: "Valider la commande",
+                OrderConfirmed: "Commande confirmée !",
+                Redirecting: "Redirection vers WhatsApp...",
+                ConfirmDetails: "Veuillez confirmer vos informations",
+                OrderID: "ID de commande",
+                ConfirmName: "Nom",
+                ConfirmPhone: "Téléphone",
+                ConfirmAddress: "Adresse",
+                ConfirmCallTime: "Heure de consultation",
+                ConfirmDeliveryNote: "Note de livraison",
+                ConfirmQuantity: "Quantité",
+                ConfirmPrice: "Prix",
+                ConfirmCorrect: "Ces informations sont-elles correctes ?",
+                EditButton: "Non, Modifier",
+                ConfirmButton: "Oui, Continuer !",
+                Processing: 'Traitement...',
+                Next: 'Suivant',
+                Back: 'Retour',
+                AdditionalInfo: "Informations supplémentaires",
+                CallTime: "Heure d'appel préférée pour la consultation gratuite",
+                DeliveryNote: "Note de livraison (Facultatif)",
+                DeliveryNotePlaceholder: "ex: laisser chez le concierge, appeler à l'arrivée...",
+                ClientNote: "(Note client) : veuillez m'appeler au {time} pour consultation et confirmation",
+                SellerNote: "(Note du vendeur) : je remplace l'appel de confirmation par un appel de consultation pour convertir un maximum de prospects en commandes livrées",
+                
+            },
+            ar: {
+                CompleteOrder: "أكمل طلبك",
+                FillDetails: "املأ التفاصيل أدناه لإتمام عملية الشراء.",
+                ProductDetails: "تفاصيل المنتج",
+                ProductName: "سموث سليب",
+                Quantity: "الكمية",
+                SelectQuantity: "اختر الكمية",
+                Bottle1: "زجاجة واحدة",
+                Bottle3: "3 زجاجات",
+                Bottle5: "5 زجاجات",
+                YourDetails: "تفاصيلك الشخصية",
+                FullName: "الاسم الكامل",
+                FullNamePlaceholder: "أدخل اسمك الكامل*",
+                PhoneNumber: "رقم الهاتف",
+                PhoneNumberPlaceholder: "+212 600-000000",
+                ConfirmPhoneNumber: "تأكيد رقم الهاتف",
+                ConfirmPhoneNumberPlaceholder: "أعد إدخال رقم الهاتف",
+                FullAddress: "العنوان الكامل",
+                FullAddressPlaceholder: "الشارع، المدينة، إلخ.",
+                ValidPhone: "الرجاء إدخال رقم هاتف صحيح.",
+                PhoneMismatch: "رقما الهاتف غير متطابقين.",
+                SubmitOrder: "تأكيد الطلب",
+                OrderConfirmed: "تم تأكيد الطلب!",
+                Redirecting: "جاري التحويل إلى واتساب...",
+                ConfirmDetails: "الرجاء تأكيد التفاصيل الخاصة بك",
+                OrderID: "رقم الطلب",
+                ConfirmName: "الاسم",
+                ConfirmPhone: "الهاتف",
+                ConfirmAddress: "العنوان",
+                ConfirmCallTime: "وقت الاستشارة",
+                ConfirmDeliveryNote: "ملاحظات التسليم",
+                ConfirmQuantity: "الكمية",
+                ConfirmPrice: "السعر",
+                ConfirmCorrect: "هل هذه المعلومات صحيحة؟",
+                EditButton: "لا، تعديل",
+                ConfirmButton: "نعم، إتمام الطلب!",
+                Processing: 'جاري المعالجة...',
+                Next: 'التالي',
+                Back: 'رجوع',
+                AdditionalInfo: "معلومات إضافية",
+                CallTime: "الوقت المفضل للاتصال للاستشارة المجانية",
+                DeliveryNote: "ملاحظات التسليم (اختياري)",
+                DeliveryNotePlaceholder: "مثال: اتركها مع البواب، اتصل عند الوصول...",
+                ClientNote: "(ملاحظة العميل): يرجى الاتصال بي على {time} للاستشارة والتأكيد",
+                SellerNote: "(ملاحظة البائع): أقوم باستبدال مكالمة التأكيد بمكالمة الاستشارة لتحويل الحد الأقصى من العملاء المحتملين إلى طلبات تم تسليمها",
+                
+            }
+        };
+
+        let currentLang = localStorage.getItem('selectedLang') || 'en';
+
+
+        const pageContent = document.getElementById('page-content');
+        const langContents = document.querySelectorAll('.lang-content');
+        const langSwitchers = document.querySelectorAll('.lang-switcher');
+        const htmlTag = document.documentElement;
+
+        function updateFormLanguage(lang) {
+            const formContainer = document.getElementById('form-container');
+            if (!formContainer) return;
+            currentLang = lang;
+            
+            document.querySelectorAll('[data-lang-key]').forEach(el => {
+                const key = el.getAttribute('data-lang-key');
+                if (translations[lang] && translations[lang][key]) {
+                    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        el.placeholder = translations[lang][key];
+                    } else {
+                        el.innerText = translations[lang][key];
+                    }
+                }
+            });
+        }
+        
+        function switchLang(lang) {
+            currentLang = lang;
+            localStorage.setItem('selectedLang', lang);
+            htmlTag.lang = lang;
+
+            const checkoutModalBody = document.getElementById('checkout-modal-body');
+            const formContainer = document.getElementById('form-container');
+
+            if (lang === 'ar') {
+                checkoutModalBody.classList.add('rtl');
+                checkoutModalBody.classList.remove('ltr');
+                formContainer.setAttribute('dir', 'rtl');
+            } else {
+                checkoutModalBody.classList.add('ltr');
+                checkoutModalBody.classList.remove('rtl');
+                formContainer.setAttribute('dir', 'ltr');
+            }
+
+            const confirmBox = document.getElementById('confirmation-details-box');
+            if (confirmBox) {
+              if (lang === 'ar') {
+                confirmBox.setAttribute('dir', 'rtl');
+                confirmBox.classList.remove('text-left');
+                confirmBox.classList.add('text-right');
+              } else {
+                confirmBox.setAttribute('dir', 'ltr');
+                confirmBox.classList.remove('text-right');
+                confirmBox.classList.add('text-left');
+              }
+            }
+            
+            langContents.forEach(content => {
+                content.classList.remove('active');
+                if (content.id === `lang-${lang}`) {
+                    content.classList.add('active');
+                }
+            });
+            
+            langSwitchers.forEach(switcher => {
+                switcher.classList.remove('bg-indigo-600', 'text-white', 'shadow-md');
+                switcher.classList.add('text-gray-600');
+                if (switcher.dataset.lang === lang) {
+                    switcher.classList.add('bg-indigo-600', 'text-white', 'shadow-md');
+                    switcher.classList.remove('text-gray-600');
+                }
+            });
+            
+            updateFormLanguage(lang);
+        }
+        
+        // --- FAQ Accordion Logic ---
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const alreadyActive = question.classList.contains('active');
+                document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+                if (!alreadyActive) {
+                    question.classList.add('active');
+                }
+            });
+        });
+
+        // --- CHECKOUT MODAL & MULTI-STEP FORM LOGIC ---
+        const checkoutModal = document.getElementById('checkout-modal-body');
+        const variantSelect = document.getElementById('product-variant');
+        const priceDisplay = document.getElementById('product-price');
+        const currencySymbol = 'MAD';
+        
+        const formStep1 = document.getElementById('form-step-1');
+        const formStep2 = document.getElementById('form-step-2');
+        const formStep3 = document.getElementById('form-step-3');
+
+        const nextButton = document.getElementById('next-button');
+        const nextButtonStep2 = document.getElementById('next-button-step2');
+        const backButtonStep2 = document.getElementById('back-button-step2');
+        const backButtonStep3 = document.getElementById('back-button-step3');
+
+        function showStep(step) {
+            formStep1.classList.toggle('hidden', step !== 1);
+            formStep2.classList.toggle('hidden', step !== 2);
+            formStep3.classList.toggle('hidden', step !== 3);
+        }
+
+        nextButton.addEventListener('click', () => {
+            // Validate step 1
+            if (variantSelect.checkValidity()) {
+                showStep(2);
+            } else {
+                variantSelect.reportValidity();
+            }
+        });
+        
+        nextButtonStep2.addEventListener('click', () => {
+            // Validate all fields in step 2
+            if (!fullNameInput.checkValidity() || !phoneInput.checkValidity() || !confirmPhoneInput.checkValidity() || !addressInput.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+            if (phoneInput.value.trim().length < 9) {
+                phoneFormatError.classList.remove('hidden');
+                phoneInput.focus();
+                return;
+            }
+            if (phoneInput.value !== confirmPhoneInput.value) {
+                phoneMismatchError.classList.remove('hidden');
+                confirmPhoneInput.focus();
+                return;
+            }
+            // If valid, hide errors and go to step 3
+            phoneFormatError.classList.add('hidden');
+            phoneMismatchError.classList.add('hidden');
+            showStep(3);
+        });
+        
+        backButtonStep2.addEventListener('click', () => {
+            showStep(1);
+        });
+
+        backButtonStep3.addEventListener('click', () => {
+            showStep(2);
+        });
+
+
+        function openCheckoutModal(packageId, lang) {
+            // Set language first
+            switchLang(lang); // Use switchLang to handle all language updates
+
+            // Select package
+            variantSelect.value = packageId;
+            // Trigger change event to update price display
+            variantSelect.dispatchEvent(new Event('change'));
+
+            // Always start at step 1
+            showStep(1);
+
+            // Show modal
+            checkoutModal.classList.remove('modal-hidden');
+            document.body.classList.add('overflow-hidden'); // Prevent background scroll
+        }
+
+        function closeCheckoutModal() {
+            checkoutModal.classList.add('modal-hidden');
+            document.body.classList.remove('overflow-hidden');
+            // Hide confirmation/success overlays as well
+            document.getElementById('confirmation-modal').classList.add('modal-hidden');
+            document.getElementById('success-message').classList.add('hidden');
+        }
+
+        // --- FORM SUBMISSION & VALIDATION LOGIC ---
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwDyvrE3gVhvxUPiXLwk_M_p_z-vO1acq2nljXK10HonrJCkne00zNIKhx7lecE5cc2ug/exec';
+        const sellerWhatsappNumber = '212768356015';
+
+        const form = document.getElementById('checkout-form');
+        const fullNameInput = document.getElementById('full-name');
+        const phoneInput = document.getElementById('phone-number');
+        const confirmPhoneInput = document.getElementById('confirm-phone-number');
+        const addressInput = document.getElementById('full-address');
+
+        const phoneFormatError = document.getElementById('phone-format-error');
+        const phoneMismatchError = document.getElementById('phone-mismatch-error');
+        const confirmationModal = document.getElementById('confirmation-modal');
+        const confirmModalContent = document.getElementById('modal-content-confirm');
+        const confirmButton = document.getElementById('confirm-button');
+        const confirmButtonText = document.getElementById('confirm-button-text');
+        const editButton = document.getElementById('edit-button');
+        const successMessage = document.getElementById('success-message');
+        const submitButton = document.getElementById('submit-button');
+
+        editButton.addEventListener('click', function() {
+            hideConfirmDialog();
+            document.getElementById('submit-button').classList.remove('hidden'); // Show submit button again
+});
+
+
+
+        function setInitialPriceDisplay() {
+            priceDisplay.innerHTML = `--.-- ${currencySymbol}`;
+        }
+
+        function generateOrderId() {
+            const timestamp = Date.now().toString();
+            const uniquePart = timestamp.substring(timestamp.length - 6);
+            return `LXLY-3126-${uniquePart}`;
+        }
+        
+        function showConfirmDialog() {
+            confirmationModal.classList.remove('modal-hidden');
+            submitButton.parentElement.classList.add('hidden');
+            setTimeout(() => {
+                confirmModalContent.style.transform = 'scale(1)';
+                confirmModalContent.style.opacity = '1';
+            }, 50); 
+        }
+
+        function hideConfirmDialog() {
+            confirmModalContent.style.transform = 'scale(0.95)';
+            confirmModalContent.style.opacity = '0';
+            submitButton.parentElement.classList.remove('hidden');
+            setTimeout(() => {
+                confirmationModal.classList.add('modal-hidden');
+            }, 300);
+        }
+
+        variantSelect.addEventListener('change', function(event) {
+            const selectedOption = event.target.options[event.target.selectedIndex];
+            const newPrice = selectedOption.getAttribute('data-price');
+            const oldPrice = selectedOption.getAttribute('data-old-price');
+
+            if (newPrice && newPrice !== "0") {
+                let priceHTML = `<span>${parseFloat(newPrice).toFixed(0)} ${currencySymbol}</span>`;
+                if (oldPrice && parseFloat(oldPrice) > parseFloat(newPrice)) {
+                    priceHTML += ` <s class="text-red-500 font-normal text-lg ml-2">${parseFloat(oldPrice).toFixed(0)} ${currencySymbol}</s>`;
+                }
+                priceDisplay.innerHTML = priceHTML;
+            } else {
+                setInitialPriceDisplay();
+            }
+        });
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const selectedOption = variantSelect.options[variantSelect.selectedIndex];
+            document.getElementById('confirm-order-id').innerText = generateOrderId();
+            document.getElementById('confirm-name').innerText = fullNameInput.value;
+            document.getElementById('confirm-phone').innerText = phoneInput.value;
+            document.getElementById('confirm-address').innerText = addressInput.value;
+            document.getElementById('confirm-call-time').innerText = document.getElementById('note').value;
+            document.getElementById('confirm-delivery-note').innerText = document.getElementById('delivery-note').value || 'N/A';
+            document.getElementById('confirm-variant').innerText = translations[currentLang][selectedOption.getAttribute('data-lang-key')];
+            document.getElementById('confirm-price').innerText = `${parseFloat(selectedOption.getAttribute('data-price')).toFixed(0)} ${currencySymbol}`;
+            showConfirmDialog();
+            document.getElementById('submit-button').classList.add('hidden');
+        });
+
+        confirmButton.addEventListener('click', function () {
+            confirmButton.disabled = true;
+            editButton.disabled = true;
+            confirmButtonText.innerText = translations[currentLang]['Processing'];
+
+            const selectedOption = variantSelect.options[variantSelect.selectedIndex];
+            const finalPrice = parseFloat(selectedOption.getAttribute('data-price')).toFixed(0);
+
+            let rawClientPhone = phoneInput.value.trim();
+            if (rawClientPhone.length === 9 && (rawClientPhone.startsWith('6') || rawClientPhone.startsWith('7'))) {
+                rawClientPhone = '0' + rawClientPhone;
+            }
+            const phoneForGoogleSheet = "'" + rawClientPhone;
+
+            const orderId = document.getElementById('confirm-order-id').innerText;
+            const productTitle = document.getElementById('product-title').innerText;
+            const sku = document.getElementById('sku').value;
+
+            // Combine the notes into a single field
+            
+
+// 1. Build the notes dynamically using translations
+const consultationTime = document.getElementById('note').value;
+const clientNoteText = translations[currentLang].ClientNote.replace('{time}', consultationTime);
+const sellerNoteText = translations[currentLang].SellerNote;
+const combinedNote = `${clientNoteText}\n${sellerNoteText}`;
+
+// // 2. Create the data object with the combined notes
+const data = {
+    orderId: orderId,
+    productTitle: productTitle,
+    sku: sku,
+    productPrice: `${finalPrice} ${currencySymbol}`,
+    productVariant: variantSelect.value,
+    clientName: fullNameInput.value,
+    clientPhone: phoneForGoogleSheet,
+    clientAddress: addressInput.value,
+    note: combinedNote,
+    delivery_note: document.getElementById('delivery-note').value,
+};
+
+            // Prepare WhatsApp message
+            const message = `*New Order* 🔥\n-------------------\n*Order ID:* ${orderId}\n\n*Product:* ${productTitle}\n*SKU:* ${data.sku}\n*Quantity:* ${data.productVariant} bottle(s)\n*Price:* ${data.productPrice}\n\n*Client Details:*\n*Name:* ${data.clientName}\n*Phone:* ${rawClientPhone}\n*Address:* ${data.clientAddress}\n\n*Consultation & Notes:*\n${data.note}\n\n*Delivery Note:* ${data.delivery_note || 'None'}`;
+            const encodedMessage = encodeURIComponent(message.trim());
+            const whatsappURL = `https://wa.me/${sellerWhatsappNumber}?text=${encodedMessage}`;
+
+            // Submit to Google Sheets
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+            .then(() => {
+                hideConfirmDialog();
+                successMessage.classList.remove('hidden');
+
+                pushOrderData({
+                    orderId: data.orderId,
+                    productPrice: finalPrice,
+                    productVariant: data.productVariant,
+                    productTitle: data.productTitle,
+                    sku: data.sku
+                });
+
+                // Wait briefly, then redirect to WhatsApp
+                setTimeout(() => {
+                    window.open(whatsappURL, '_blank');
+                    setTimeout(() => {
+                        form.reset();
+                        setInitialPriceDisplay();
+                        closeCheckoutModal();
+                        confirmButton.disabled = false;
+                        editButton.disabled = false;
+                        confirmButtonText.innerText = translations[currentLang]['ConfirmButton'];
+                    }, 1000);
+                }, 800); // Slight delay to show success screen
+            })
+            .catch(error => {
+                console.error('Error submitting to Google Sheet:', error);
+                alert('An error occurred while submitting your order. Please try again.');
+                hideConfirmDialog();
+                confirmButton.disabled = false;
+                editButton.disabled = false;
+                confirmButtonText.innerText = translations[currentLang]['ConfirmButton'];
+            });
+        });
+
+    // On page load, apply the saved language or default to 'en'
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedLang = localStorage.getItem('selectedLang') || 'en';
+        switchLang(savedLang);
+
+        // Auto-hiding header logic
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > header.offsetHeight) {
+                header.style.top = `-${header.offsetHeight + 10}px`;
+            } else {
+                header.style.top = "0";
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        }, false);
+        
+        setInitialPriceDisplay();
+    });
+
+    </script>
+</body>
+</html>
