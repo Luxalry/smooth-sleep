@@ -2279,8 +2279,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         editButton.addEventListener('click', function() {
             hideConfirmDialog();
-            document.getElementById('submit-button').classList.remove('hidden'); // Show submit button again
-});
+            submitButton.parentElement.classList.remove('hidden'); // Show submit button again
+        });
 
 
 
@@ -2306,7 +2306,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function hideConfirmDialog() {
             confirmModalContent.style.transform = 'scale(0.95)';
             confirmModalContent.style.opacity = '0';
-            submitButton.parentElement.classList.remove('hidden');
             setTimeout(() => {
                 confirmationModal.classList.add('modal-hidden');
             }, 300);
@@ -2341,13 +2340,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             document.getElementById('confirm-variant').innerText = translations[currentLang][selectedOption.getAttribute('data-lang-key')];
             document.getElementById('confirm-price').innerText = `${parseFloat(selectedOption.getAttribute('data-price')).toFixed(0)} ${currencySymbol}`;
             showConfirmDialog();
-            document.getElementById('submit-button').classList.add('hidden');
         });
 
         confirmButton.addEventListener('click', function () {
             confirmButton.disabled = true;
             editButton.disabled = true;
             confirmButtonText.innerText = translations[currentLang]['Processing'];
+
+            // --- FIX FOR POPUP BLOCKER ---
+            // 1. Open a new window immediately on click
+            const whatsappWindow = window.open('', '_blank');
+            if(whatsappWindow){
+                whatsappWindow.document.write('Please wait... Redirecting to WhatsApp.');
+            }
+            // --- END FIX ---
 
             const selectedOption = variantSelect.options[variantSelect.selectedIndex];
             const finalPrice = parseFloat(selectedOption.getAttribute('data-price')).toFixed(0);
@@ -2362,35 +2368,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             const productTitle = document.getElementById('product-title').innerText;
             const sku = document.getElementById('sku').value;
 
-            // Combine the notes into a single field
-            
+            const consultationTime = document.getElementById('note').value;
+            const clientNoteText = translations[currentLang].ClientNote.replace('{time}', consultationTime);
+            const sellerNoteText = translations[currentLang].SellerNote;
+            const combinedNote = `${clientNoteText}\n${sellerNoteText}`;
 
-// 1. Build the notes dynamically using translations
-const consultationTime = document.getElementById('note').value;
-const clientNoteText = translations[currentLang].ClientNote.replace('{time}', consultationTime);
-const sellerNoteText = translations[currentLang].SellerNote;
-const combinedNote = `${clientNoteText}\n${sellerNoteText}`;
+            const data = {
+                orderId: orderId,
+                productTitle: productTitle,
+                sku: sku,
+                productPrice: `${finalPrice} ${currencySymbol}`,
+                productVariant: variantSelect.value,
+                clientName: fullNameInput.value,
+                clientPhone: phoneForGoogleSheet,
+                clientAddress: addressInput.value,
+                note: combinedNote,
+                delivery_note: document.getElementById('delivery-note').value,
+            };
 
-// // 2. Create the data object with the combined notes
-const data = {
-    orderId: orderId,
-    productTitle: productTitle,
-    sku: sku,
-    productPrice: `${finalPrice} ${currencySymbol}`,
-    productVariant: variantSelect.value,
-    clientName: fullNameInput.value,
-    clientPhone: phoneForGoogleSheet,
-    clientAddress: addressInput.value,
-    note: combinedNote,
-    delivery_note: document.getElementById('delivery-note').value,
-};
-
-            // Prepare WhatsApp message
             const message = `*New Order* 🔥\n-------------------\n*Order ID:* ${orderId}\n\n*Product:* ${productTitle}\n*SKU:* ${data.sku}\n*Quantity:* ${data.productVariant} bottle(s)\n*Price:* ${data.productPrice}\n\n*Client Details:*\n*Name:* ${data.clientName}\n*Phone:* ${rawClientPhone}\n*Address:* ${data.clientAddress}\n\n*Consultation & Notes:*\n${data.note}\n\n*Delivery Note:* ${data.delivery_note || 'None'}`;
             const encodedMessage = encodeURIComponent(message.trim());
             const whatsappURL = `https://wa.me/${sellerWhatsappNumber}?text=${encodedMessage}`;
 
-            // Submit to Google Sheets
             fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',
                 mode: 'no-cors',
@@ -2408,19 +2407,28 @@ const data = {
                     productTitle: data.productTitle,
                     sku: data.sku
                 });
+                
+                // --- FIX FOR POPUP BLOCKER ---
+                // 2. Now set the URL of the window we opened earlier
+                if(whatsappWindow){
+                    whatsappWindow.location.href = whatsappURL;
+                } else {
+                    // Fallback for extreme cases where even the initial open failed
+                    window.location.href = whatsappURL;
+                }
+                // --- END FIX ---
 
-                // Wait briefly, then redirect to WhatsApp
                 setTimeout(() => {
-                    window.open(whatsappURL, '_blank');
-                    setTimeout(() => {
-                        form.reset();
-                        setInitialPriceDisplay();
-                        closeCheckoutModal();
-                        confirmButton.disabled = false;
-                        editButton.disabled = false;
-                        confirmButtonText.innerText = translations[currentLang]['ConfirmButton'];
-                    }, 1000);
-                }, 800); // Slight delay to show success screen
+                    form.reset();
+                    setInitialPriceDisplay();
+                    closeCheckoutModal();
+                    confirmButton.disabled = false;
+                    editButton.disabled = false;
+                    confirmButtonText.innerText = translations[currentLang]['ConfirmButton'];
+                    // --- FIX FOR SUBMIT BUTTON ---
+                    submitButton.parentElement.classList.remove('hidden');
+                    // --- END FIX ---
+                }, 1000);
             })
             .catch(error => {
                 console.error('Error submitting to Google Sheet:', error);
@@ -2429,6 +2437,10 @@ const data = {
                 confirmButton.disabled = false;
                 editButton.disabled = false;
                 confirmButtonText.innerText = translations[currentLang]['ConfirmButton'];
+                submitButton.parentElement.classList.remove('hidden');
+                if(whatsappWindow) {
+                    whatsappWindow.close(); // Close the blank window if the fetch fails
+                }
             });
         });
 
