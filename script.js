@@ -512,6 +512,7 @@ delivery_note: document.getElementById('delivery-note').value,
                     setInitialPriceDisplay();
                     closeCheckoutModal();
                     document.getElementById('submit-button').classList.remove('hidden'); // ✅ Show Submit button again
+                    showStep(1); // Optional: return to first step
                     confirmButton.disabled = false;
                     editButton.disabled = false;
                     confirmButtonText.innerText = translations[currentLang]['ConfirmButton'];
@@ -549,4 +550,5 @@ document.addEventListener('DOMContentLoaded', () => {
     setInitialPriceDisplay();
 
 });
+
 
