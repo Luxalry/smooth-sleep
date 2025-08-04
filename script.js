@@ -401,7 +401,10 @@ window.addEventListener('scroll', () => {
     function hideConfirmDialog() {
         confirmModalContent.style.transform = 'scale(0.95)';
         confirmModalContent.style.opacity = '0';
-        submitButton.parentElement.classList.remove('hidden');
+        const submitWrapper = submitButton.parentElement;
+submitWrapper.classList.remove('hidden');
+submitButton.classList.remove('hidden');
+
         setTimeout(() => {
             confirmationModal.classList.add('modal-hidden');
         }, 300);
@@ -549,6 +552,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInitialPriceDisplay();
 
 });
+
 
 
 
