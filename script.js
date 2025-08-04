@@ -475,48 +475,55 @@ window.addEventListener('scroll', () => {
   const whatsappURL = `https://wa.me/${sellerWhatsappNumber}?text=${encodedMessage}`;
 
   // ✅ Open WhatsApp early (to bypass popup blocker)
-  window.open(whatsappURL, '_blank');
+  const whatsappWindow = window.open(whatsappURL, '_blank'); // ✅ Fix for popup blocker
 
-  // ✅ Submit to Google Sheets
-  fetch(GOOGLE_SCRIPT_URL, {
-    method: 'POST',
-    mode: 'no-cors',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data)
-  })
-    .then(() => {
-      hideConfirmDialog();
-      successMessage.classList.remove('hidden');
+fetch(GOOGLE_SCRIPT_URL, {
+  method: 'POST',
+  mode: 'no-cors',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(data)
+})
+  .then(() => {
+    hideConfirmDialog();
+    successMessage.classList.remove('hidden');
 
-      pushOrderData({
-        orderId: data.orderId || 'N/A',
-        productPrice: data.productPrice,
-        productVariant: data.productVariant,
-        productTitle: data.productTitle
-      });
+    pushOrderData({
+      orderId: data.orderId || 'N/A',
+      productPrice: data.productPrice,
+      productVariant: data.productVariant,
+      productTitle: data.productTitle
+    });
 
-      // ✅ Reset form after short delay
-      setTimeout(() => {
-        form.reset();
-        setInitialPriceDisplay();
-        showStep(1); // 🔁 Go back to step 1
-        document.getElementById('submit-button').classList.remove('hidden');
-        confirmButton.disabled = false;
-        editButton.disabled = false;
-        confirmButtonText.innerText = translations[currentLang]['ConfirmButton'];
-        noteInput.value = "14:00 - 19:00"; // reset to default
-        deliveryNoteInput.value = "";
-      }, 800);
-    })
-    .catch(error => {
-      console.error('Error submitting to Google Sheet:', error.message);
-      alert('An error occurred. Please try again.');
-      hideConfirmDialog();
+    setTimeout(() => {
+      form.reset();
+      setInitialPriceDisplay();
+      showStep(1); // 🔁 Go back to step 1
+
+      const submitWrapper = submitButton.parentElement;
+      submitWrapper.classList.remove('hidden');  // ✅ Fix: show container
+      submitButton.classList.remove('hidden');   // ✅ Fix: show button
+
       confirmButton.disabled = false;
       editButton.disabled = false;
       confirmButtonText.innerText = translations[currentLang]['ConfirmButton'];
-    });
-});
+      noteInput.value = "14:00 - 19:00";
+      deliveryNoteInput.value = "";
+    }, 800);
+  })
+  .catch(error => {
+    console.error('Error submitting to Google Sheet:', error.message);
+    alert('An error occurred. Please try again.');
+    hideConfirmDialog();
+
+    const submitWrapper = submitButton.parentElement;
+    submitWrapper.classList.remove('hidden');
+    submitButton.classList.remove('hidden');
+
+    confirmButton.disabled = false;
+    editButton.disabled = false;
+    confirmButtonText.innerText = translations[currentLang]['ConfirmButton'];
+  });
+
 
 
 // On page load, apply the saved language or default to 'en'
@@ -540,6 +547,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInitialPriceDisplay();
 
 });
+
 
 
 
