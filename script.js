@@ -486,7 +486,9 @@ fetch(GOOGLE_SCRIPT_URL, {
   .then(() => {
     hideConfirmDialog();
     successMessage.classList.remove('hidden');
-
+const submitWrapper = submitButton.parentElement;
+submitWrapper.classList.remove('hidden');
+submitButton.classList.remove('hidden');
     pushOrderData({
       orderId: data.orderId || 'N/A',
       productPrice: data.productPrice,
@@ -547,6 +549,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInitialPriceDisplay();
 
 });
+
 
 
 
