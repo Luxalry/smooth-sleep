@@ -1,4 +1,4 @@
-<script>       
+      
       window.addEventListener('scroll',()=>{        const scrollPercentage=(window.scrollY/(document.documentElement.scrollHeight-window.innerHeight))*100;        if(scrollPercentage>=25)dataLayer.push({event:'scroll_depth','scroll_percentage':25});        if(scrollPercentage>=50)dataLayer.push({event:'scroll_depth','scroll_percentage':50});        if(scrollPercentage>=75)dataLayer.push({event:'scroll_depth','scroll_percentage':75});        if(scrollPercentage>=90)dataLayer.push({event:'scroll_depth','scroll_percentage':90});     },{passive:!0});     
       document.addEventListener('DOMContentLoaded',function(){        const ctaButtons=document.querySelectorAll('a[href="#order-btn"], a[href="#order-btn-fr"], a[href="#order-btn-ar"], button[onclick^="openCheckoutModal"]');        ctaButtons.forEach(btn=>{          btn.addEventListener('click',()=>{            dataLayer.push({event:'cta_click','cta_label':btn.innerText||'Buy Now'});         });       });     });     
       function pushOrderData(orderData){        dataLayer.push({          event:'purchase',          ecommerce:{              transaction_id:orderData.orderId,              value:orderData.productPrice,              currency:'MAD',              items:[{                item_id:orderData.sku,                item_name:orderData.productTitle,                quantity:orderData.productVariant,                price:orderData.productPrice
@@ -71,4 +71,4 @@ const consultationTime=document.getElementById('note').value;const clientNoteTex
     document.addEventListener('DOMContentLoaded',()=>{        const savedLang=localStorage.getItem('selectedLang')||'en';        switchLang(savedLang);       
         let lastScrollTop=0;        const header=document.querySelector('header');        window.addEventListener("scroll",function(){            let scrollTop=window.pageYOffset||document.documentElement.scrollTop;            if(scrollTop>lastScrollTop&&scrollTop>header.offsetHeight){                header.style.top=`-${header.offsetHeight + 10}px`;           }else{                header.style.top="0";           }
             lastScrollTop=scrollTop<=0?0:scrollTop;       },!1);        
-        setInitialPriceDisplay();   });   </script>
+        setInitialPriceDisplay();   });
