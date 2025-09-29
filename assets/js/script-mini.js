@@ -1,1 +1,1088 @@
-window.addEventListener("scroll",()=>{const e=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;e>=25&&dataLayer.push({event:"scroll_depth",scroll_percentage:25}),e>=50&&dataLayer.push({event:"scroll_depth",scroll_percentage:50}),e>=75&&dataLayer.push({event:"scroll_depth",scroll_percentage:75}),e>=90&&dataLayer.push({event:"scroll_depth",scroll_percentage:90})},{passive:!0}),document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll('a[href="#order-btn"], a[href="#order-btn-fr"], a[href="#order-btn-ar"], button[onclick^="openCheckoutModal"]').forEach(e=>{e.addEventListener("click",()=>{dataLayer.push({event:"cta_click",cta_label:e.innerText||"Buy Now"})})})});const e={en:{CompleteOrder:"Complete Your Order",FillDetails:"Fill out the details below to checkout.",ProductDetails:"Product Details",ProductName:"Smooth Sleep",Quantity:"Quantity",SelectQuantity:"Select a quantity",Bottle1:"1 Bottle",Bottle3:"3 Bottles",Bottle5:"5 Bottles",YourDetails:"Your Details",FullName:"Full Name",FullNamePlaceholder:"Enter Your Name*",PhoneNumber:"Phone Number",PhoneNumberPlaceholder:"+212 600-000000",ConfirmPhoneNumber:"Confirm Phone Number",ConfirmPhoneNumberPlaceholder:"Re-enter phone number",FullAddress:"Full Address",FullAddressPlaceholder:"Street, City, etc.",ValidPhone:"Please enter a valid phone number.",PhoneMismatch:"Phone numbers do not match.",SubmitOrder:"Submit Order",OrderConfirmed:"Order Confirmed!",Redirecting:"Redirecting to WhatsApp...",ConfirmDetails:"Please Confirm Your Details",OrderID:"Order ID",ConfirmName:"Name",ConfirmPhone:"Phone",ConfirmAddress:"Address",ConfirmCallTime:"Consultation Time",ConfirmDeliveryNote:"Delivery Note",ConfirmQuantity:"Quantity",ConfirmPrice:"Price",ConfirmCorrect:"Is this information correct?",EditButton:"No, Edit",ConfirmButton:"Yes, Go!",Processing:"Processing...",Next:"Next",Back:"Back",AdditionalInfo:"Additional Info",CallTime:"Preferred call time for free consultation",DeliveryNote:"Delivery Note (Optional)",DeliveryNotePlaceholder:"e.g., leave with the concierge, call upon arrival...",ClientNote:"(Client Note): please call me at {time} for consultation and confirmation",SellerNote:"(Seller Note): im replacing confirmation call to consultation call to convert maximum leads to delivered orders"},fr:{CompleteOrder:"Complétez votre commande",FillDetails:"Remplissez les détails ci-dessous pour finaliser.",ProductDetails:"Détails du produit",ProductName:"Smooth Sleep",Quantity:"Quantité",SelectQuantity:"Sélectionnez une quantité",Bottle1:"1 Bouteille",Bottle3:"3 Bouteilles",Bottle5:"5 Bouteilles",YourDetails:"Vos coordonnées",FullName:"Nom complet",FullNamePlaceholder:"Entrez votre nom complet*",PhoneNumber:"Numéro de téléphone",PhoneNumberPlaceholder:"+212 600-000000",ConfirmPhoneNumber:"Confirmez le numéro de téléphone",ConfirmPhoneNumberPlaceholder:"Retapez le numéro de téléphone",FullAddress:"Adresse complète",FullAddressPlaceholder:"Rue, Ville, etc.",ValidPhone:"Veuillez entrer un numéro de téléphone valide.",PhoneMismatch:"Les numéros de téléphone ne correspondent pas.",SubmitOrder:"Valider la commande",OrderConfirmed:"Commande confirmée !",Redirecting:"Redirection vers WhatsApp...",ConfirmDetails:"Veuillez confirmer vos informations",OrderID:"ID de commande",ConfirmName:"Nom",ConfirmPhone:"Téléphone",ConfirmAddress:"Adresse",ConfirmCallTime:"Heure de consultation",ConfirmDeliveryNote:"Note de livraison",ConfirmQuantity:"Quantité",ConfirmPrice:"Prix",ConfirmCorrect:"Ces informations sont-elles correctes ?",EditButton:"Non, Modifier",ConfirmButton:"Oui, Continuer !",Processing:"Traitement...",Next:"Suivant",Back:"Retour",AdditionalInfo:"Informations supplémentaires",CallTime:"Heure d'appel préférée pour la consultation gratuite",DeliveryNote:"Note de livraison (Facultatif)",DeliveryNotePlaceholder:"ex: laisser chez le concierge, appeler à l'arrivée...",ClientNote:"(Note client) : veuillez m'appeler au {time} pour consultation et confirmation",SellerNote:"(Note du vendeur) : je remplace l'appel de confirmation par un appel de consultation pour convertir un maximum de prospects en commandes livrées"},ar:{CompleteOrder:"أكمل طلبك",FillDetails:"املأ التفاصيل أدناه لإتمام عملية الشراء.",ProductDetails:"تفاصيل المنتج",ProductName:"سموث سليب",Quantity:"الكمية",SelectQuantity:"اختر الكمية",Bottle1:"زجاجة واحدة",Bottle3:"3 زجاجات",Bottle5:"5 زجاجات",YourDetails:"تفاصيلك الشخصية",FullName:"الاسم الكامل",FullNamePlaceholder:"أدخل اسمك الكامل*",PhoneNumber:"رقم الهاتف",PhoneNumberPlaceholder:"+212 600-000000",ConfirmPhoneNumber:"تأكيد رقم الهاتف",ConfirmPhoneNumberPlaceholder:"أعد إدخال رقم الهاتف",FullAddress:"العنوان الكامل",FullAddressPlaceholder:"الشارع، المدينة، إلخ.",ValidPhone:"الرجاء إدخال رقم هاتف صحيح.",PhoneMismatch:"رقما الهاتف غير متطابقين.",SubmitOrder:"تأكيد الطلب",OrderConfirmed:"تم تأكيد الطلب!",Redirecting:"جاري التحويل إلى واتساب...",ConfirmDetails:"الرجاء تأكيد التفاصيل الخاصة بك",OrderID:"رقم الطلب",ConfirmName:"الاسم",ConfirmPhone:"الهاتف",ConfirmAddress:"العنوان",ConfirmCallTime:"وقت الاستشارة",ConfirmDeliveryNote:"ملاحظات التسليم",ConfirmQuantity:"الكمية",ConfirmPrice:"السعر",ConfirmCorrect:"هل هذه المعلومات صحيحة؟",EditButton:"لا، تعديل",ConfirmButton:"نعم، إتمام الطلب!",Processing:"جاري المعالجة...",Next:"التالي",Back:"رجوع",AdditionalInfo:"معلومات إضافية",CallTime:"الوقت المفضل للاتصال للاستشارة المجانية",DeliveryNote:"ملاحظات التسليم (اختياري)",DeliveryNotePlaceholder:"مثال: اتركها مع البواب، اتصل عند الوصول...",ClientNote:"(ملاحظة العميل): يرجى الاتصال بي على {time} للاستشارة والتأكيد",SellerNote:"(ملاحظة البائع): أقوم باستبدال مكالمة التأكيد بمكالمة الاستشارة لتحويل الحد الأقصى من العملاء المحتملين إلى طلبات تم تسليمها"}};let t=localStorage.getItem("selectedLang")||"en";document.getElementById("page-content");const n=document.querySelectorAll(".lang-content"),o=document.querySelectorAll(".lang-switcher"),r=document.documentElement;function l(l){t=l,localStorage.setItem("selectedLang",l),r.lang=l;const i=document.getElementById("checkout-modal-body"),d=document.getElementById("form-container");"ar"===l?(i.classList.add("rtl"),i.classList.remove("ltr"),d.setAttribute("dir","rtl")):(i.classList.add("ltr"),i.classList.remove("rtl"),d.setAttribute("dir","ltr"));const a=document.getElementById("confirmation-details-box");a&&("ar"===l?(a.setAttribute("dir","rtl"),a.classList.remove("text-left"),a.classList.add("text-right")):(a.setAttribute("dir","ltr"),a.classList.remove("text-right"),a.classList.add("text-left"))),n.forEach(e=>{e.classList.remove("active"),e.id===`lang-${l}`&&e.classList.add("active")}),o.forEach(e=>{e.classList.remove("bg-indigo-600","text-white","shadow-md"),e.classList.add("text-gray-600"),e.dataset.lang===l&&(e.classList.add("bg-indigo-600","text-white","shadow-md"),e.classList.remove("text-gray-600"))}),function(n){document.getElementById("form-container")&&(t=n,document.querySelectorAll("[data-lang-key]").forEach(t=>{const o=t.getAttribute("data-lang-key");e[n]&&e[n][o]&&("INPUT"===t.tagName||"TEXTAREA"===t.tagName?t.placeholder=e[n][o]:t.innerText=e[n][o])}))}(l)}document.querySelectorAll(".faq-question").forEach(e=>{e.addEventListener("click",()=>{const t=e.classList.contains("active");document.querySelectorAll(".faq-question").forEach(e=>e.classList.remove("active")),t||e.classList.add("active")})});const i=document.getElementById("checkout-modal-body"),d=document.getElementById("product-variant"),a=document.getElementById("product-price"),c="MAD",s=document.getElementById("form-step-1"),m=document.getElementById("form-step-2"),u=document.getElementById("form-step-3"),h=document.getElementById("next-button"),f=document.getElementById("next-button-step2"),p=document.getElementById("back-button-step2"),g=document.getElementById("back-button-step3");function y(e){s.classList.toggle("hidden",1!==e),m.classList.toggle("hidden",2!==e),u.classList.toggle("hidden",3!==e)}h.addEventListener("click",()=>{d.checkValidity()?y(2):d.reportValidity()}),f.addEventListener("click",()=>{if(E.checkValidity()&&C.checkValidity()&&N.checkValidity()&&B.checkValidity()){if(C.value.trim().length<9)return b.classList.remove("hidden"),void C.focus();if(C.value!==N.value)return I.classList.remove("hidden"),void N.focus();b.classList.add("hidden"),I.classList.add("hidden"),y(3)}else v.reportValidity()}),p.addEventListener("click",()=>{y(1)}),g.addEventListener("click",()=>{y(2)});const v=document.getElementById("checkout-form"),E=document.getElementById("full-name"),C=document.getElementById("phone-number"),N=document.getElementById("confirm-phone-number"),B=document.getElementById("full-address"),b=document.getElementById("phone-format-error"),I=document.getElementById("phone-mismatch-error"),P=document.getElementById("confirmation-modal"),L=document.getElementById("modal-content-confirm"),x=document.getElementById("confirm-button"),A=document.getElementById("confirm-button-text"),D=document.getElementById("edit-button"),T=document.getElementById("success-message"),k=document.getElementById("submit-button");function S(){a.innerHTML=`--.-- ${c}`}function F(){L.style.transform="scale(0.95)",L.style.opacity="0",k.parentElement.classList.remove("hidden"),setTimeout(()=>{P.classList.add("modal-hidden")},300)}D.addEventListener("click",function(){F(),document.getElementById("submit-button").classList.remove("hidden")}),d.addEventListener("change",function(e){const t=e.target.options[e.target.selectedIndex],n=t.getAttribute("data-price"),o=t.getAttribute("data-old-price");if(n&&"0"!==n){let e=`<span>${parseFloat(n).toFixed(0)} ${c}</span>`;o&&parseFloat(o)>parseFloat(n)&&(e+=` <s class="text-red-500 font-normal text-lg ml-2">${parseFloat(o).toFixed(0)} ${c}</s>`),a.innerHTML=e}else S()}),v.addEventListener("submit",function(n){n.preventDefault();const o=d.options[d.selectedIndex];document.getElementById("confirm-order-id").innerText=function(){const e=Date.now().toString();return`LXLY-3126-${e.substring(e.length-6)}`}(),document.getElementById("confirm-name").innerText=E.value,document.getElementById("confirm-phone").innerText=C.value,document.getElementById("confirm-address").innerText=B.value,document.getElementById("confirm-call-time").innerText=document.getElementById("note").value,document.getElementById("confirm-delivery-note").innerText=document.getElementById("delivery-note").value||"N/A",document.getElementById("confirm-variant").innerText=e[t][o.getAttribute("data-lang-key")],document.getElementById("confirm-price").innerText=`${parseFloat(o.getAttribute("data-price")).toFixed(0)} ${c}`,P.classList.remove("modal-hidden"),k.parentElement.classList.add("hidden"),setTimeout(()=>{L.style.transform="scale(1)",L.style.opacity="1"},50),document.getElementById("submit-button").classList.add("hidden")}),x.addEventListener("click",function(){x.disabled=!0,D.disabled=!0,A.innerText=e[t].Processing;const n=d.options[d.selectedIndex],o=parseFloat(n.getAttribute("data-price")).toFixed(0);let r=C.value.trim();9===r.length&&(r.startsWith("6")||r.startsWith("7"))&&(r="0"+r);const l="'"+r,a=document.getElementById("confirm-order-id").innerText,s=document.getElementById("product-title").innerText,m=document.getElementById("sku").value,u=document.getElementById("note").value,h=`${e[t].ClientNote.replace("{time}",u)}\n${e[t].SellerNote}`,f={orderId:a,productTitle:s,sku:m,productPrice:`${o} ${c}`,productVariant:d.value,clientName:E.value,clientPhone:l,clientAddress:B.value,note:h,delivery_note:document.getElementById("delivery-note").value},p=`https://wa.me/212768356015?text=${encodeURIComponent(`*New Order* 🔥\n-------------------\n*Order ID:* ${a}\n\n*Product:* ${s}\n*SKU:* ${f.sku}\n*Quantity:* ${f.productVariant} bottle(s)\n*Price:* ${f.productPrice}\n\n*Client Details:*\n*Name:* ${f.clientName}\n*Phone:* ${r}\n*Address:* ${f.clientAddress}\n\n*Consultation & Notes:*\n${f.note}\n\n*Delivery Note:* ${f.delivery_note||"None"}`.trim())}`;fetch("https://script.google.com/macros/s/AKfycbwDyvrE3gVhvxUPiXLwk_M_p_z-vO1acq2nljXK10HonrJCkne00zNIKhx7lecE5cc2ug/exec",{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/json"},body:JSON.stringify(f)}).then(()=>{var n;F(),T.classList.remove("hidden"),n={orderId:f.orderId,productPrice:o,productVariant:f.productVariant,productTitle:f.productTitle,sku:f.sku},dataLayer.push({event:"purchase",ecommerce:{transaction_id:n.orderId,value:n.productPrice,currency:"MAD",items:[{item_id:n.sku,item_name:n.productTitle,quantity:n.productVariant,price:n.productPrice}]}}),setTimeout(()=>{window.open(p,"_blank"),setTimeout(()=>{v.reset(),S(),i.classList.add("modal-hidden"),document.body.classList.remove("overflow-hidden"),document.getElementById("confirmation-modal").classList.add("modal-hidden"),document.getElementById("success-message").classList.add("hidden"),x.disabled=!1,D.disabled=!1,A.innerText=e[t].ConfirmButton},1e3)},800)}).catch(n=>{console.error("Error submitting to Google Sheet:",n),alert("An error occurred while submitting your order. Please try again."),F(),x.disabled=!1,D.disabled=!1,A.innerText=e[t].ConfirmButton})}),document.addEventListener("DOMContentLoaded",()=>{l(localStorage.getItem("selectedLang")||"en");let e=0;const t=document.querySelector("header");window.addEventListener("scroll",function(){let n=window.pageYOffset||document.documentElement.scrollTop;n>e&&n>t.offsetHeight?t.style.top=`-${t.offsetHeight+10}px`:t.style.top="0",e=n<=0?0:n},!1),S()});
+
+
+      
+
+      window.addEventListener('scroll', () => {
+
+        const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+
+        if (scrollPercentage >= 25) dataLayer.push({ event: 'scroll_depth', 'scroll_percentage': 25 });
+
+        if (scrollPercentage >= 50) dataLayer.push({ event: 'scroll_depth', 'scroll_percentage': 50 });
+
+        if (scrollPercentage >= 75) dataLayer.push({ event: 'scroll_depth', 'scroll_percentage': 75 });
+
+        if (scrollPercentage >= 90) dataLayer.push({ event: 'scroll_depth', 'scroll_percentage': 90 });
+
+      }, { passive: true });
+
+
+
+ 
+
+      document.addEventListener('DOMContentLoaded', function() {
+
+        const ctaButtons = document.querySelectorAll('a[href="#order-btn"], a[href="#order-btn-fr"], a[href="#order-btn-ar"], button[onclick^="openCheckoutModal"]');
+
+        ctaButtons.forEach(btn => {
+
+          btn.addEventListener('click', () => {
+
+            dataLayer.push({ event: 'cta_click', 'cta_label': btn.innerText || 'Buy Now' });
+
+          });
+
+        });
+
+      });
+
+
+
+  
+
+      function pushOrderData(orderData) {
+
+        dataLayer.push({
+
+          event: 'purchase',
+
+          ecommerce: {
+
+              transaction_id: orderData.orderId,
+
+              value: orderData.productPrice,
+
+              currency: 'MAD',
+
+              items: [{
+
+                item_id: orderData.sku,
+
+                item_name: orderData.productTitle,
+
+                quantity: orderData.productVariant,
+
+                price: orderData.productPrice
+
+              }]
+
+          }
+
+        });
+
+      }
+
+
+
+ 
+
+        const translations = {
+
+            en: {
+
+                CompleteOrder: "Complete Your Order",
+
+                FillDetails: "Fill out the details below to checkout.",
+
+                ProductDetails: "Product Details",
+
+                ProductName: "Smooth Sleep",
+
+                Quantity: "Quantity",
+
+                SelectQuantity: "Select a quantity",
+
+                Bottle1: "1 Bottle",
+
+                Bottle3: "3 Bottles",
+
+                Bottle5: "5 Bottles",
+
+                YourDetails: "Your Details",
+
+                FullName: "Full Name",
+
+                FullNamePlaceholder: "Enter Your Name*",
+
+                PhoneNumber: "Phone Number",
+
+                PhoneNumberPlaceholder: "+212 600-000000",
+
+                ConfirmPhoneNumber: "Confirm Phone Number",
+
+                ConfirmPhoneNumberPlaceholder: "Re-enter phone number",
+
+                FullAddress: "Full Address",
+
+                FullAddressPlaceholder: "Street, City, etc.",
+
+                ValidPhone: "Please enter a valid phone number.",
+
+                PhoneMismatch: "Phone numbers do not match.",
+
+                SubmitOrder: "Submit Order",
+
+                OrderConfirmed: "Order Confirmed!",
+
+                Redirecting: "Redirecting to WhatsApp...",
+
+                ConfirmDetails: "Please Confirm Your Details",
+
+                OrderID: "Order ID",
+
+                ConfirmName: "Name",
+
+                ConfirmPhone: "Phone",
+
+                ConfirmAddress: "Address",
+
+                ConfirmCallTime: "Consultation Time",
+
+                ConfirmDeliveryNote: "Delivery Note",
+
+                ConfirmQuantity: "Quantity",
+
+                ConfirmPrice: "Price",
+
+                ConfirmCorrect: "Is this information correct?",
+
+                EditButton: "No, Edit",
+
+                ConfirmButton: "Yes, Go!",
+
+                Processing: 'Processing...',
+
+                Next: 'Next',
+
+                Back: 'Back',
+
+                AdditionalInfo: "Additional Info",
+
+                CallTime: "Preferred call time for free consultation",
+
+                DeliveryNote: "Delivery Note (Optional)",
+
+                DeliveryNotePlaceholder: "e.g., leave with the concierge, call upon arrival...",
+
+                ClientNote: "(Client Note): please call me at {time} for consultation and confirmation",
+
+                SellerNote: "(Seller Note): im replacing confirmation call to consultation call to convert maximum leads to delivered orders",
+
+                
+
+            },
+
+            fr: {
+
+                CompleteOrder: "Complétez votre commande",
+
+                FillDetails: "Remplissez les détails ci-dessous pour finaliser.",
+
+                ProductDetails: "Détails du produit",
+
+                ProductName: "Smooth Sleep",
+
+                Quantity: "Quantité",
+
+                SelectQuantity: "Sélectionnez une quantité",
+
+                Bottle1: "1 Bouteille",
+
+                Bottle3: "3 Bouteilles",
+
+                Bottle5: "5 Bouteilles",
+
+                YourDetails: "Vos coordonnées",
+
+                FullName: "Nom complet",
+
+                FullNamePlaceholder: "Entrez votre nom complet*",
+
+                PhoneNumber: "Numéro de téléphone",
+
+                PhoneNumberPlaceholder: "+212 600-000000",
+
+                ConfirmPhoneNumber: "Confirmez le numéro de téléphone",
+
+                ConfirmPhoneNumberPlaceholder: "Retapez le numéro de téléphone",
+
+                FullAddress: "Adresse complète",
+
+                FullAddressPlaceholder: "Rue, Ville, etc.",
+
+                ValidPhone: "Veuillez entrer un numéro de téléphone valide.",
+
+                PhoneMismatch: "Les numéros de téléphone ne correspondent pas.",
+
+                SubmitOrder: "Valider la commande",
+
+                OrderConfirmed: "Commande confirmée !",
+
+                Redirecting: "Redirection vers WhatsApp...",
+
+                ConfirmDetails: "Veuillez confirmer vos informations",
+
+                OrderID: "ID de commande",
+
+                ConfirmName: "Nom",
+
+                ConfirmPhone: "Téléphone",
+
+                ConfirmAddress: "Adresse",
+
+                ConfirmCallTime: "Heure de consultation",
+
+                ConfirmDeliveryNote: "Note de livraison",
+
+                ConfirmQuantity: "Quantité",
+
+                ConfirmPrice: "Prix",
+
+                ConfirmCorrect: "Ces informations sont-elles correctes ?",
+
+                EditButton: "Non, Modifier",
+
+                ConfirmButton: "Oui, Continuer !",
+
+                Processing: 'Traitement...',
+
+                Next: 'Suivant',
+
+                Back: 'Retour',
+
+                AdditionalInfo: "Informations supplémentaires",
+
+                CallTime: "Heure d'appel préférée pour la consultation gratuite",
+
+                DeliveryNote: "Note de livraison (Facultatif)",
+
+                DeliveryNotePlaceholder: "ex: laisser chez le concierge, appeler à l'arrivée...",
+
+                ClientNote: "(Note client) : veuillez m'appeler au {time} pour consultation et confirmation",
+
+                SellerNote: "(Note du vendeur) : je remplace l'appel de confirmation par un appel de consultation pour convertir un maximum de prospects en commandes livrées",
+
+                
+
+            },
+
+            ar: {
+
+                CompleteOrder: "أكمل طلبك",
+
+                FillDetails: "املأ التفاصيل أدناه لإتمام عملية الشراء.",
+
+                ProductDetails: "تفاصيل المنتج",
+
+                ProductName: "سموث سليب",
+
+                Quantity: "الكمية",
+
+                SelectQuantity: "اختر الكمية",
+
+                Bottle1: "زجاجة واحدة",
+
+                Bottle3: "3 زجاجات",
+
+                Bottle5: "5 زجاجات",
+
+                YourDetails: "تفاصيلك الشخصية",
+
+                FullName: "الاسم الكامل",
+
+                FullNamePlaceholder: "أدخل اسمك الكامل*",
+
+                PhoneNumber: "رقم الهاتف",
+
+                PhoneNumberPlaceholder: "+212 600-000000",
+
+                ConfirmPhoneNumber: "تأكيد رقم الهاتف",
+
+                ConfirmPhoneNumberPlaceholder: "أعد إدخال رقم الهاتف",
+
+                FullAddress: "العنوان الكامل",
+
+                FullAddressPlaceholder: "الشارع، المدينة، إلخ.",
+
+                ValidPhone: "الرجاء إدخال رقم هاتف صحيح.",
+
+                PhoneMismatch: "رقما الهاتف غير متطابقين.",
+
+                SubmitOrder: "تأكيد الطلب",
+
+                OrderConfirmed: "تم تأكيد الطلب!",
+
+                Redirecting: "جاري التحويل إلى واتساب...",
+
+                ConfirmDetails: "الرجاء تأكيد التفاصيل الخاصة بك",
+
+                OrderID: "رقم الطلب",
+
+                ConfirmName: "الاسم",
+
+                ConfirmPhone: "الهاتف",
+
+                ConfirmAddress: "العنوان",
+
+                ConfirmCallTime: "وقت الاستشارة",
+
+                ConfirmDeliveryNote: "ملاحظات التسليم",
+
+                ConfirmQuantity: "الكمية",
+
+                ConfirmPrice: "السعر",
+
+                ConfirmCorrect: "هل هذه المعلومات صحيحة؟",
+
+                EditButton: "لا، تعديل",
+
+                ConfirmButton: "نعم، إتمام الطلب!",
+
+                Processing: 'جاري المعالجة...',
+
+                Next: 'التالي',
+
+                Back: 'رجوع',
+
+                AdditionalInfo: "معلومات إضافية",
+
+                CallTime: "الوقت المفضل للاتصال للاستشارة المجانية",
+
+                DeliveryNote: "ملاحظات التسليم (اختياري)",
+
+                DeliveryNotePlaceholder: "مثال: اتركها مع البواب، اتصل عند الوصول...",
+
+                ClientNote: "(ملاحظة العميل): يرجى الاتصال بي على {time} للاستشارة والتأكيد",
+
+                SellerNote: "(ملاحظة البائع): أقوم باستبدال مكالمة التأكيد بمكالمة الاستشارة لتحويل الحد الأقصى من العملاء المحتملين إلى طلبات تم تسليمها",
+
+                
+
+            }
+
+        };
+
+
+
+        let currentLang = localStorage.getItem('selectedLang') || 'en';
+
+
+
+
+
+        const pageContent = document.getElementById('page-content');
+
+        const langContents = document.querySelectorAll('.lang-content');
+
+        const langSwitchers = document.querySelectorAll('.lang-switcher');
+
+        const htmlTag = document.documentElement;
+
+
+
+        function updateFormLanguage(lang) {
+
+            const formContainer = document.getElementById('form-container');
+
+            if (!formContainer) return;
+
+            currentLang = lang;
+
+            
+
+            document.querySelectorAll('[data-lang-key]').forEach(el => {
+
+                const key = el.getAttribute('data-lang-key');
+
+                if (translations[lang] && translations[lang][key]) {
+
+                    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+
+                        el.placeholder = translations[lang][key];
+
+                    } else {
+
+                        el.innerText = translations[lang][key];
+
+                    }
+
+                }
+
+            });
+
+        }
+
+        
+
+        function switchLang(lang) {
+
+            currentLang = lang;
+
+            localStorage.setItem('selectedLang', lang);
+
+            htmlTag.lang = lang;
+
+
+
+            const checkoutModalBody = document.getElementById('checkout-modal-body');
+
+            const formContainer = document.getElementById('form-container');
+
+
+
+            if (lang === 'ar') {
+
+                checkoutModalBody.classList.add('rtl');
+
+                checkoutModalBody.classList.remove('ltr');
+
+                formContainer.setAttribute('dir', 'rtl');
+
+            } else {
+
+                checkoutModalBody.classList.add('ltr');
+
+                checkoutModalBody.classList.remove('rtl');
+
+                formContainer.setAttribute('dir', 'ltr');
+
+            }
+
+
+
+            const confirmBox = document.getElementById('confirmation-details-box');
+
+            if (confirmBox) {
+
+              if (lang === 'ar') {
+
+                confirmBox.setAttribute('dir', 'rtl');
+
+                confirmBox.classList.remove('text-left');
+
+                confirmBox.classList.add('text-right');
+
+              } else {
+
+                confirmBox.setAttribute('dir', 'ltr');
+
+                confirmBox.classList.remove('text-right');
+
+                confirmBox.classList.add('text-left');
+
+              }
+
+            }
+
+            
+
+            langContents.forEach(content => {
+
+                content.classList.remove('active');
+
+                if (content.id === `lang-${lang}`) {
+
+                    content.classList.add('active');
+
+                }
+
+            });
+
+            
+
+            langSwitchers.forEach(switcher => {
+
+                switcher.classList.remove('bg-indigo-600', 'text-white', 'shadow-md');
+
+                switcher.classList.add('text-gray-600');
+
+                if (switcher.dataset.lang === lang) {
+
+                    switcher.classList.add('bg-indigo-600', 'text-white', 'shadow-md');
+
+                    switcher.classList.remove('text-gray-600');
+
+                }
+
+            });
+
+            
+
+            updateFormLanguage(lang);
+
+        }
+
+        
+
+   
+
+        document.querySelectorAll('.faq-question').forEach(question => {
+
+            question.addEventListener('click', () => {
+
+                const alreadyActive = question.classList.contains('active');
+
+                document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+
+                if (!alreadyActive) {
+
+                    question.classList.add('active');
+
+                }
+
+            });
+
+        });
+
+
+
+        
+
+        const checkoutModal = document.getElementById('checkout-modal-body');
+
+        const variantSelect = document.getElementById('product-variant');
+
+        const priceDisplay = document.getElementById('product-price');
+
+        const currencySymbol = 'MAD';
+
+        
+
+        const formStep1 = document.getElementById('form-step-1');
+
+        const formStep2 = document.getElementById('form-step-2');
+
+        const formStep3 = document.getElementById('form-step-3');
+
+
+
+        const nextButton = document.getElementById('next-button');
+
+        const nextButtonStep2 = document.getElementById('next-button-step2');
+
+        const backButtonStep2 = document.getElementById('back-button-step2');
+
+        const backButtonStep3 = document.getElementById('back-button-step3');
+
+
+
+        function showStep(step) {
+
+            formStep1.classList.toggle('hidden', step !== 1);
+
+            formStep2.classList.toggle('hidden', step !== 2);
+
+            formStep3.classList.toggle('hidden', step !== 3);
+
+        }
+
+
+
+        nextButton.addEventListener('click', () => {
+
+       
+
+            if (variantSelect.checkValidity()) {
+
+                showStep(2);
+
+            } else {
+
+                variantSelect.reportValidity();
+
+            }
+
+        });
+
+        
+
+        nextButtonStep2.addEventListener('click', () => {
+
+        
+
+            if (!fullNameInput.checkValidity() || !phoneInput.checkValidity() || !confirmPhoneInput.checkValidity() || !addressInput.checkValidity()) {
+
+                form.reportValidity();
+
+                return;
+
+            }
+
+            if (phoneInput.value.trim().length < 9) {
+
+                phoneFormatError.classList.remove('hidden');
+
+                phoneInput.focus();
+
+                return;
+
+            }
+
+            if (phoneInput.value !== confirmPhoneInput.value) {
+
+                phoneMismatchError.classList.remove('hidden');
+
+                confirmPhoneInput.focus();
+
+                return;
+
+            }
+
+          
+
+            phoneFormatError.classList.add('hidden');
+
+            phoneMismatchError.classList.add('hidden');
+
+            showStep(3);
+
+        });
+
+        
+
+        backButtonStep2.addEventListener('click', () => {
+
+            showStep(1);
+
+        });
+
+
+
+        backButtonStep3.addEventListener('click', () => {
+
+            showStep(2);
+
+        });
+
+
+
+
+
+        function openCheckoutModal(packageId, lang) {
+
+         
+            switchLang(lang); 
+
+
+       
+            variantSelect.value = packageId;
+
+           
+            variantSelect.dispatchEvent(new Event('change'));
+
+
+
+          
+            showStep(1);
+
+
+
+          
+
+            checkoutModal.classList.remove('modal-hidden');
+
+            document.body.classList.add('overflow-hidden');
+
+        }
+
+
+
+        function closeCheckoutModal() {
+
+            checkoutModal.classList.add('modal-hidden');
+
+            document.body.classList.remove('overflow-hidden');
+
+            
+
+            document.getElementById('confirmation-modal').classList.add('modal-hidden');
+
+            document.getElementById('success-message').classList.add('hidden');
+
+        }
+
+
+
+        
+
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwDyvrE3gVhvxUPiXLwk_M_p_z-vO1acq2nljXK10HonrJCkne00zNIKhx7lecE5cc2ug/exec';
+
+        const sellerWhatsappNumber = '212768356015';
+
+
+
+        const form = document.getElementById('checkout-form');
+
+        const fullNameInput = document.getElementById('full-name');
+
+        const phoneInput = document.getElementById('phone-number');
+
+        const confirmPhoneInput = document.getElementById('confirm-phone-number');
+
+        const addressInput = document.getElementById('full-address');
+
+
+
+        const phoneFormatError = document.getElementById('phone-format-error');
+
+        const phoneMismatchError = document.getElementById('phone-mismatch-error');
+
+        const confirmationModal = document.getElementById('confirmation-modal');
+
+        const confirmModalContent = document.getElementById('modal-content-confirm');
+
+        const confirmButton = document.getElementById('confirm-button');
+
+        const confirmButtonText = document.getElementById('confirm-button-text');
+
+        const editButton = document.getElementById('edit-button');
+
+        const successMessage = document.getElementById('success-message');
+
+        const submitButton = document.getElementById('submit-button');
+
+
+
+        editButton.addEventListener('click', function() {
+
+            hideConfirmDialog();
+
+            document.getElementById('submit-button').classList.remove('hidden'); 
+
+});
+
+
+
+
+
+
+
+        function setInitialPriceDisplay() {
+
+            priceDisplay.innerHTML = `--.-- ${currencySymbol}`;
+
+        }
+
+
+
+        function generateOrderId() {
+
+            const timestamp = Date.now().toString();
+
+            const uniquePart = timestamp.substring(timestamp.length - 6);
+
+            return `LXLY-3126-${uniquePart}`;
+
+        }
+
+        
+
+        function showConfirmDialog() {
+
+            confirmationModal.classList.remove('modal-hidden');
+
+            submitButton.parentElement.classList.add('hidden');
+
+            setTimeout(() => {
+
+                confirmModalContent.style.transform = 'scale(1)';
+
+                confirmModalContent.style.opacity = '1';
+
+            }, 50); 
+
+        }
+
+
+
+        function hideConfirmDialog() {
+
+            confirmModalContent.style.transform = 'scale(0.95)';
+
+            confirmModalContent.style.opacity = '0';
+
+            submitButton.parentElement.classList.remove('hidden');
+
+            setTimeout(() => {
+
+                confirmationModal.classList.add('modal-hidden');
+
+            }, 300);
+
+        }
+
+
+
+        variantSelect.addEventListener('change', function(event) {
+
+            const selectedOption = event.target.options[event.target.selectedIndex];
+
+            const newPrice = selectedOption.getAttribute('data-price');
+
+            const oldPrice = selectedOption.getAttribute('data-old-price');
+
+
+
+            if (newPrice && newPrice !== "0") {
+
+                let priceHTML = `<span>${parseFloat(newPrice).toFixed(0)} ${currencySymbol}</span>`;
+
+                if (oldPrice && parseFloat(oldPrice) > parseFloat(newPrice)) {
+
+                    priceHTML += ` <s class="text-red-500 font-normal text-lg ml-2">${parseFloat(oldPrice).toFixed(0)} ${currencySymbol}</s>`;
+
+                }
+
+                priceDisplay.innerHTML = priceHTML;
+
+            } else {
+
+                setInitialPriceDisplay();
+
+            }
+
+        });
+
+
+
+        form.addEventListener('submit', function(e) {
+
+            e.preventDefault();
+
+            
+
+            const selectedOption = variantSelect.options[variantSelect.selectedIndex];
+
+            document.getElementById('confirm-order-id').innerText = generateOrderId();
+
+            document.getElementById('confirm-name').innerText = fullNameInput.value;
+
+            document.getElementById('confirm-phone').innerText = phoneInput.value;
+
+            document.getElementById('confirm-address').innerText = addressInput.value;
+
+            document.getElementById('confirm-call-time').innerText = document.getElementById('note').value;
+
+            document.getElementById('confirm-delivery-note').innerText = document.getElementById('delivery-note').value || 'N/A';
+
+            document.getElementById('confirm-variant').innerText = translations[currentLang][selectedOption.getAttribute('data-lang-key')];
+
+            document.getElementById('confirm-price').innerText = `${parseFloat(selectedOption.getAttribute('data-price')).toFixed(0)} ${currencySymbol}`;
+
+            showConfirmDialog();
+
+            document.getElementById('submit-button').classList.add('hidden');
+
+        });
+
+
+
+        confirmButton.addEventListener('click', function () {
+
+            confirmButton.disabled = true;
+
+            editButton.disabled = true;
+
+            confirmButtonText.innerText = translations[currentLang]['Processing'];
+
+
+
+            const selectedOption = variantSelect.options[variantSelect.selectedIndex];
+
+            const finalPrice = parseFloat(selectedOption.getAttribute('data-price')).toFixed(0);
+
+
+
+            let rawClientPhone = phoneInput.value.trim();
+
+            if (rawClientPhone.length === 9 && (rawClientPhone.startsWith('6') || rawClientPhone.startsWith('7'))) {
+
+                rawClientPhone = '0' + rawClientPhone;
+
+            }
+
+            const phoneForGoogleSheet = "'" + rawClientPhone;
+
+
+
+            const orderId = document.getElementById('confirm-order-id').innerText;
+
+            const productTitle = document.getElementById('product-title').innerText;
+
+            const sku = document.getElementById('sku').value;
+
+
+
+
+            
+
+
+
+
+const consultationTime = document.getElementById('note').value;
+
+const clientNoteText = translations[currentLang].ClientNote.replace('{time}', consultationTime);
+
+const sellerNoteText = translations[currentLang].SellerNote;
+
+const combinedNote = `${clientNoteText}\n${sellerNoteText}`;
+
+
+
+
+const data = {
+
+    orderId: orderId,
+
+    productTitle: productTitle,
+
+    sku: sku,
+
+    productPrice: `${finalPrice} ${currencySymbol}`,
+
+    productVariant: variantSelect.value,
+
+    clientName: fullNameInput.value,
+
+    clientPhone: phoneForGoogleSheet,
+
+    clientAddress: addressInput.value,
+
+    note: combinedNote,
+
+    delivery_note: document.getElementById('delivery-note').value,
+
+};
+
+
+
+
+            const message = `*New Order* 🔥\n-------------------\n*Order ID:* ${orderId}\n\n*Product:* ${productTitle}\n*SKU:* ${data.sku}\n*Quantity:* ${data.productVariant} bottle(s)\n*Price:* ${data.productPrice}\n\n*Client Details:*\n*Name:* ${data.clientName}\n*Phone:* ${rawClientPhone}\n*Address:* ${data.clientAddress}\n\n*Consultation & Notes:*\n${data.note}\n\n*Delivery Note:* ${data.delivery_note || 'None'}`;
+
+            const encodedMessage = encodeURIComponent(message.trim());
+
+            const whatsappURL = `https://wa.me/${sellerWhatsappNumber}?text=${encodedMessage}`;
+
+
+
+
+            fetch(GOOGLE_SCRIPT_URL, {
+
+                method: 'POST',
+
+                mode: 'no-cors',
+
+                headers: { 'Content-Type': 'application/json' },
+
+                body: JSON.stringify(data)
+
+            })
+
+            .then(() => {
+
+                hideConfirmDialog();
+
+                successMessage.classList.remove('hidden');
+
+
+
+                pushOrderData({
+
+                    orderId: data.orderId,
+
+                    productPrice: finalPrice,
+
+                    productVariant: data.productVariant,
+
+                    productTitle: data.productTitle,
+
+                    sku: data.sku
+
+                });
+
+
+
+
+                setTimeout(() => {
+
+                    window.open(whatsappURL, '_blank');
+
+                    setTimeout(() => {
+
+                        form.reset();
+
+                        setInitialPriceDisplay();
+
+                        closeCheckoutModal();
+
+                        confirmButton.disabled = false;
+
+                        editButton.disabled = false;
+
+                        confirmButtonText.innerText = translations[currentLang]['ConfirmButton'];
+
+                    }, 1000);
+
+                }, 800); 
+
+            .catch(error => {
+
+                console.error('Error submitting to Google Sheet:', error);
+
+                alert('An error occurred while submitting your order. Please try again.');
+
+                hideConfirmDialog();
+
+                confirmButton.disabled = false;
+
+                editButton.disabled = false;
+
+                confirmButtonText.innerText = translations[currentLang]['ConfirmButton'];
+
+            });
+
+        });
+
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const savedLang = localStorage.getItem('selectedLang') || 'en';
+
+        switchLang(savedLang);
+
+
+
+
+        let lastScrollTop = 0;
+
+        const header = document.querySelector('header');
+
+        window.addEventListener("scroll", function () {
+
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop && scrollTop > header.offsetHeight) {
+
+                header.style.top = `-${header.offsetHeight + 10}px`;
+
+            } else {
+
+                header.style.top = "0";
+
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+
+        }, false);
+
+        
+
+        setInitialPriceDisplay();
+
+    });
+
+
+
+  
