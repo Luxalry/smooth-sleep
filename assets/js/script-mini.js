@@ -420,19 +420,24 @@ window.closeCheckoutModal = closeCheckoutModal; // Make it globally accessible
  * Shows the order confirmation dialog.
  */
 function showConfirmDialog() {
+    if (!confirmationModal) return;
+
+    const orderId = generateInquiryId(); // إنشاء المعرف هنا
+    const selectedServiceText = serviceSelect.options[serviceSelect.selectedIndex].text;
+
     const confirmationModal = document.getElementById('confirmation-modal');
     const confirmModalContent = document.getElementById('modal-content-confirm');
     const submitButton = document.getElementById('submit-button');
 
     confirmationModal.classList.remove('modal-hidden');
-    submitButton.parentElement.classList.add('hidden');
-
+    if (submitButton) submitButton.parentElement.classList.add('hidden');
     setTimeout(() => {
-        confirmModalContent.style.transform = 'scale(1)';
-        confirmModalContent.style.opacity = '1';
+        if (confirmModalContent) {
+            confirmModalContent.style.transform = 'scale(1)';
+            confirmModalContent.style.opacity = '1';
+        }
     }, 50);
 }
-
 /**
  * Hides the order confirmation dialog.
  * ENHANCEMENT: Immediately restores the submit button for better UX.
