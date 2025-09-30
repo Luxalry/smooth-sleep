@@ -698,8 +698,16 @@ function handleFinalConfirmation() {
         body: JSON.stringify(data)
     })
     .then(() => {
-        hideConfirmDialog();
-        document.getElementById('success-message').classList.remove('hidden');
+        
+       // **THE FIX FOR SUCCESS**:
+            // 1. Manually hide the confirmation modal WITHOUT showing the step 3 buttons.
+            if (confirmationModal) {
+                confirmationModal.classList.add('modal-hidden');
+            }
+            // 2. Show the success message.
+            if (successMessage) {
+                successMessage.classList.remove('hidden');
+            }
 
         pushOrderData({
             orderId: data.orderId,
