@@ -420,64 +420,43 @@ window.closeCheckoutModal = closeCheckoutModal; // Make it globally accessible
  * Shows the order confirmation dialog.
  */
 function showConfirmDialog() {
-    if (!confirmationModal) return;
-
-    const orderId = generateInquiryId(); // إنشاء المعرف هنا
-    const selectedServiceText = serviceSelect.options[serviceSelect.selectedIndex].text;
-
     const confirmationModal = document.getElementById('confirmation-modal');
     const confirmModalContent = document.getElementById('modal-content-confirm');
     const submitButton = document.getElementById('submit-button');
 
     confirmationModal.classList.remove('modal-hidden');
-    if (submitButton) submitButton.parentElement.classList.add('hidden');
+    submitButton.parentElement.classList.add('hidden');
+
     setTimeout(() => {
-        if (confirmModalContent) {
-            confirmModalContent.style.transform = 'scale(1)';
-            confirmModalContent.style.opacity = '1';
-        }
+        confirmModalContent.style.transform = 'scale(1)';
+        confirmModalContent.style.opacity = '1';
     }, 50);
 }
+
 /**
  * Hides the order confirmation dialog.
  * ENHANCEMENT: Immediately restores the submit button for better UX.
  */
 function hideConfirmDialog() {
-    if (!confirmationModal) return;
-    if (confirmModalContent) {
-        confirmModalContent.style.transform = 'scale(0.95)';
-        confirmModalContent.style.opacity = '0';
-    }
-// *** THE FIX ***
-    // Immediately restore the submit button's parent container so the user can edit.
+    const confirmationModal = document.getElementById('confirmation-modal');
+    const confirmModalContent = document.getElementById('modal-content-confirm');
+    const submitButton = document.getElementById('submit-button');
+
+    // **التحسين**: إعادة إظهار زر الإرسال فوراً
     if (submitButton && submitButton.parentElement) {
         submitButton.parentElement.classList.remove('hidden');
     }
+
+    // ثم تبدأ مؤثرات الإخفاء
+    confirmModalContent.style.transform = 'scale(0.95)';
+    confirmModalContent.style.opacity = '0';
 
     setTimeout(() => {
         confirmationModal.classList.add('modal-hidden');
     }, 300);
 }
 
-if (editButton) {
-    editButton.addEventListener('click', hideConfirmDialog);
-}
 
-if (form) {
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        showConfirmDialog();
-    });
-}
-
-if (confirmButton) {
-    confirmButton.addEventListener('click', function() {
-        confirmButton.disabled = true;
-        if (editButton) editButton.disabled = true;
-        if (confirmButtonText) confirmButtonText.innerText = translations[currentLang]['Processing'];
-
-    });
-}
 
 // --- Popup Blocker Monitor ---
 
