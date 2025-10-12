@@ -10,6 +10,12 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://smooth-sleep.luxalry.com/404.html</loc>
+    <lastmod>2025-08-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
   <!-- Add more pages manually below -->
   <url>
     <loc>https://smooth-sleep.luxalry.com/products</loc>
