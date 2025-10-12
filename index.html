@@ -142,7 +142,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {
           "@type": "Offer",
           "name": "1 Bottle - Trial Pack",
-          "url": "https://smooth-sleep.luxalry.com/#order-btn",
+          "url": "https://smooth-sleep.luxalry.com/#order-btn-en",
           "price": "299",
           "priceCurrency": "MAD",
           "priceValidUntil": "2025-12-31",
@@ -184,7 +184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {
           "@type": "Offer",
           "name": "3 Bottles - Save 20%",
-          "url": "https://smooth-sleep.luxalry.com/#order-btn",
+          "url": "https://smooth-sleep.luxalry.com/#order-btn-en",
           "price": "717",
           "priceCurrency": "MAD",
           "priceValidUntil": "2025-12-31",
@@ -226,7 +226,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {
           "@type": "Offer",
           "name": "5 Bottles - Save 35%",
-          "url": "https://smooth-sleep.luxalry.com/#order-btn",
+          "url": "https://smooth-sleep.luxalry.com/#order-btn-en",
           "price": "972",
           "priceCurrency": "MAD",
           "priceValidUntil": "2025-12-31",
@@ -391,26 +391,63 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div id="lang-en" class="lang-content active">
             <main>
         <!-- 1. Hero Section (EN) -->
-        <section id="hero-en" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 md:py-28 text-center">
-            <div class="container mx-auto px-4 max-w-4xl">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">
-                    Rest Smarter. Perform Better.
-                </h1>
-                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-                    Scientifically crafted sleep support for high-performing professionals.
-                </p>
-                <div class="mb-12">
-                    <img src="images/luxalry-smooth-sleep-supplement-sleep-aid.webp" loading="lazy" fetchpriority="high" alt="Smooth Sleep Product" class="mx-auto rounded-3xl shadow-2xl w-64 md:w-80 border-4 border-white/50">
-                    <div class="mt-4 text-xl md:text-2xl font-bold star-rating">
-                        ⭐⭐⭐⭐⭐ <span class="text-white/80 text-base font-normal">(4.9/5 based on 2,500+ reviews)</span>
+        <section id="hero-en" class="relative overflow-hidden bg-slate-900 text-white py-20 md:py-28">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+                    <!-- Text Content -->
+                    <div class="md:col-span-3 text-center md:text-left">
+                        <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-4">
+                            Sleep Smarter. <br class="hidden md:block"> Perform Better.
+                        </h1>
+                        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto md:mx-0 opacity-80">
+                            Scientifically crafted sleep support for high-performing professionals who demand the best from their mind and body.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
+                             <a href="#order-btn-en" data-cta-location="Top" class="cta-button-gradient text-white font-bold py-3 px-8 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                                Try Smooth Sleep Now!
+                            </a>
+                        </div>
                     </div>
-                    <p class="text-sm md:text-base mt-2 font-semibold text-indigo-300">
-                        Doctor-Formulated | Non-Habit Forming | Fast Results
-                    </p>
+                    <!-- Image Content -->
+                    <div class="md:col-span-2 flex justify-center">
+                        <div class="relative w-72 md:w-80">
+                            <div class="absolute -inset-2 bg-gradient-to-br from-indigo-500 to-pink-500 rounded-3xl blur-xl opacity-40"></div>
+                            <img src="/images/luxalry-smooth-sleep-supplement-sleep-aid.webp?text=Smooth+Sleep" loading="lazy" fetchpriority="high" alt="Smooth Sleep Product" class="relative mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+                            <div class="relative mt-6 p-4 bg-slate-800/50 rounded-2xl text-center backdrop-blur-sm">
+                                <div class="text-2xl font-bold star-rating">⭐⭐⭐⭐⭐</div>
+                                <div class="text-white/80 text-sm font-normal mt-1">(4.9/5 from 2,500+ reviews)</div>
+                                <p class="text-xs mt-3 font-semibold text-indigo-300 uppercase tracking-wider">
+                                    Doctor-Formulated | Non-Habit Forming
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a href="#order-btn" data-cta-location="Top" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 interactive-hover">
-                    Try Smooth Sleep Now!
-                </a>
+    
+                <!-- Product Cards -->
+                <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-transparent rounded-2xl backdrop-blur p-4 text-center">
+                      <img src="/images/sleping-people.webp?text=Comfort" loading="lazy" fetchpriority="high" alt="Ready for Tomorrow!" class="relative w-60 h-50 mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+                      <h3 class="font-bold text-lg">Ready for Tomorrow!</h3>
+                    </div>
+                    <div class="bg-transparent rounded-2xl backdrop-blur p-4 text-center">
+                      <img src="/images/hapy-people.webp?text=Happy" loading="lazy" fetchpriority="high" alt="No Morning Grogginess!" class="relative w-60 h-50 mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+                      <h3 class="font-bold text-lg">No Morning Grogginess!</h3>
+                    </div>
+                    <div class="bg-transparent rounded-2xl backdrop-blur p-4 text-center">
+                      <img src="/images/safety-sleep.webp?text=Sweet+Dreams" loading="lazy" fetchpriority="high" alt="Uninterrupted Sleep!" class="relative w-60 h-50 mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+                      <h3 class="font-bold text-lg">Uninterrupted Sleep!</h3>
+                    </div>
+                    <div class="bg-transparent rounded-2xl backdrop-blur p-4 text-center">
+                      <img src="/images/early-wake-up.webp?text=Wake+Up" loading="lazy" fetchpriority="high" alt="Ready for Success!" class="relative w-60 h-50 mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+                      <h3 class="font-bold text-lg">Ready for Success!</h3>
+                    </div>
+                  </div>
+              
+                  <!-- Description -->
+                  <div class="mt-10 bg-white/10 rounded-2xl backdrop-blur px-6 py-5 text-base md:text-lg max-w-3xl mx-auto text-center">
+                    Experience restful nights and refreshed mornings with Smooth Sleep by Luxalry. Scientifically formulated ingredients work in harmony to support deeper, uninterrupted sleep, helping high-performing professionals recharge efficiently. Each dose is carefully crafted for fast results without next-day grogginess, empowering you to wake up energized, focused, and ready to excel—all while prioritizing your long-term wellness and everyday productivity.
+                  </div>
             </div>
         </section>
 
@@ -447,7 +484,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 3. NEW "The Luxalry Advantage" Section (EN) -->
 <section id="why-choose-en" class="py-16 bg-slate-50">
     <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">The Luxalry Advantage</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">The Smooth Sleep Advantage</h2>
         <p class="text-xl text-gray-600 mb-12">Engineered for Your Peak Performance</p>
         <div class="max-w-4xl mx-auto text-left">
             <ul class="space-y-8">
@@ -565,16 +602,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="text-lg text-gray-700 mb-6 leading-relaxed">Smooth Sleep's formulation is rooted in robust scientific research. Our key ingredients have been individually studied for their efficacy in promoting relaxation and improving various aspects of sleep quality. We've optimized their synergy to provide comprehensive support for your natural sleep cycle.</p>
             <h3 class="text-2xl font-semibold mb-4 text-gray-800">Key Ingredients:</h3>
             <ul class="list-disc list-inside text-left text-gray-600 mb-6 space-y-2">
-                <li><strong>St. John's Wort (Hypericum Perforatum):</strong> Traditionally known to help reduce mild anxiety and depression.</li>
-                <li><strong>Valerian Root:</strong> Traditionally used to promote relaxation and may help improve sleep quality.</li>
-                <li><strong>Marigold (Souci):</strong> Believed to help soothe the nervous system and may contribute to better sleep.</li>
-                <li><strong>Chamomile:</strong> Famous for its calming properties and helping to relax before bed.</li>
-                <li><strong>Passion Flower:</strong> Known for its calming properties, it may contribute to general relaxation and support nerve health.</li>
-                <li><strong>Hops Extract:</strong> Works with Valerian to calm the nervous system for deep sleep.</li>
-                <li><strong>Zinc:</strong> Supports immune system functions and contributes to nervous balance.</li>
+                <li><strong>Valerian Extract:</strong> Traditionally used to promote relaxation and help improve sleep quality.</li>
+<li><strong>Chamomile Extract:</strong> Famous for its calming properties, helping to relax before bed.</li>
+<li><strong>Magnesium:</strong> Contributes to muscle relaxation and supports the nervous system for a restful night.</li>
+<li><strong>Melatonin:</strong> Helps reduce the time it takes to fall asleep and regulate the natural sleep-wake cycle.</li>
+<li><strong>Vitamin B6:</strong> Supports the nervous system and contributes to the production of sleep-regulating hormones.</li>
             </ul>
             <div class="text-center my-10">
-                <a href="#order-btn" data-cta-location="Middle" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 inline-block">Invest in Your Performance!</a>
+                <a href="#order-btn-en" data-cta-location="Middle" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 inline-block">Invest in Your Performance!</a>
             </div>
             <div class="bg-gray-100 p-6 rounded-xl border-l-4 border-purple-500 text-left italic">
                 <p class="text-gray-700 mb-2">"Optimal sleep is not a luxury, but a fundamental pillar of cognitive function and long-term health. Smooth Sleep provides a natural and effective pathway to achieving that essential rest for busy professionals."</p>
@@ -643,7 +678,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="py-16 bg-slate-50">
     <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div class="order-2 md:order-1">
-             <img src="images/Smooth Sleep-Capsules-naturelles-puissantes-pour-un-sommeil-profond-سموث سليب-كبسولات-طبيعية-فعالة-لنوم-عميق-ومريح-.webp" loading="lazy" fetchpriority="high" alt="Person taking a capsule" class="rounded-lg shadow-md w-full">
+             <img src="images/Smooth Sleep-Capsules-naturelles-puissantes-pour-un-sommeil-profond-سموث سليب-كبسولات-طبيعية-فعالة-لنوم-عميق-ومريح-.webp" loading="lazy" fetchpriority="high" alt="Person taking a capsule" class="relative mx-auto rounded-3xl shadow-3xl border-4 border-orange-500/100 transform/20 md:rotate-3 hover:rotate-0 transition-transform duration-500" width="400" height="400">
         </div>
         <div class="order-1 md:order-2">
             <h2 class="text-3xl font-bold text-slate-800">Simple Steps to Better Nights</h2>
@@ -662,7 +697,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                     <div>
                         <div class="mt-12">
-                        <a href="#order-btn" data-cta-location="Bottom" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                        <a href="#order-btn-en" data-cta-location="Bottom" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">
                             Try Smooth Sleep Now!
                         </a>
                         </div>
@@ -673,12 +708,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 <!-- Daily Routine Section EN -->
                  <!-- 🌙 Daily Routine Integration Section -->
-                 <section id="daily-routine" class="py-10 bg-gray-100">
+                 <section id="daily-routineen" class="py-10 bg-gray-100">
                     <div class="max-w-6xl mx-auto px-4">
                       <h2 class="text-3xl font-bold text-center text-indigo-700 mb-8">🕒 How Smooth Sleep Fits Into Your Daily Routine</h2>
                   
                       <!-- EN Version -->
-                      <div class="lang-content lang-en grid md:grid-cols-3 gap-6">
+                      <div class="mt-12 grid md:grid-cols-3 gap-8">
                         <div class="bg-white p-6 rounded-xl shadow text-center">
                           <h3 class="text-xl font-semibold mb-2">7:00 PM – Start Unwinding</h3>
                           <p class="text-gray-600">Turn off screens, dim the lights, and start relaxing after your busy day.</p>
@@ -706,7 +741,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- 11. Order Now Section (EN) -->
-<section id="order-btn" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-24 text-center">
+<section id="order-btn-en" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-24 text-center">
     <div class="container mx-auto px-4 max-w-5xl">
         <h2 class="text-4xl md:text-5xl font-extrabold mb-8 leading-tight">Choose Your Path to Optimal Sleep</h2>
         <p class="text-xl md:text-2xl mb-12 opacity-90">Select the package that best fits your needs and start your transformation.</p>
@@ -805,8 +840,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <footer class="bg-slate-900 text-slate-300 py-8">
             <div class="container mx-auto px-6 text-center">
                   <p class="font-semibold text-lg">Need Help? Contact Us!</p>
-                  <p class="mt-2">Phone/WhatsApp: <a href="https://wa.me/212768356015" class="hover:text-white">+212-768-356015</a></p>
-                  <p class="mt-4 text-sm text-slate-400">&copy; 2025 Luxalry. All Rights Reserved. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+                  <p class="mt-2">Phone/WhatsApp: <a href="https://wa.me/212768356015" class="hover:text-white">00212-768-356015</a></p>
+                  <p class="mt-4 text-sm text-slate-400">&copy; 2025 Luxalry. All Rights Reserved.</p>
+                  <p class="mt-4 text-sm text-slate-400" alt="Disclaimer" title="Disclaimer">"This product is a dietary supplement and not a medicine. It is not intended to diagnose, treat, cure, or prevent any disease. The information on this page is for informational purposes only and is not a substitute for professional medical advice. Results may vary from person to person."</p>
+
             </div>
      </footer>
  </main>
@@ -816,16 +853,63 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div id="lang-fr" class="lang-content">
                 <main>
 <!-- 1. Hero Section (FR) -->
-<section id="hero-fr" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 md:py-28 text-center">
-    <div class="container mx-auto px-4 max-w-4xl">
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">Dormez mieux. Performez plus.</h1>
-        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">Soutien au sommeil scientifiquement élaboré pour les professionnels très performants.</p>
-        <div class="mb-12">
-            <img src="images/luxalry-smooth-sleep-supplement-sleep-aid.webp" loading="lazy" fetchpriority="high" alt="Produit Smooth Sleep" class="mx-auto rounded-3xl shadow-2xl w-64 md:w-80 border-4 border-white/50">
-            <div class="mt-4 text-xl md:text-2xl font-bold star-rating">⭐⭐⭐⭐⭐ <span class="text-white/80 text-base font-normal">(4.9/5 basé sur plus de 2 500 avis)</span></div>
-            <p class="text-sm md:text-base mt-2 font-semibold text-indigo-300">Formulé par des médecins | Non-accoutumant | Résultats rapides</p>
+<section id="hero-fr" class="relative overflow-hidden bg-slate-900 text-white py-20 md:py-28">
+    <div class="container mx-auto px-6 max-w-7xl">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="md:col-span-3 text-center md:text-left">
+                <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-4">
+                    Un Sommeil Plus Intelligent. <br class="hidden md:block"> De Meilleures Performances.
+                </h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto md:mx-0 opacity-80">
+                    Un soutien au sommeil scientifiquement conçu pour les professionnels performants qui exigent le meilleur de leur esprit et de leur corps.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
+                    <a href="#order-btn-fr" data-cta-location="Top" class="cta-button-gradient text-white font-bold py-3 px-8 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        Essayez Smooth Sleep Maintenant !
+                    </a>
+                </div>
+            </div>
+            <!-- Image Content -->
+            <div class="md:col-span-2 flex justify-center">
+                <div class="relative w-72 md:w-80">
+                    <div class="absolute -inset-2 bg-gradient-to-br from-indigo-500 to-pink-500 rounded-3xl blur-xl opacity-40"></div>
+                    <img src="/images/luxalry-smooth-sleep-supplement-sleep-aid.webp?text=Smooth+Sleep" loading="lazy" fetchpriority="high" alt="Produit Smooth Sleep" class="relative mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+                    <div class="relative mt-6 p-4 bg-slate-800/50 rounded-2xl text-center backdrop-blur-sm">
+                        <div class="text-2xl font-bold star-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="text-white/80 text-sm font-normal mt-1">(4.9/5 sur 2,500+ avis)</div>
+                        <p class="text-xs mt-3 font-semibold text-indigo-300 uppercase tracking-wider">
+                            Formulé par des Médecins | Sans Accoutumance
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="#order-btn-fr" data-cta-location="Top" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">Essayez Smooth Sleep Maintenant!</a>
+
+        <!-- Product Cards -->
+        <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-transparent rounded-2xl backdrop-blur p-4 text-center">
+              <img src="/images/sleping-people.webp?text=Confort" loading="lazy" fetchpriority="high" alt="Prêt pour demain !" class="relative w-60 h-50 mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+              <h3 class="font-bold text-lg">Prêt pour demain !</h3>
+            </div>
+            <div class="bg-transparent rounded-2xl backdrop-blur p-4 text-center">
+              <img src="/images/hapy-people.webp?text=Joyeux" loading="lazy" fetchpriority="high" alt="Réveil Énergique !" class="relative w-60 h-50 mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+              <h3 class="font-bold text-lg">Réveil Énergique !</h3>
+            </div>
+            <div class="bg-transparent rounded-2xl backdrop-blur p-4 text-center">
+              <img src="/images/safety-sleep.webp?text=Beaux+Rêves" loading="lazy" fetchpriority="high" alt="Sommeil Profond!" class="relative w-60 h-50 mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+              <h3 class="font-bold text-lg">Sommeil Profond !</h3>
+            </div>
+            <div class="bg-transparent rounded-2xl backdrop-blur p-4 text-center">
+              <img src="/images/early-wake-up.webp" loading="lazy" fetchpriority="high" alt="Prêt pour la réussite!" class="relative w-60 h-50 mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+              <h3 class="font-bold text-lg">Prêt pour la réussite !</h3>
+            </div>
+          </div>
+      
+          <!-- Description -->
+          <div class="mt-10 bg-white/10 rounded-2xl backdrop-blur px-6 py-5 text-base md:text-lg max-w-3xl mx-auto text-center">
+            Vivez des nuits reposantes et des matins rafraîchis avec Smooth Sleep de Luxalry. Des ingrédients scientifiquement formulés agissent en harmonie pour favoriser un sommeil plus profond et ininterrompu, aidant les professionnels performants à se ressourcer efficacement. Chaque dose est soigneusement conçue pour des résultats rapides sans somnolence le lendemain, vous permettant de vous réveiller énergisé, concentré et prêt à exceller, tout en donnant la priorité à votre bien-être à long terme et à votre productivité quotidienne.
+          </div>
     </div>
 </section>
 
@@ -865,7 +949,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 3. NEW "The Luxalry Advantage" Section (FR) -->
 <section id="why-choose-fr" class="py-16 bg-slate-50">
     <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">L'Avantage Luxalry</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">L'Avantage Smooth Sleep</h2>
         <p class="text-xl text-gray-600 mb-12">Conçu pour Votre Performance Optimale</p>
         <div class="max-w-4xl mx-auto text-left">
             <ul class="space-y-8">
@@ -981,13 +1065,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="text-lg text-gray-700 mb-6 leading-relaxed">La formulation de Smooth Sleep est ancrée dans une recherche scientifique solide. Nos ingrédients clés ont été étudiés individuellement pour leur efficacité à promouvoir la relaxation et à améliorer divers aspects de la qualité du sommeil. Nous avons optimisé leur synergie pour fournir un soutien complet à votre cycle de sommeil naturel.</p>
             <h3 class="text-2xl font-semibold mb-4 text-gray-800">Ingrédients Clés :</h3>
             <ul class="list-disc list-inside text-left text-gray-600 mb-6 space-y-2">
-                <li><strong>Millepertuis (Hypericum Perforatum) :</strong> Traditionnellement connu pour aider à réduire l'anxiété et la dépression légère.</li>
-                <li><strong>Racine de Valériane :</strong> Utilisée traditionnellement pour favoriser la relaxation et peut aider à améliorer la qualité du sommeil.</li>
-                <li><strong>Souci (Belamane) :</strong> On pense qu'il aide à apaiser le système nerveux et peut contribuer à un meilleur sommeil.</li>
-                <li><strong>Camomille :</strong> Célèbre pour ses propriétés apaisantes et aidant à se détendre avant de dormir.</li>
-                <li><strong>Fleur de la Passion :</strong> Connue pour ses propriétés calmantes, elle peut contribuer à la relaxation générale et soutenir la santé nerveuse.</li>
-                <li><strong>Extrait de Houblon :</strong> Agit en synergie avec la valériane pour calmer le système nerveux et favoriser un sommeil profond.</li>
-                <li><strong>Zinc :</strong> Soutient les fonctions du système immunitaire et contribue à l'équilibre nerveux.</li>
+                <li><strong>Extrait de valériane :</strong> Utilisé traditionnellement pour favoriser la relaxation et améliorer la qualité du sommeil.</li>
+                <li><strong>Extrait de camomille :</strong> Réputé pour ses propriétés apaisantes, il aide à se détendre avant le coucher.</li>
+                <li><strong>Magnésium :</strong> Contribue à la relaxation musculaire et soutient le système nerveux pour une nuit reposante.</li>
+                <li><strong>Mélatonine :</strong> Aide à réduire le temps d'endormissement et à réguler le cycle naturel du sommeil.</li>
+                <li><strong>Vitamine B6</strong> Soutient le système nerveux et participe à la production d’hormones régulatrices du sommeil.</li>
             </ul>
             <div class="text-center my-10">
                 <a href="#order-btn-fr" data-cta-location="Middle" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 inline-block">Investissez dans Votre Performance!</a>
@@ -1059,7 +1141,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="py-16 bg-slate-50">
     <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div class="order-2 md:order-1">
-             <img src="images/Smooth Sleep-Capsules-naturelles-puissantes-pour-un-sommeil-profond-سموث سليب-كبسولات-طبيعية-فعالة-لنوم-عميق-ومريح-.webp?text=Mode+d'emploi" loading="lazy" fetchpriority="high" alt="Personne prenant une gélule" class="rounded-lg shadow-md w-full">
+             <img src="images/Smooth Sleep-Capsules-naturelles-puissantes-pour-un-sommeil-profond-سموث سليب-كبسولات-طبيعية-فعالة-لنوم-عميق-ومريح-.webp?text=Mode+d'emploi" loading="lazy" fetchpriority="high" alt="Personne prenant une gélule" class="relative mx-auto rounded-3xl shadow-3xl border-4 border-orange-500/100 transform/20 md:rotate-3 hover:rotate-0 transition-transform duration-500" width="400" height="400">
         </div>
         <div class="order-1 md:order-2">
             <h2 class="text-3xl font-bold text-slate-800">Des étapes simples pour de meilleures nuits</h2>
@@ -1087,11 +1169,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </section>
 <!-- Daily Routine Section FR -->
-<section id="daily-routine" class="py-10 bg-gray-100">
+<section id="daily-routine-fr" class="py-10 bg-gray-100">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl font-bold text-center text-indigo-700 mb-8">🕒 Comment Smooth Sleep s'intègre à votre routine quotidienne</h2>
       <!-- FR Version -->
-<div class="lang-content lang-fr grid md:grid-cols-3 gap-6">
+<div class="mt-12 grid md:grid-cols-3 gap-8">
 <div class="bg-white p-6 rounded-xl shadow text-center">
 <h3 class="text-xl font-semibold mb-2">19h00 – Commencez à vous détendre</h3>
 <p class="text-gray-600">Éteignez les écrans, tamisez la lumière et commencez à vous relaxer.</p>
@@ -1214,8 +1296,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer class="bg-slate-900 text-slate-300 py-8">
     <div class="container mx-auto px-6 text-center">
         <p class="font-semibold text-lg">Besoin d'aide ? Contactez-nous !</p>
-        <p class="mt-2">Téléphone/WhatsApp: <a href="https://wa.me/212768356015" class="hover:text-white">+212-768-356015</a></p>
-        <p class="mt-4 text-sm text-slate-400">&copy; 2025 Luxalry. Tous droits réservés. Ce produit n'est pas destiné à diagnostiquer, traiter, guérir ou prévenir une quelconque maladie.</p>
+        <p class="mt-2">Téléphone/WhatsApp: <a href="https://wa.me/212768356015" class="hover:text-white">00212-768-356015</a></p>
+        <p class="mt-4 text-sm text-slate-400">&copy; 2025 Luxalry. Tous droits réservés.</p>
+        <p class="mt-4 text-sm text-slate-400" alt="Clause de non-responsabilité" title="Clause de non-responsabilité">"Ce produit est un complément alimentaire et non un médicament. Il n'est pas destiné à diagnostiquer, traiter, guérir ou prévenir une quelconque maladie. Les informations sur cette page sont à but informatif uniquement et ne remplacent pas l'avis d'un médecin ou d'un pharmacien. Les résultats peuvent varier d'une personne à l'autre."</p>
     </div>
 </footer>
 </main>
@@ -1226,23 +1309,70 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <main>
 
 <!-- 1. Hero Section (AR) -->
-<section id="hero-ar" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 md:py-28 text-center">
-    <div class="container mx-auto px-4 max-w-4xl">
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">نم نوماً هادئاً. وأبدع في عملك.</h1>
-        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">دعم نوم مصمم علمياً للمهنيين ذوي الأداء العالي.</p>
-        <div class="mb-12">
-            <img src="images/luxalry-smooth-sleep-supplement-sleep-aid.webp" loading="lazy" fetchpriority="high" alt="منتج Smooth Sleep" class="mx-auto rounded-3xl shadow-2xl w-64 md:w-80 border-4 border-white/50">
-            <div class="mt-4 text-xl md:text-2xl font-bold star-rating">⭐⭐⭐⭐⭐ <span class="text-white/80 text-base font-normal">(4.9/5 بناءً على أكثر من 2500 تقييم)</span></div>
-            <p class="text-sm md:text-base mt-2 font-semibold text-indigo-300">صيغة طبية | غير مسببة للإدمان | نتائج سريعة</p>
+<section id="hero-ar" dir="rtl" class="relative overflow-hidden bg-slate-900 text-white py-20 md:py-28">
+    <div class="container mx-auto px-6 max-w-7xl">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="md:col-span-3 text-center md:text-right">
+                <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-4">
+                    نوم أذكى. <br class="hidden md:block"> أداء أفضل.
+                </h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto md:mx-0 opacity-80">
+                    دعم نوم مُصمم علميًا للمهنيين ذوي الأداء العالي الذين يطلبون الأفضل لعقولهم وأجسادهم.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center md:justify-end">
+                    <a href="#order-btn-ar" data-cta-location="Top" class="cta-button-gradient text-white font-bold py-3 px-8 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        جرّب Smooth Sleep الآن!
+                    </a>
+                </div>
+            </div>
+            <!-- Image Content -->
+            <div class="md:col-span-2 flex justify-center">
+                <div class="relative w-72 md:w-80">
+                    <div class="absolute -inset-2 bg-gradient-to-br from-indigo-500 to-pink-500 rounded-3xl blur-xl opacity-40"></div>
+                    <img src="/images/luxalry-smooth-sleep-supplement-sleep-aid.webp?text=Smooth+Sleep" loading="lazy" fetchpriority="high" alt="منتج Smooth Sleep" class="relative mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:rotate-3 hover:rotate-0 transition-transform duration-500">
+                    <div class="relative mt-6 p-4 bg-slate-800/50 rounded-2xl text-center backdrop-blur-sm">
+                        <div class="text-2xl font-bold star-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="text-white/80 text-sm font-normal mt-1">(4.9/5 من 2,500+ تقييم)</div>
+                        <p class="text-xs mt-3 font-semibold text-indigo-300 uppercase tracking-wider">
+                            بتركيبة طبية | لا يسبب الإدمان
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="#order-btn-ar" data-cta-location="top" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">جرب سموث سليب الآن!</a>
+
+        <!-- Product Cards -->
+        <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-transparent rounded-2xl backdrop-blur p-4 text-center">
+              <img src="/images/sleping-people.webp?text=راحة" loading="lazy" fetchpriority="high" alt="أفضل استعداد ليومك التالي!" class="relative w-60 h-50 mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+              <h3 class="font-bold text-lg">أفضل استعداد ليومك التالي!</h3>
+            </div>
+            <div class="bg-transparent rounded-2xl backdrop-blur p-4 text-center">
+              <img src="/images/hapy-people.webp?text=سعادة" loading="lazy" fetchpriority="high" alt="وداعاً للخمول الصباحي!" class="relative w-60 h-50 mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+              <h3 class="font-bold text-lg">وداعاً للخمول الصباحي!</h3>
+            </div>
+            <div class="bg-transparent rounded-2xl backdrop-blur p-4 text-center">
+              <img src="/images/safety-sleep.webp?text=أحلام+سعيدة" loading="lazy" fetchpriority="high" alt="نوم عميق بلا انقطاع!" class="relative w-60 h-50 mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+              <h3 class="font-bold text-lg">نوم عميق بلا انقطاع!</h3>
+            </div>
+            <div class="bg-transparent rounded-2xl backdrop-blur p-4 text-center">
+              <img src="/images/early-wake-up.webp?text=استيقاظ" loading="lazy" fetchpriority="high" alt="جاهز ليوم من الإنجازات!" class="relative w-60 h-50 mx-auto rounded-3xl shadow-2xl border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+              <h3 class="font-bold text-lg">جاهز ليوم من الإنجازات!</h3>
+            </div>
+          </div>
+      
+          <!-- Description -->
+          <div class="mt-10 bg-white/10 rounded-2xl backdrop-blur px-6 py-5 text-base md:text-lg max-w-3xl mx-auto text-center">
+            استمتع بليالٍ هادئة وصباحات منعشة مع Smooth Sleep من Luxalry. تعمل المكونات المصممة علميًا في تناغم لدعم نوم أعمق وغير متقطع، مما يساعد المهنيين ذوي الأداء العالي على إعادة شحن طاقتهم بكفاءة. تم تصميم كل جرعة بعناية لتحقيق نتائج سريعة دون الشعور بالترنح في اليوم التالي، مما يمنحك القدرة على الاستيقاظ بنشاط وتركيز واستعداد للتفوق - كل ذلك مع إعطاء الأولوية لرفاهيتك على المدى الطويل وإنتاجيتك اليومية.
+          </div>
     </div>
 </section>
 <!-- 2. Professionals Benefit Section (NEW - AR) -->
 <section class="bg-gray-50 py-16 lang-ar">
     <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800">للمهنيين ذوي الأداء العالي</h2>
-        <p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto">سوث سليب ليس مجرد مساعد للنوم؛ إنه استثمار في ميزتك المهنية. اختبر الفرق الذي يمكن أن تحدثه ليلة نوم مريحة حقًا.</p>
+        <p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto">سموث سليب ليس مجرد مساعد للنوم؛ إنه استثمار في ميزتك المهنية. اختبر الفرق الذي يمكن أن تحدثه ليلة نوم مريحة حقًا.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Benefit 1: Cognitive Focus -->
             <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition duration-300">
@@ -1275,7 +1405,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 3. NEW "The Luxalry Advantage" Section (AR) -->
 <section id="why-choose-ar" class="py-16 bg-slate-50" dir="rtl">
     <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">ميزة لوكسالري</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">ميزة Smooth sleep</h2>
         <p class="text-xl text-gray-600 mb-12">مُصمم خصيصًا لأدائك الفائق</p>
         <div class="max-w-4xl mx-auto text-right">
             <ul class="space-y-8">
@@ -1323,7 +1453,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 4. Before/After Lifestyle Comparison (NEW - AR) -->
 <section id="before-after-ar" class="bg-gradient-to-r from-blue-300 to-purple-500 text-white py-16 lang-ar">
     <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-12">تحوّل Smooth Sleep</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-12" dir="rtl">تحوّل Smooth Sleep</h2>
         <p class="text-lg mb-10 max-w-3xl mx-auto opacity-90">اكتشف كيف يمكن لـ Smooth Sleep أن يحوّل حياتك المهنية والشخصية من التعب الدائم إلى الأداء العالي.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- قبل استخدام Smooth Sleep -->
@@ -1365,7 +1495,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </section>
 <!-- 5. Testimonials Section (AR) -->
-<section id="testimonials-ar" class="py-16 bg-white">
+<section id="testimonials-ar" class="py-16 bg-white" dir="rtl">
     <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-slate-800 text-center">يثق به محترفون مثلك</h2>
         <div class="mt-12 grid md:grid-cols-3 gap-8">
@@ -1392,14 +1522,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="text-lg text-gray-700 mb-6 leading-relaxed">تستند تركيبة Smooth Sleep إلى بحث علمي قوي. تمت دراسة مكوناتنا الرئيسية بشكل فردي لفعاليتها في تعزيز الاسترخاء وتحسين جوانب مختلفة من جودة النوم. لقد قمنا بتحسين تآزرها لتوفير دعم شامل لدورة نومك الطبيعية.</p>
             <h3 class="text-2xl font-semibold mb-4 text-gray-800">المكونات الرئيسية:</h3>
             <ul class="list-disc list-inside text-right text-gray-600 mb-6 space-y-2">
-                <li><strong>هيوفاريقون (Hypericum Perforatum):</strong> يُعرف تقليديًا بأنه قد يساعد في تقليل القلق والاكتئاب الطفيف.</li>
-                <li><strong>ناردين (Valerian Root):</strong> يُستخدم تقليديًا لتعزيز الاسترخاء وقد يساعد في تحسين جودة النوم.</li>
-                <li><strong>بلعمان (Souci):</strong> يُعتقد أنه يساعد في تهدئة الجهاز العصبي وقد يساهم في تحسين النوم.</li>
-                <li><strong>البابونج (Chamomile):</strong> مشهور بخصائصه المهدئة والمساعدة على الاسترخاء قبل النوم.</li>
-                <li><strong>زهرة الآلام (Passion Flower):</strong> تعرف بخصائصها المهدئة وقد تساهم في الاسترخاء العام ودعم صحة الأعصاب.</li>
-                <li><strong>مستخلص الجنجل (Hops Extract):</strong> يعمل مع الناردين لتهدئة الجهاز العصبي من أجل نوم عميق.</li>
-                <li><strong>الزنك (Zinc):</strong> يدعم وظائف الجهاز المناعي ويساهم في التوازن العصبي.</li>
-            </ul>
+                <li><strong>مستخلص الناردين:</strong> يُستخدم تقليديًا لتعزيز الاسترخاء والمساعدة في تحسين جودة النوم.</li>
+<li><strong>مستخلص البابونج:</strong> مشهور بخصائصه المهدئة والمساعدة على الاسترخاء قبل النوم.</li>
+<li><strong>المغنيسيوم:</strong> يساهم في استرخاء العضلات ويدعم الجهاز العصبي من أجل ليلة هادئة.</li>
+<li><strong>الميلاتونين:</strong> يساعد على تقليل الوقت اللازم للدخول في النوم وتنظيم دورة النوم والاستيقاظ الطبيعية.</li>
+<li><strong>فيتامين B6:</strong> يدعم الجهاز العصبي ويساهم في إنتاج الهرمونات المنظمة للنوم.</li> 
+</ul>
             <div class="text-center my-10">
                 <a href="#order-btn-ar" data-cta-location="Middle" class="cta-button-gradient text-white font-bold py-3 px-6 text-lg md:py-4 md:px-10 md:text-xl rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 inline-block">استثمر في أدائك!</a>
             </div>
@@ -1416,7 +1544,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 <!-- 7. Comparison Section AR -->
                <section class="py-16 bg-slate-50">
-                   <div class="container mx-auto px-6">
+                   <div class="container mx-auto px-6" dir="rtl">
                        <h2 class="text-3xl font-bold text-slate-800 text-center">الاختيار الواضح لنوم أفضل</h2>
                        <div class="mt-8 max-w-3xl mx-auto overflow-x-auto">
                            <table class="w-full text-right border-collapse">
@@ -1459,7 +1587,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                    <h2 class="text-2xl font-bold">جودة يمكنك الوثوق بها</h2>
                    <p class="mt-2 text-slate-300">تم التصنيع في منشأة حديثة تلتزم بأعلى معايير الجودة.</p>
                    <div class="flex justify-center items-center gap-8 md:gap-12 mt-8 flex-wrap">
-                       <span class="font-semibold">مرخص من ONSSA (CAPV 261009.24)</span>
+                       <span class="font-semibold">ONSSA (CAPV 261009.24) مرخص من طرف</span>
                        <span class="font-semibold">حاصل على شهادة GMP</span>
                        <span class="font-semibold">خالي من المواد المعدلة وراثياً</span>
                    </div>
@@ -1469,9 +1597,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
            <section class="py-16 bg-slate-50">
             <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-2">
-                     <img src="images/Smooth Sleep-Capsules-naturelles-puissantes-pour-un-sommeil-profond-سموث سليب-كبسولات-طبيعية-فعالة-لنوم-عميق-ومريح-.webp?text=طريقة+الاستخدام" loading="lazy" fetchpriority="high" alt="شخص يتناول كبسولة" class="rounded-lg shadow-md w-full">
+                     <img src="images/Smooth Sleep-Capsules-naturelles-puissantes-pour-un-sommeil-profond-سموث سليب-كبسولات-طبيعية-فعالة-لنوم-عميق-ومريح-.webp?text=طريقة+الاستخدام" loading="lazy" fetchpriority="high" alt="شخص يتناول كبسولة" class="relative mx-auto rounded-3xl shadow-3xl border-4 border-orange-500/100 transform/20 md:rotate-3 hover:rotate-0 transition-transform duration-500" width="400" height="400">
                 </div>
-                <div class="order-1 md:order-1 text-right">
+                <div class="order-1 md:order-1 text-right" dir="rtl">
                     <h2 class="text-3xl font-bold text-slate-800">خطوات بسيطة لليالٍ أفضل</h2>
                     <div class="mt-6 space-y-4">
                         <div>
@@ -1497,12 +1625,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
         <!-- Daily Routine Section AR -->
-        <section id="daily-routine" class="py-10 bg-gray-100">
+        <section id="daily-routine-ar" class="py-10 bg-gray-100" dir="rtl">
             <div class="max-w-6xl mx-auto px-4">
               <h2 class="text-3xl font-bold text-center text-indigo-700 mb-8">🕒 كيف يتناسب Smooth Sleep مع روتينك اليومي</h2>
               <!-- AR Version -->
-<div class="lang-content lang-ar grid md:grid-cols-3 gap-6">
-    <div class="bg-white p-6 rounded-xl shadow text-center">
+        <div class="mt-12 grid md:grid-cols-3 gap-8" >
+            <div class="bg-white p-6 rounded-xl shadow text-center">
       <h3 class="text-xl font-semibold mb-2">7:00 مساءً – بداية الاسترخاء</h3>
       <p class="text-gray-600">قم بإطفاء الشاشات وخفّض الإضاءة وابدأ في التهدئة بعد يومك الطويل.</p>
     </div>
@@ -1626,8 +1754,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer class="bg-slate-900 text-slate-300 py-8">
     <div class="container mx-auto px-6 text-center">
           <p class="font-semibold text-lg">هل تحتاج إلى مساعدة؟ اتصل بنا!</p>
-          <p class="mt-2">الهاتف/واتساب: <a href="https://wa.me/212768356015" class="hover:text-white">+212768356015</a></p>
-          <p class="mt-4 text-sm text-slate-400">&copy; 2025 Luxalry. كل الحقوق محفوظة. هذا المنتج غير مخصص لتشخيص أو علاج أو منع أي مرض.</p>
+          <p class="mt-2">الهاتف/واتساب: <a href="https://wa.me/212768356015" class="hover:text-white" dir="rtl">00212-768-356015</a></p>
+          <p class="mt-4 text-sm text-slate-400">&copy; 2025 Luxalry. كل الحقوق محفوظة.</p>
+          <p class="mt-4 text-sm text-slate-400" alt="تنصل" title="تنصل">"هذا المنتج مكمل غذائي وليس دواءً، ولا يهدف إلى تشخيص أو علاج أو منع أي مرض. المعلومات الواردة في هذه الصفحة هي لأغراض إعلامية فقط ولا تغني عن استشارة الطبيب أو الصيدلي. النتائج قد تختلف من شخص لآخر."</p>
     </div>
 </footer>
 </main>
